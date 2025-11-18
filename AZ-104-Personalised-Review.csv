@@ -1,0 +1,21 @@
+Question,OptionA,OptionB,OptionC,OptionD,Correct
+What does RTO (Recovery Time Objective) measure?,The replication lag between primary and secondary regions,The maximum acceptable downtime after a failure,The maximum allowed data loss window in minutes,How often backups are taken,B
+What does RPO (Recovery Point Objective) represent?,How long it takes to switch to the DR site,The duration needed to restore services,The maximum tolerable data loss window,The maximum acceptable downtime after an outage,C
+Which Azure replication option provides the highest durability across regions?,LRS (Locally Redundant Storage),ZRS (Zone Redundant Storage),GRS (Geo-Redundant Storage),GZRS (Geo-Zone Redundant Storage),D
+Which replication type keeps data within a single region but across multiple availability zones?,LRS,GRS,ZRS,GZRS,C
+In GRS where is the secondary copy stored?,Same data center as primary,Same region but different zone,Region-paired secondary region,Different availability set,C
+Which replication model guarantees synchronous replication?,ZRS only,LRS only,GRS and GZRS,LRS and ZRS,A
+Why is asynchronous replication used for GRS/GZRS?,It reduces storage account costs,It allows manual failover,It is cheaper to implement,Synchronous replication across regions creates unacceptable latency,D
+What triggers RTO during a disaster?,Backup deletion,RPO breach,Region pairing event,Loss of service functionality requiring recovery,D
+Which Azure feature improves RTO most effectively?,Geo-zone redundancy,Soft delete for blobs,Snapshots,Automated failover,D
+Which replication option is best for regulatory environments requiring data locality?,GRS,ZRS,GZRS,LRS,D
+What is the main benefit of ZRS over LRS?,Lower cost,Higher durability and zone isolation,Synchronous regional replication across regions,Automatic cross-region failover,B
+What is required before forcing a failover for a GRS account?,Deletion of snapshots,Enable RA-GRS beforehand,Microsoft support involvement,Manual failover initiation via portal or CLI,D
+Which replication choice should be used for workloads requiring zero data loss?,GRS,GZRS,ZRS,None of these,C
+What does RA-GRS add to GRS?,Synchronous replication,Read access to secondary region,Automatic failover,Zone redundancy,B
+Which workload is ideal for LRS only?,Critical financial records,Archive blobs with low access needs,SQL PaaS databases,High-availability web apps,B
+Which replication type provides the lowest RTO?,LRS,ZRS,GZRS,GRS,C
+Which replication type provides the lowest RPO?,GZRS with RA-GZRS,ZRS,LRS,GRS,A
+When planning RTO/RPO what should come first?,Choosing replication type,Classifying business impact,Provisioning storage accounts,Creating snapshots,B
+Which feature protects against accidental blob deletion?,GZRS,Immutable storage,Soft delete,LRS,C
+Which feature prevents modification of stored data?,Snapshots,Versioning,Immutable storage,RA-GRS,C
