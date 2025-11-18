@@ -1,6 +1,6 @@
 # AZ-104 Critical Priorities Study Deck
 
-This repository contains a focused Anki deck of 26 high-priority questions designed specifically to address critical weak areas identified in AZ-104 exam performance, particularly the App Service & Containers domain (20% failure rate) and enhanced compute topics.
+This repository contains a focused Anki deck of multiple choice questions designed specifically to address critical weak areas identified in AZ-104 exam performance, particularly the App Service & Containers domain (20% failure rate) and enhanced compute topics.
 
 ## About This Deck
 
@@ -13,11 +13,11 @@ This deck was created using analysis of quiz performance data and enhanced study
 
 ## Deck Features
 
-- **26 Targeted Questions:** Quality over quantity approach
+- **Multiple Choice Format:** Standard exam-style questions with 4 answer choices
 - **Priority-Based Organization:** Critical weak areas receive primary focus
-- **Rich Content:** Detailed explanations with step-by-step sequences
+- **Detailed Explanations:** Step-by-step reasoning for correct answers
 - **Exam-Focused:** Based on actual quiz failure patterns and Microsoft Learn content
-- **HTML Formatting:** Enhanced readability with bullet points and emphasis
+- **Clean Formatting:** Professional styling that works perfectly in Anki
 
 ## How to Use
 

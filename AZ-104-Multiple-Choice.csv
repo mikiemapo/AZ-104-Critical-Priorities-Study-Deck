@@ -1,0 +1,116 @@
+Front,Back,Tags
+"What are the EXACT steps to configure auto-swap for Azure App Service deployment slots?
+
+A) Create slot → Enable auto-swap → Configure warm-up → Test
+B) Configure warm-up → Create slot → Enable auto-swap → Deploy  
+C) Create slot → Deploy → Enable auto-swap → Configure warm-up
+D) Enable auto-swap → Create slot → Configure warm-up → Deploy","A) Create slot → Enable auto-swap → Configure warm-up → Test
+
+<strong>Correct Answer: A</strong>
+
+The correct sequence is:
+1. Create deployment slot (staging)
+2. Enable Auto-Swap during slot creation OR in deployment settings
+3. Configure automatic warm-up process before swap
+4. Test to ensure zero-downtime deployment works
+
+This ensures proper integration with CI/CD pipelines and fail-safe rollback capabilities.","App Service,Deployment,Critical Priority"
+"You need to securely connect an App Service to Azure SQL Database. What is the CORRECT sequence?
+
+A) Service Endpoint → VNet Integration → Firewall Rules → Disable Public Access → Test
+B) VNet Integration → Service Endpoint → Firewall Rules → Disable Public Access → Test  
+C) Firewall Rules → VNet Integration → Service Endpoint → Disable Public Access → Test
+D) Disable Public Access → VNet Integration → Service Endpoint → Firewall Rules → Test","B) VNet Integration → Service Endpoint → Firewall Rules → Disable Public Access → Test
+
+<strong>Correct Answer: B</strong>
+
+The sequence is: <strong>C→A→D→B→E</strong>
+- <strong>C</strong> - VNet Integration: Connect App Service to VNet subnet FIRST
+- <strong>A</strong> - Service Endpoint: Enable Microsoft.Sql service endpoint
+- <strong>D</strong> - Firewall Rules: Update SQL Database firewall rules  
+- <strong>B</strong> - Disable Public Access: Turn off public internet access
+- <strong>E</strong> - Test: Verify end-to-end secure connection
+
+CRITICAL: Must establish VNet integration and service endpoints BEFORE disabling public access.","App Service,Security,VNet,SQL Database,Critical Priority"
+"What is Azure Container Instances (ACI) scaling limitation compared to AKS?
+
+A) ACI supports horizontal auto-scaling like AKS
+B) ACI requires manual scaling by updating container specifications
+C) ACI has no scaling support - containers are fixed size
+D) ACI requires delete/redeploy for scaling changes","D) ACI requires delete/redeploy for scaling changes
+
+<strong>Correct Answer: D</strong>
+
+<strong>ACI Fundamental Limitation:</strong> NO in-place auto-scaling support
+
+<strong>ACI Scaling Process:</strong>
+1. Delete existing container group (az container delete)
+2. Modify deployment template with new specs (CPU, memory, container count)  
+3. Redeploy container group (az container create)
+
+<strong>vs AKS:</strong> In-place Horizontal Pod Autoscaler (HPA) with zero downtime
+
+Choose AKS for production workloads requiring auto-scaling.","ACI,Scaling,Containers,Critical Priority"
+"What are the different Container Apps ingress configuration options?
+
+A) Public, Private, Internal, Disabled
+B) External, Internal, Disabled
+C) Internet, VNet, Private, None
+D) Public, VNet-only, Private, Background","B) External, Internal, Disabled
+
+<strong>Correct Answer: B</strong>
+
+<strong>External Ingress:</strong>
+• Exposes app to internet traffic
+• Provides public FQDN
+• Use for: Public-facing APIs, web applications
+
+<strong>Internal Ingress:</strong>  
+• VNet-only access - no internet exposure
+• Private connectivity within Container Apps Environment
+• Use for: Internal microservices, backend APIs
+
+<strong>Disabled:</strong>
+• No HTTP ingress at all
+• Use for: Background jobs, queue processors","Container Apps,Ingress,Networking,High Priority"
+"What is the correct difference between Fault Domains and Update Domains?
+
+A) Fault Domains = power/network failure protection, Update Domains = planned maintenance isolation
+B) Fault Domains = planned maintenance isolation, Update Domains = power/network failure protection  
+C) Both provide the same protection against different types of failures
+D) Fault Domains are for VMs, Update Domains are for containers","A) Fault Domains = power/network failure protection, Update Domains = planned maintenance isolation
+
+<strong>Correct Answer: A</strong>
+
+<strong>Fault Domains (FD):</strong>
+• Protection against unplanned hardware failures
+• Separate power source and network switch
+• Azure automatically distributes VMs across fault domains
+
+<strong>Update Domains (UD):</strong>
+• Protection during planned maintenance/updates  
+• Only one update domain rebooted at a time
+• Ensures service availability during Azure maintenance
+
+<strong>Key:</strong> FD = unplanned failures, UD = planned maintenance","Azure VMs,Fault Domains,Update Domains,High Priority"
+"What are the differences between VMSS Orchestration Modes?
+
+A) Uniform = identical VMs, Flexible = mixed VM sizes and types
+B) Uniform = automatic scaling, Flexible = manual scaling
+C) Uniform = single VM type, Flexible = multiple availability zones  
+D) No difference - both modes work identically","A) Uniform = identical VMs, Flexible = mixed VM sizes and types
+
+<strong>Correct Answer: A</strong>
+
+<strong>Uniform Orchestration Mode:</strong>
+• All VMs must be identical (same size, image, configuration)
+• Built for true scale sets with identical workloads
+• Traditional VMSS behavior
+
+<strong>Flexible Orchestration Mode:</strong>
+• Mix different VM sizes and types in same scale set
+• Better for heterogeneous workloads
+• More flexibility in VM configuration
+• Can manage existing VMs
+
+Choose Uniform for identical workloads, Flexible for mixed requirements.","VMSS,Orchestration,Scaling,High Priority"
