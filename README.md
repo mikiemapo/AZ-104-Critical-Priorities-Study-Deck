@@ -1,5 +1,13 @@
 # AZ-104 Critical Priorities Study Deck
 
+## 📥 Download
+
+**[⬇️ Download AZ-104-Critical-Priorities-Study-Deck.apkg](https://github.com/mikiemapo/AZ-104-Critical-Priorities-Study-Deck/raw/main/AZ-104-Critical-Priorities-Study-Deck.apkg)**
+
+*Click the link above to download the Anki deck file. Double-click to import into Anki.*
+
+---
+
 This repository contains a focused Anki deck of multiple choice questions designed specifically to address critical weak areas identified in AZ-104 exam performance, particularly the App Service & Containers domain (20% failure rate) and enhanced compute topics.
 
 ## About This Deck
@@ -21,14 +29,13 @@ This deck was created using analysis of quiz performance data and enhanced study
 
 ## How to Use
 
-### Option 1: Direct Import (.apkg file - Ready!)
+### Quick Start (Recommended)
 
-1. Download the `AZ-104-Critical-Priorities-Study-Deck.apkg` file from this repository
-2. Double-click the downloaded file or open Anki → File → Import
-3. The deck will be automatically imported with proper formatting
-4. Start studying immediately
+1. **[Click here to download the .apkg file](https://github.com/mikiemapo/AZ-104-Critical-Priorities-Study-Deck/raw/main/AZ-104-Critical-Priorities-Study-Deck.apkg)**
+2. **Double-click** the downloaded file to import into Anki
+3. **Start studying** immediately with properly formatted multiple choice questions
 
-### Option 2: CSV Import (Also Available)
+### Alternative: CSV Import
 
 1. Download the `AZ-104-Critical-Priorities-Study-Deck.csv` file
 2. Open Anki → File → Import
