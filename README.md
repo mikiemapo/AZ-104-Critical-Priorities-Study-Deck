@@ -4,7 +4,7 @@
 
 **[⬇️ Download AZ-104-Critical-Priorities-Study-Deck.apkg](https://github.com/mikiemapo/AZ-104-Critical-Priorities-Study-Deck/raw/main/AZ-104-Critical-Priorities-Study-Deck.apkg)**
 
-*Click the link above to download the Anki deck file. Double-click to import into Anki.*
+_Click the link above to download the Anki deck file. Double-click to import into Anki._
 
 ---
 
