@@ -1,19 +1,66 @@
-<h1>AZ-104 Study Deck</h1>
+# AZ-104 Critical Priorities Study Deck
 
-<p>This repository contains an Anki deck of just under 4,000 multiple-choice questions designed to help with studying for the AZ-104: Microsoft Azure Administrator exam. The questions are based on content available on Microsoft Learn and are organized to cover key areas you’ll need to know for the exam.</p>
+This repository contains a focused Anki deck of 30 high-priority questions designed specifically to address critical weak areas identified in AZ-104 exam performance, particularly the App Service & Containers domain (20% failure rate) and enhanced compute topics.
 
-<h2>About the Deck</h2>
+## About This Deck
 
-<p>The deck was created using a custom-made Anki note type tailored specifically for AZ-104 content, making it easier to review and retain information. I consolidated information from Microsoft Learn modules into comprehensive, exam-focused questions. I had a little assistance from AI to generate or refine questions, ensuring they align well with AZ-104 material.</p>
+This deck was created using analysis of quiz performance data and enhanced study materials from comprehensive Azure guides. It focuses on:
 
-<h3>How to Use</h3>
+- **Critical Priority:** App Service & Containers (addressing 20% failure rate)
+- **High Priority:** Enhanced compute topics including Fault Domains, Container Apps, Network Watcher
+- **Medium Priority:** Core AZ-104 concepts with exam-focused scenarios
+- **Strategic Coverage:** Topics identified as common exam pitfalls
 
-<ol>
-  <li>Download the Anki deck file from this repository.</li>
-  <li>Open Anki on your device, and import the deck.</li>
-  <li>Start reviewing the questions to reinforce your understanding of AZ-104 topics.</li>
-</ol>
+## Deck Features
 
-<h2>Feedback &amp; Contributions</h2>
+- **30 Targeted Questions:** Quality over quantity approach
+- **Priority-Based Organization:** Critical weak areas receive primary focus
+- **Rich Content:** Detailed explanations with step-by-step sequences
+- **Exam-Focused:** Based on actual quiz failure patterns and Microsoft Learn content
+- **HTML Formatting:** Enhanced readability with bullet points and emphasis
 
-<p>If you spot any mistakes or have suggestions to improve the questions, please feel free to reach out or open an issue here. Your feedback is highly appreciated to make this deck as accurate and helpful as possible for everyone!</p>
+## How to Use
+
+1. Import the CSV file into Anki using the included format
+2. Focus first on "Critical Priority" tagged cards
+3. Use spaced repetition for App Service & Containers domain
+4. Practice sequence-based cards (D-G-W-C, C→A→D→B→E) until automatic
+
+## Priority Areas Covered
+
+### Critical Priority (App Service & Containers - 20% Failure Rate)
+
+- Auto-swap deployment configuration
+- VNet + SQL Database security sequence
+- Container security pipeline implementation
+- ACI scaling limitations vs AKS
+- Container Apps ingress configuration
+
+### High Priority (Enhanced Compute Topics)
+
+- Fault Domains vs Update Domains foundational knowledge
+- VMSS Orchestration Modes (Uniform vs Flexible)
+- Encrypted VM migration (D-G-W-C sequence)
+- Network Watcher Agent deployment
+- App Service runtime and OS constraints
+
+### Medium Priority (Core AZ-104)
+
+- VM sizing strategies and performance optimization
+- Azure Backup vs Site Recovery differences
+- Scaling concepts and autoscale best practices
+- Deployment slots and slot-specific settings
+- Monitoring stack integration
+
+## Import Instructions
+
+1. Download the `AZ-104-Critical-Priorities-Study-Deck.csv` file
+2. Open Anki application
+3. File → Import
+4. Select the CSV file
+5. Configure field mapping: Front, Back, Tags, Type
+6. Import and start studying
+
+## Feedback & Contributions
+
+This deck is designed to complement existing AZ-104 study materials by focusing specifically on identified weak areas and common exam pitfalls. Feedback on question accuracy and additional priority topics is welcomed.
