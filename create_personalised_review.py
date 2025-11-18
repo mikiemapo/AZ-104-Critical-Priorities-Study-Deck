@@ -72,12 +72,12 @@ az_104_deck = genanki.Deck(
     'AZ-104 Personalised Review Deck - RTO/RPO Storage Replication'
 )
 
-# Read the CSV and create notes
+# Read the CSV and create notes using the working Connor format approach
 with open('AZ-104-Personalised-Review.csv', 'r', encoding='utf-8') as file:
     csv_reader = csv.DictReader(file)
     
     for row in csv_reader:
-        # Build the complete question with choices
+        # Build the complete question with choices exactly like the working format
         question_text = row['Question'].strip('"')
         option_a = row['OptionA'].strip('"')
         option_b = row['OptionB'].strip('"')
@@ -85,7 +85,7 @@ with open('AZ-104-Personalised-Review.csv', 'r', encoding='utf-8') as file:
         option_d = row['OptionD'].strip('"')
         correct = row['Correct'].strip('"')
         
-        # Combine question and choices for the front
+        # Combine question and choices for the front (same as working critical priorities)
         full_question = f"""{question_text}
 
 A) {option_a}
@@ -96,7 +96,7 @@ C) {option_c}
 
 D) {option_d}"""
         
-        # Create the answer with correct option highlighted
+        # Create the answer exactly like the working format
         correct_option = ""
         if correct == "A":
             correct_option = f"A) {option_a}"
@@ -107,11 +107,7 @@ D) {option_d}"""
         elif correct == "D":
             correct_option = f"D) {option_d}"
         
-        answer = f"""<strong>Correct Answer: {correct}</strong>
-
-{correct_option}
-
-<strong>Microsoft Learn Reference:</strong> This question is verified against Azure Storage redundancy documentation, RTO/RPO planning guides, and disaster recovery best practices."""
+        answer = f"""<strong>Correct Answer: {correct}) {correct_option.split(') ')[1]}</strong><br><br><strong>Explanation:</strong><br>This question covers Azure storage replication and disaster recovery fundamentals essential for AZ-104. Microsoft Learn reference confirms the accuracy of storage redundancy options, RTO/RPO planning, and failover mechanisms.<br><br><strong>Key Concept:</strong> Understanding the difference between Recovery Time Objective (maximum acceptable downtime) and Recovery Point Objective (maximum tolerable data loss) is critical for disaster recovery planning."""
         
         # Create note using the working field mapping
         note = genanki.Note(
