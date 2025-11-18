@@ -2,9 +2,8 @@
 
 import genanki
 import csv
-import html
 
-# Use the proven Front/Back format
+# Use the proven Front/Back format - EXACTLY like create_simple_apkg.py
 az_104_model = genanki.Model(
     1607392320,  # Original Model ID
     'Basic',
@@ -27,30 +26,30 @@ az_104_deck = genanki.Deck(
     'AZ-104 Critical Priorities Study Deck'
 )
 
-# Read the updated CSV format and create notes
+# Read the CSV format and create notes - FIXED VERSION
 with open('AZ-104-Connor-Format.csv', 'r', encoding='utf-8') as file:
     csv_reader = csv.DictReader(file)
     
     for row in csv_reader:
-        # Build the complete question with choices
-        question_text = row['Question'].strip('"')
-        choice_a = row['ChoiceA'].strip('"')
-        choice_b = row['ChoiceB'].strip('"')
-        choice_c = row['ChoiceC'].strip('"')
-        choice_d = row['ChoiceD'].strip('"')
-        correct = row['Correct'].strip('"')
-        explanation = row['Explanation'].strip('"')
+        # NO .strip('"') - let CSV reader handle it properly
+        question_text = row['Question']
+        choice_a = row['ChoiceA']
+        choice_b = row['ChoiceB'] 
+        choice_c = row['ChoiceC']
+        choice_d = row['ChoiceD']
+        correct = row['Correct']
+        explanation = row['Explanation']
         
-        # Combine question and choices for the front
-        full_question = f"{question_text}\n\nA) {choice_a}\nB) {choice_b}\nC) {choice_c}\nD) {choice_d}"
+        # Build the question exactly like working version
+        front = f"{question_text}\n\nA) {choice_a}\nB) {choice_b}\nC) {choice_c}\nD) {choice_d}"
         
-        # Create the answer with correct choice and explanation
-        answer = f"Correct Answer: {correct}\n\n{explanation}"
+        # Build the answer with correct choice and explanation
+        back = f"Correct Answer: {correct}\n\n{explanation}"
         
         # Create note using Front/Back fields
         note = genanki.Note(
             model=az_104_model,
-            fields=[full_question, answer]
+            fields=[front, back]
         )
         
         az_104_deck.add_note(note)

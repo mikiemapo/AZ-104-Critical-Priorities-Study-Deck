@@ -27,47 +27,29 @@ az_104_deck = genanki.Deck(
     'AZ-104 Personalised Review Deck - RTO/RPO Storage Replication'
 )
 
-# Read the CSV and create notes using the working Connor format approach
+# Read the CSV and create notes using the exact same working format
 with open('AZ-104-Personalised-Review.csv', 'r', encoding='utf-8') as file:
     csv_reader = csv.DictReader(file)
     
     for row in csv_reader:
         # Build the complete question with choices exactly like the working format
-        question_text = row['Question'].strip('"')
-        option_a = row['OptionA'].strip('"')
-        option_b = row['OptionB'].strip('"')
-        option_c = row['OptionC'].strip('"')
-        option_d = row['OptionD'].strip('"')
-        correct = row['Correct'].strip('"')
+        question_text = row['Question']
+        option_a = row['OptionA']
+        option_b = row['OptionB']
+        option_c = row['OptionC']
+        option_d = row['OptionD']
+        correct = row['Correct']
         
-        # Combine question and choices for the front (same as working critical priorities)
-        full_question = f"""{question_text}
-
-A) {option_a}
-
-B) {option_b}
-
-C) {option_c}
-
-D) {option_d}"""
+        # Build front exactly like create_simple_apkg.py
+        front = f"{question_text}\n\nA) {option_a}\nB) {option_b}\nC) {option_c}\nD) {option_d}"
         
-        # Create the answer exactly like the working format
-        correct_option = ""
-        if correct == "A":
-            correct_option = f"A) {option_a}"
-        elif correct == "B":
-            correct_option = f"B) {option_b}"
-        elif correct == "C":
-            correct_option = f"C) {option_c}"
-        elif correct == "D":
-            correct_option = f"D) {option_d}"
-        
-        answer = f"""<strong>Correct Answer: {correct}) {correct_option.split(') ')[1]}</strong><br><br><strong>Explanation:</strong><br>This question covers Azure storage replication and disaster recovery fundamentals essential for AZ-104. Microsoft Learn reference confirms the accuracy of storage redundancy options, RTO/RPO planning, and failover mechanisms.<br><br><strong>Key Concept:</strong> Understanding the difference between Recovery Time Objective (maximum acceptable downtime) and Recovery Point Objective (maximum tolerable data loss) is critical for disaster recovery planning."""
+        # Build back with simple format
+        back = f"Correct Answer: {correct}\n\nThis question covers Azure storage replication and disaster recovery fundamentals essential for AZ-104. Understanding RTO/RPO concepts is critical for disaster recovery planning."
         
         # Create note using Front/Back fields like working format
         note = genanki.Note(
             model=az_104_model,
-            fields=[full_question, answer]
+            fields=[front, back]
         )
         
         az_104_deck.add_note(note)

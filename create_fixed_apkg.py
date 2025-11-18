@@ -26,23 +26,23 @@ az_104_deck_fixed = genanki.Deck(
     'AZ-104 Critical Priorities - FIXED'
 )
 
-# Read CSV and create notes using Front/Back format
+# Read CSV and create notes using Front/Back format - FIXED VERSION
 with open('AZ-104-Connor-Format.csv', 'r', encoding='utf-8') as file:
     csv_reader = csv.DictReader(file)
     
     for row in csv_reader:
-        question = row['Question'].strip('"')
-        choice_a = row['ChoiceA'].strip('"')
-        choice_b = row['ChoiceB'].strip('"')
-        choice_c = row['ChoiceC'].strip('"')
-        choice_d = row['ChoiceD'].strip('"')
-        correct = row['Correct'].strip('"')
-        explanation = row['Explanation'].strip('"')
+        question = row['Question']
+        choice_a = row['ChoiceA']
+        choice_b = row['ChoiceB']
+        choice_c = row['ChoiceC']  
+        choice_d = row['ChoiceD']
+        correct = row['Correct']
+        explanation = row['Explanation']
         
-        # Build front with question and choices
+        # Build front exactly like working version
         front = f"{question}\n\nA) {choice_a}\nB) {choice_b}\nC) {choice_c}\nD) {choice_d}"
         
-        # Build back with correct answer and explanation
+        # Build back with correct answer and clean explanation
         back = f"Correct Answer: {correct}\n\n{explanation}"
         
         # Create note with Front/Back fields
