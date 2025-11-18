@@ -22,7 +22,7 @@ This repository contains a focused Anki deck of multiple choice questions design
 This deck was created using analysis of quiz performance data and enhanced study materials from comprehensive Azure guides. It focuses on:
 
 - **Critical Priority:** App Service & Containers (addressing 20% failure rate)
-- **High Priority:** Enhanced compute topics including Fault Domains, Container Apps, Network Watcher  
+- **High Priority:** Enhanced compute topics including Fault Domains, Container Apps, Network Watcher
 - **Medium Priority:** Core AZ-104 concepts with exam-focused scenarios
 - **Strategic Coverage:** Topics identified as common exam pitfalls
 
@@ -47,7 +47,7 @@ This deck was created using analysis of quiz performance data and enhanced study
 
 ### Alternative: CSV Import
 
-1. Download the `AZ-104-Connor-Format.csv` file  
+1. Download the `AZ-104-Connor-Format.csv` file
 2. Open Anki → File → Import
 3. Map fields: Question, ChoiceA, ChoiceB, ChoiceC, ChoiceD, Correct, Explanation, Tags, Source
 4. Import and start studying
@@ -89,11 +89,13 @@ This deck was created using analysis of quiz performance data and enhanced study
 ## Import Instructions
 
 ### For .apkg file (Recommended)
+
 1. Download the `AZ-104-Critical-Priorities-Study-Deck.apkg` file
 2. Double-click the file to automatically import into Anki
 3. Start studying immediately
 
 ### For CSV file (Advanced Users)
+
 1. Download the `AZ-104-Connor-Format.csv` file
 2. Open Anki application
 3. File → Import
@@ -104,8 +106,9 @@ This deck was created using analysis of quiz performance data and enhanced study
 ## Format Compatibility
 
 This deck is fully compatible with Connor Sayers' AZ-104 Study Deck format. You can:
+
 - ✅ Import both decks without conflicts
-- ✅ Use the same study workflow and shortcuts  
+- ✅ Use the same study workflow and shortcuts
 - ✅ Benefit from consistent styling and navigation
 - ✅ Mix and match cards for comprehensive coverage
 
