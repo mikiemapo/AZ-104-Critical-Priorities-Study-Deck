@@ -4,66 +4,21 @@ import genanki
 import csv
 import html
 
-# Create a model that matches the working format
+# Use the exact same working model as create_simple_apkg.py
 az_104_model = genanki.Model(
     1607392325,  # New Model ID for Personalised Review
-    'AZ-104 Personalised Review Model',
+    'Basic',
     fields=[
-        {'name': 'Question'},
-        {'name': 'Answer'},
-        {'name': 'Tags'}
+        {'name': 'Front'},
+        {'name': 'Back'}
     ],
     templates=[
         {
             'name': 'Card 1',
-            'qfmt': '{{Question}}',
-            'afmt': '{{Question}}<hr id="answer">{{Answer}}',
+            'qfmt': '{{Front}}',
+            'afmt': '{{FrontSide}}\n\n<hr id="answer">\n\n{{Back}}',
         },
-    ],
-    css='''
-.card {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    text-align: left;
-    color: #333;
-    background-color: #fff;
-    padding: 20px;
-    line-height: 1.5;
-}
-
-.question {
-    margin-bottom: 20px;
-}
-
-.answer {
-    margin-top: 15px;
-}
-
-hr {
-    border: none;
-    border-top: 2px solid #0066cc;
-    margin: 20px 0;
-}
-
-strong {
-    color: #0066cc;
-    font-weight: bold;
-}
-
-.correct {
-    color: #0066cc;
-    font-weight: bold;
-}
-
-ul, ol {
-    margin: 10px 0;
-    padding-left: 20px;
-}
-
-li {
-    margin: 5px 0;
-}
-'''
+    ]
 )
 
 # Create the deck
@@ -109,10 +64,10 @@ D) {option_d}"""
         
         answer = f"""<strong>Correct Answer: {correct}) {correct_option.split(') ')[1]}</strong><br><br><strong>Explanation:</strong><br>This question covers Azure storage replication and disaster recovery fundamentals essential for AZ-104. Microsoft Learn reference confirms the accuracy of storage redundancy options, RTO/RPO planning, and failover mechanisms.<br><br><strong>Key Concept:</strong> Understanding the difference between Recovery Time Objective (maximum acceptable downtime) and Recovery Point Objective (maximum tolerable data loss) is critical for disaster recovery planning."""
         
-        # Create note using the working field mapping
+        # Create note using Front/Back fields like working format
         note = genanki.Note(
             model=az_104_model,
-            fields=[full_question, answer, "RTO/RPO,Storage,Disaster Recovery,Critical Priority"]
+            fields=[full_question, answer]
         )
         
         az_104_deck.add_note(note)
