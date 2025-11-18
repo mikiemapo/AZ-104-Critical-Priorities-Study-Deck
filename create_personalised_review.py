@@ -2,9 +2,8 @@
 
 import genanki
 import csv
-import html
 
-# Use the exact same working model as create_simple_apkg.py
+# Use the exact same working model as the Critical Priorities deck
 az_104_model = genanki.Model(
     1607392325,  # New Model ID for Personalised Review
     'Basic',
@@ -27,12 +26,13 @@ az_104_deck = genanki.Deck(
     'AZ-104 Personalised Review Deck - RTO/RPO Storage Replication'
 )
 
-# Read the CSV and create notes using the exact same working format
+# Read the CSV and build hardcoded questions like the working format
 with open('AZ-104-Personalised-Review.csv', 'r', encoding='utf-8') as file:
     csv_reader = csv.DictReader(file)
     
+    # Build questions_data array like the working deck
+    questions_data = []
     for row in csv_reader:
-        # Build the complete question with choices exactly like the working format
         question_text = row['Question']
         option_a = row['OptionA']
         option_b = row['OptionB']
@@ -40,19 +40,22 @@ with open('AZ-104-Personalised-Review.csv', 'r', encoding='utf-8') as file:
         option_d = row['OptionD']
         correct = row['Correct']
         
-        # Build front exactly like create_simple_apkg.py
+        # Format exactly like working deck with proper line breaks
         front = f"{question_text}\n\nA) {option_a}\nB) {option_b}\nC) {option_c}\nD) {option_d}"
-        
-        # Build back with simple format
         back = f"Correct Answer: {correct}\n\nThis question covers Azure storage replication and disaster recovery fundamentals essential for AZ-104. Understanding RTO/RPO concepts is critical for disaster recovery planning."
         
-        # Create note using Front/Back fields like working format
-        note = genanki.Note(
-            model=az_104_model,
-            fields=[front, back]
-        )
-        
-        az_104_deck.add_note(note)
+        questions_data.append({
+            "front": front,
+            "back": back
+        })
+
+# Create notes exactly like the working format
+for item in questions_data:
+    note = genanki.Note(
+        model=az_104_model,
+        fields=[item["front"], item["back"]]
+    )
+    az_104_deck.add_note(note)
 
 # Generate the package
 genanki.Package(az_104_deck).write_to_file('AZ-104-Personalised-Review-Deck.apkg')
