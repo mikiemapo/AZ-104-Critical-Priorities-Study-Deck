@@ -16,9 +16,25 @@ az_104_model = genanki.Model(
         {
             'name': 'Card 1',
             'qfmt': '{{Question}}',
-            'afmt': '{{Question}}<hr id="answer">{{Answer}}',
+            'afmt': '{{Answer}}',
         },
-    ]
+    ],
+    css="""
+.card {
+ font-family: arial;
+ font-size: 20px;
+ text-align: left;
+ color: black;
+ background-color: white;
+}
+.question {
+ margin-bottom: 20px;
+}
+#answer {
+ border: 2px solid #0066cc;
+ margin: 20px 0;
+}
+    """
 )
 
 # Create the deck
@@ -42,16 +58,8 @@ with open('AZ-104-Connor-Format.csv', 'r', encoding='utf-8') as file:
         explanation = row['Explanation']
         tags = row['Tags']
         
-        # Combine question and choices for the Question field (this made the choices visible!)
-        full_question = f"""{question_text}
-
-A) {choice_a}
-
-B) {choice_b}
-
-C) {choice_c}
-
-D) {choice_d}"""
+        # Combine question and choices for the Question field with proper line breaks
+        full_question = f"""{question_text}<br><br>A) {choice_a}<br><br>B) {choice_b}<br><br>C) {choice_c}<br><br>D) {choice_d}"""
         
         # Create the answer with correct choice and explanation
         answer = f"Correct Answer: {correct}\n\n{explanation}"
