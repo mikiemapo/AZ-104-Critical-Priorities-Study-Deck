@@ -8,24 +8,34 @@ _Click the link above to download the Anki deck file. Double-click to import int
 
 ---
 
-This repository contains a focused Anki deck of multiple choice questions designed specifically to address critical weak areas identified in AZ-104 exam performance, particularly the App Service & Containers domain (20% failure rate) and enhanced compute topics.
+This repository contains a focused Anki deck of multiple choice questions designed specifically to address critical weak areas identified in AZ-104 exam performance. **This deck follows the exact format and styling of Connor Sayers' AZ-104 Study Deck**, ensuring consistency with established best practices for AZ-104 Anki study materials.
 
 ## About This Deck
+
+**Format Alignment:** This deck follows Connor Sayers' AZ-104 Study Deck format exactly, ensuring seamless integration with existing study workflows. Each card uses:
+
+- **Custom Note Type:** AZ-104 Multiple Choice - Connor Format
+- **Professional Styling:** Matching Connor's visual design and color scheme
+- **Consistent Structure:** Question + 4 choices + correct answer + detailed explanation + source reference
+- **Quality Standards:** Microsoft Learn alignment and exam-focused content
 
 This deck was created using analysis of quiz performance data and enhanced study materials from comprehensive Azure guides. It focuses on:
 
 - **Critical Priority:** App Service & Containers (addressing 20% failure rate)
-- **High Priority:** Enhanced compute topics including Fault Domains, Container Apps, Network Watcher
+- **High Priority:** Enhanced compute topics including Fault Domains, Container Apps, Network Watcher  
 - **Medium Priority:** Core AZ-104 concepts with exam-focused scenarios
 - **Strategic Coverage:** Topics identified as common exam pitfalls
 
 ## Deck Features
 
-- **Multiple Choice Format:** Standard exam-style questions with 4 answer choices
+- **Connor Sayers Format:** Exact alignment with established AZ-104 Anki best practices
+- **Professional Multiple Choice:** 4-option questions with clear correct answer identification
+- **Detailed Explanations:** Step-by-step reasoning with key concepts highlighted
+- **Source References:** Microsoft Learn citations for credibility and further study
 - **Priority-Based Organization:** Critical weak areas receive primary focus
-- **Detailed Explanations:** Step-by-step reasoning for correct answers
 - **Exam-Focused:** Based on actual quiz failure patterns and Microsoft Learn content
 - **Clean Formatting:** Professional styling that works perfectly in Anki
+- **Seamless Import:** No formatting issues or compatibility problems
 
 ## How to Use
 
@@ -37,10 +47,12 @@ This deck was created using analysis of quiz performance data and enhanced study
 
 ### Alternative: CSV Import
 
-1. Download the `AZ-104-Critical-Priorities-Study-Deck.csv` file
+1. Download the `AZ-104-Connor-Format.csv` file  
 2. Open Anki → File → Import
-3. Map fields: Front, Back, Tags, Type
+3. Map fields: Question, ChoiceA, ChoiceB, ChoiceC, ChoiceD, Correct, Explanation, Tags, Source
 4. Import and start studying
+
+**Note:** The new Connor format includes separate fields for each choice and detailed explanations, providing better study experience than the previous format.
 
 ### Study Strategy
 
@@ -76,13 +88,31 @@ This deck was created using analysis of quiz performance data and enhanced study
 
 ## Import Instructions
 
-1. Download the `AZ-104-Critical-Priorities-Study-Deck.csv` file
+### For .apkg file (Recommended)
+1. Download the `AZ-104-Critical-Priorities-Study-Deck.apkg` file
+2. Double-click the file to automatically import into Anki
+3. Start studying immediately
+
+### For CSV file (Advanced Users)
+1. Download the `AZ-104-Connor-Format.csv` file
 2. Open Anki application
 3. File → Import
 4. Select the CSV file
-5. Configure field mapping: Front, Back, Tags, Type
+5. Configure field mapping: Question, ChoiceA, ChoiceB, ChoiceC, ChoiceD, Correct, Explanation, Tags, Source
 6. Import and start studying
+
+## Format Compatibility
+
+This deck is fully compatible with Connor Sayers' AZ-104 Study Deck format. You can:
+- ✅ Import both decks without conflicts
+- ✅ Use the same study workflow and shortcuts  
+- ✅ Benefit from consistent styling and navigation
+- ✅ Mix and match cards for comprehensive coverage
 
 ## Feedback & Contributions
 
-This deck is designed to complement existing AZ-104 study materials by focusing specifically on identified weak areas and common exam pitfalls. Feedback on question accuracy and additional priority topics is welcomed.
+This deck is designed to complement Connor Sayers' AZ-104 Study Deck by focusing specifically on identified weak areas and common exam pitfalls while maintaining format consistency. The combination of both decks provides comprehensive AZ-104 coverage with unified styling and user experience.
+
+**Acknowledgment:** This deck follows the format and design principles established by Connor Sayers' excellent AZ-104 Study Deck. Special thanks to Connor for creating the foundational template that makes AZ-104 Anki studying so effective.
+
+Feedback on question accuracy and additional priority topics is welcomed.
