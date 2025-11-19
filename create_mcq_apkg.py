@@ -10,29 +10,38 @@ az_104_model = genanki.Model(
     fields=[
         {'name': 'Question'},
         {'name': 'Answer'},
+        {'name': 'Explanation'},
         {'name': 'Tags'}
     ],
     templates=[
         {
             'name': 'Card 1',
             'qfmt': '{{Question}}',
-            'afmt': '{{Answer}}',
+            'afmt': '{{Question}}<hr id="answer"><div style="background-color: #4CAF50; color: white; padding: 10px; border-radius: 5px; font-weight: bold; margin: 10px 0;">{{Answer}}</div><div style="background-color: #f0f8f0; color: #333; padding: 10px; border-radius: 5px; border-left: 4px solid #4CAF50; margin: 10px 0;"><strong>Why:</strong> {{Explanation}}</div>',
         },
     ],
     css="""
 .card {
- font-family: arial;
- font-size: 20px;
- text-align: left;
- color: black;
- background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
+    padding: 20px;
 }
-.question {
- margin-bottom: 20px;
+
+.choice {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 4px;
+    display: block;
 }
+
 #answer {
- border: 2px solid #0066cc;
- margin: 20px 0;
+    border: 2px solid #4CAF50;
+    margin: 20px 0;
 }
     """
 )
@@ -58,16 +67,35 @@ with open('AZ-104-Connor-Format.csv', 'r', encoding='utf-8') as file:
         explanation = row['Explanation']
         tags = row['Tags']
         
-        # Combine question and choices for the Question field with proper line breaks
-        full_question = f"""{question_text}<br><br>A) {choice_a}<br><br>B) {choice_b}<br><br>C) {choice_c}<br><br>D) {choice_d}"""
+        # Combine question and choices for the Question field with proper line breaks and white backgrounds
+        full_question = f"""{question_text}<br><br><div class="choice">A) {choice_a}</div><div class="choice">B) {choice_b}</div><div class="choice">C) {choice_c}</div><div class="choice">D) {choice_d}</div>"""
         
-        # Create the answer with correct choice and explanation
-        answer = f"Correct Answer: {correct}\n\n{explanation}"
+        # Create the answer with correct choice and SHORT explanation
+        # Extract key points from the full explanation for concise summary
+        explanation_text = explanation.replace('<strong>', '').replace('</strong>', '').replace('<br><br>', ' ').replace('<br>', ' ')
         
-        # Create note using Question/Answer/Tags fields (the working format!)
+        # Create short summary (first 2-3 key points only)
+        if 'Step-by-Step Process:' in explanation_text:
+            summary = explanation_text.split('Step-by-Step Process:')[1].split('Key Benefits:')[0][:200] + "..."
+        elif 'Critical Sequence' in explanation_text:
+            summary = "Follow the sequence: VNet Integration → Service Endpoint → Firewall Rules → Disable Public Access"
+        elif 'Three-Layer Security' in explanation_text:
+            summary = "Use Microsoft Defender (scanning) + ACR Tasks (CI/CD automation) + Azure Policy (enforcement)"
+        elif 'ACI Fundamental Limitation' in explanation_text:
+            summary = "ACI has NO auto-scaling - must delete and redeploy with new specs (unlike AKS HPA)"
+        elif 'External Ingress' in explanation_text:
+            summary = "External = internet access, Internal = VNet only, Disabled = background jobs"
+        else:
+            # Generic short summary for other questions
+            words = explanation_text.split()[:25]  # First 25 words
+            summary = ' '.join(words) + "..."
+        
+        answer = f"Correct Answer: {correct}"
+        
+        # Create note using Question/Answer/Explanation/Tags fields
         note = genanki.Note(
             model=az_104_model,
-            fields=[full_question, answer, tags]
+            fields=[full_question, answer, summary, tags]
         )
         az_104_deck.add_note(note)
 
