@@ -6,7 +6,7 @@ import csv
 # Create the WORKING model (DO NOT CHANGE THIS!)
 az_104_model = genanki.Model(
     1607392320,  # Original Model ID
-    'AZ-104 Master Questions Model',
+    'AZ-104 Study Guide Model',
     fields=[
         {'name': 'Question'},
         {'name': 'QuestionWithAnswer'},
@@ -44,58 +44,21 @@ az_104_model = genanki.Model(
     """
 )
 
-# Create hierarchical decks with proper Anki subdeck naming
-main_deck_name = 'AZ-104 Study Guide'
-decks = {}
-all_decks = []
-
-# Create main parent deck first
-main_deck = genanki.Deck(
-    2059400100,
-    main_deck_name
+# Create a single deck with tag-based organization
+az_104_deck = genanki.Deck(
+    2059400200,
+    'AZ-104 Study Guide'
 )
-all_decks.append(main_deck)
 
-# Track batches and create subdecks with double colon notation
-with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
-    csv_reader = csv.DictReader(file)
-    
-    for row in csv_reader:
-        batch = row['Batch']
-        if batch not in decks:
-            # Create subdeck using double colon notation for Anki hierarchy
-            if 'Critical' in batch:
-                subdeck_name = f"{main_deck_name}::Critical Priorities"
-            elif 'RTO' in batch:
-                subdeck_name = f"{main_deck_name}::Storage & Recovery"  
-            else:
-                # Clean up batch name for subdeck
-                clean_batch = batch.replace(' Batch', '').replace('/', ' & ')
-                subdeck_name = f"{main_deck_name}::{clean_batch}"
-                
-            decks[batch] = genanki.Deck(
-                2059400111 + len(decks),  # Unique deck ID for each subdeck
-                subdeck_name
-            )
-            all_decks.append(decks[batch])
-            print(f"📁 Created subdeck: {subdeck_name}")
-
-print(f"\n🔄 Processing questions into subdecks...")
-
-# Read again and add notes to appropriate subdecks
-current_batch = ""
+# Read the master CSV and create notes with hierarchical tags
 batch_count = {}
 
 with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
     csv_reader = csv.DictReader(file)
     
     for row in csv_reader:
-        # Track batches
         batch = row['Batch']
-        if batch != current_batch:
-            current_batch = batch
-            batch_count[batch] = batch_count.get(batch, 0)
-        batch_count[batch] += 1
+        batch_count[batch] = batch_count.get(batch, 0) + 1
         
         # Build questions using WORKING format (DO NOT CHANGE!)
         question_text = row['Question']
@@ -105,7 +68,16 @@ with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
         choice_d = row['ChoiceD']
         correct = row['Correct']
         explanation = row['Explanation']
-        tags = f"{row['Tags']},{batch}"
+        
+        # Create hierarchical tags
+        if 'Critical' in batch:
+            domain_tag = "Critical_Priorities"
+        elif 'RTO' in batch:
+            domain_tag = "Storage_Recovery"
+        else:
+            domain_tag = batch.replace(' ', '_').replace('/', '_')
+            
+        tags = f"AZ-104 {domain_tag} {row['Tags']}"
         
         # Create question with NO highlighting for front side
         full_question = f"""{question_text}<br><br>
@@ -129,7 +101,6 @@ with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
 
         # Create SHORT explanation based on batch
         if 'Critical Priorities' in batch:
-            # Keep existing short explanations for critical priorities
             if 'auto-swap' in question_text.lower():
                 short_explanation = "Create deployment slot first, configure warm-up, then enable auto-swap for automatic staging-to-production deployment."
             elif 'VNet Integration' in explanation:
@@ -141,12 +112,10 @@ with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
             elif 'Container Apps' in explanation:
                 short_explanation = "External = internet access, Internal = VNet only, Disabled = background jobs only."
             else:
-                # Generic short explanation
                 clean_text = explanation.replace('<strong>', '').replace('</strong>', '').replace('<br>', ' ')
                 words = clean_text.split()[:20]
                 short_explanation = ' '.join(words) + "..."
         else:
-            # For other batches, use the explanation as provided (already short)
             short_explanation = explanation.replace('<strong>', '').replace('</strong>', '').replace('<br>', ' ')
         
         answer = f"Correct: {correct} - {short_explanation}"
@@ -157,16 +126,20 @@ with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
             fields=[full_question, question_with_answer, answer, tags]
         )
         
-        # Add note to the appropriate subdeck
-        decks[batch].add_note(note)
+        az_104_deck.add_note(note)
 
-# Generate the package with all subdecks
-genanki.Package(all_decks).write_to_file('AZ-104-Master-Study-Deck.apkg')
+# Generate the package with single deck + hierarchical tags
+genanki.Package(az_104_deck).write_to_file('AZ-104-Study-Guide-Tagged.apkg')
 
-total_cards = sum(len(deck.notes) for deck in all_decks)
-print(f"\n✅ Successfully created AZ-104-Master-Study-Deck.apkg with hierarchical structure")
-print(f"📊 Total cards: {total_cards}")
-print(f"📚 Subdeck structure:")
+print(f"\n✅ Successfully created AZ-104-Study-Guide-Tagged.apkg with tag-based organization")
+print(f"📊 Total cards: {len(az_104_deck.notes)}")
+print(f"📚 Tag-based organization:")
 for batch, count in batch_count.items():
-    print(f"   📁 {main_deck_name}::{batch}: {count} cards")
-print("🎯 WORKING format preserved with expandable subdeck structure!")
+    if 'Critical' in batch:
+        tag = "Critical_Priorities"
+    elif 'RTO' in batch:
+        tag = "Storage_Recovery"
+    else:
+        tag = batch.replace(' ', '_')
+    print(f"   🏷️  {tag}: {count} cards")
+print("🎯 Single deck with hierarchical tags - may create Connor-style expandable structure!")
