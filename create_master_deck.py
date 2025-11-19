@@ -44,13 +44,30 @@ az_104_model = genanki.Model(
     """
 )
 
-# Create the deck
-az_104_deck = genanki.Deck(
-    2059400111,  # Original Deck ID
-    'AZ-104 Master Study Deck - All Batches'
-)
+# Create hierarchical decks with subdecks for each batch
+main_deck_name = 'AZ-104 Master Study Deck'
+decks = {}
+all_decks = []
 
-# Read the master CSV and create notes organized by batches
+# Track batches and create subdecks
+with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
+    csv_reader = csv.DictReader(file)
+    
+    for row in csv_reader:
+        batch = row['Batch']
+        if batch not in decks:
+            # Create subdeck for this batch
+            subdeck_name = f"{main_deck_name}::{batch}"
+            decks[batch] = genanki.Deck(
+                2059400111 + len(decks),  # Unique deck ID for each subdeck
+                subdeck_name
+            )
+            all_decks.append(decks[batch])
+            print(f"📚 Created subdeck: {subdeck_name}")
+
+print(f"\n📁 Processing questions into subdecks...")
+
+# Read again and add notes to appropriate subdecks
 current_batch = ""
 batch_count = {}
 
@@ -63,7 +80,6 @@ with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
         if batch != current_batch:
             current_batch = batch
             batch_count[batch] = batch_count.get(batch, 0)
-            print(f"\n📚 Processing {batch}...")
         batch_count[batch] += 1
         
         # Build questions using WORKING format (DO NOT CHANGE!)
@@ -125,14 +141,17 @@ with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
             model=az_104_model,
             fields=[full_question, question_with_answer, answer, tags]
         )
-        az_104_deck.add_note(note)
+        
+        # Add note to the appropriate subdeck
+        decks[batch].add_note(note)
 
-# Generate the package
-genanki.Package(az_104_deck).write_to_file('AZ-104-Master-Study-Deck.apkg')
+# Generate the package with all subdecks
+genanki.Package(all_decks).write_to_file('AZ-104-Master-Study-Deck.apkg')
 
-print(f"\n✅ Successfully created AZ-104-Master-Study-Deck.apkg")
-print(f"📊 Total cards: {len(az_104_deck.notes)}")
-print(f"📚 Question batches:")
+total_cards = sum(len(deck.notes) for deck in all_decks)
+print(f"\n✅ Successfully created AZ-104-Master-Study-Deck.apkg with hierarchical structure")
+print(f"📊 Total cards: {total_cards}")
+print(f"📚 Subdeck structure:")
 for batch, count in batch_count.items():
-    print(f"   • {batch}: {count} cards")
-print("🎯 WORKING format preserved - white rectangles → green highlight on show answer!")
+    print(f"   📁 {main_deck_name}::{batch}: {count} cards")
+print("🎯 WORKING format preserved with expandable subdeck structure!")
