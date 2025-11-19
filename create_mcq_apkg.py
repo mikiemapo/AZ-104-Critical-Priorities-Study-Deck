@@ -17,7 +17,7 @@ az_104_model = genanki.Model(
         {
             'name': 'Card 1',
             'qfmt': '{{Question}}',
-            'afmt': '{{Question}}<hr id="answer"><div style="background-color: #4CAF50; color: white; padding: 10px; border-radius: 5px; font-weight: bold; margin: 10px 0;">{{Answer}}</div><div style="background-color: #f0f8f0; color: #333; padding: 10px; border-radius: 5px; border-left: 4px solid #4CAF50; margin: 10px 0;"><strong>Why:</strong> {{Explanation}}</div>',
+            'afmt': '{{Question}}<hr id="answer"><div style="background-color: #4CAF50; color: white; padding: 10px; border-radius: 5px; margin: 10px 0;">{{Explanation}}</div>',
         },
     ],
     css="""
@@ -32,11 +32,18 @@ az_104_model = genanki.Model(
 
 .choice {
     background-color: white;
-    border: 1px solid #ddd;
-    padding: 8px 12px;
-    margin: 5px 0;
-    border-radius: 4px;
+    border: 2px solid #ddd;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 6px;
     display: block;
+}
+
+.choice.correct {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border-color: #45a049 !important;
+    font-weight: bold;
 }
 
 #answer {
@@ -67,35 +74,44 @@ with open('AZ-104-Connor-Format.csv', 'r', encoding='utf-8') as file:
         explanation = row['Explanation']
         tags = row['Tags']
         
-        # Combine question and choices for the Question field with proper line breaks and white backgrounds
-        full_question = f"""{question_text}<br><br><div class="choice">A) {choice_a}</div><div class="choice">B) {choice_b}</div><div class="choice">C) {choice_c}</div><div class="choice">D) {choice_d}</div>"""
+        # Create question with white rectangles, correct answer will turn green
+        correct_letter = correct.strip()
+        choice_a_class = "choice correct" if correct_letter == "A" else "choice"
+        choice_b_class = "choice correct" if correct_letter == "B" else "choice"
+        choice_c_class = "choice correct" if correct_letter == "C" else "choice"
+        choice_d_class = "choice correct" if correct_letter == "D" else "choice"
         
-        # Create the answer with correct choice and SHORT explanation
-        # Extract key points from the full explanation for concise summary
-        explanation_text = explanation.replace('<strong>', '').replace('</strong>', '').replace('<br><br>', ' ').replace('<br>', ' ')
+        full_question = f"""{question_text}<br><br><div class="{choice_a_class}">A) {choice_a}</div><div class="{choice_b_class}">B) {choice_b}</div><div class="{choice_c_class}">C) {choice_c}</div><div class="{choice_d_class}">D) {choice_d}</div>"""
         
-        # Create short summary (first 2-3 key points only)
-        if 'Step-by-Step Process:' in explanation_text:
-            summary = explanation_text.split('Step-by-Step Process:')[1].split('Key Benefits:')[0][:200] + "..."
-        elif 'Critical Sequence' in explanation_text:
-            summary = "Follow the sequence: VNet Integration → Service Endpoint → Firewall Rules → Disable Public Access"
-        elif 'Three-Layer Security' in explanation_text:
-            summary = "Use Microsoft Defender (scanning) + ACR Tasks (CI/CD automation) + Azure Policy (enforcement)"
-        elif 'ACI Fundamental Limitation' in explanation_text:
-            summary = "ACI has NO auto-scaling - must delete and redeploy with new specs (unlike AKS HPA)"
-        elif 'External Ingress' in explanation_text:
-            summary = "External = internet access, Internal = VNet only, Disabled = background jobs"
+        # Create SHORT 2-sentence explanations
+        if 'auto-swap' in question_text.lower():
+            summary = "Create deployment slot first, then configure warm-up settings. Enable auto-swap to automatically swap staging to production after successful deployment."
+        elif 'VNet Integration' in explanation:
+            summary = "Must establish VNet integration and service endpoints BEFORE disabling public access. This prevents connectivity loss during the security configuration."
+        elif 'Three-Layer Security' in explanation:
+            summary = "Combine Microsoft Defender for vulnerability scanning with ACR Tasks for CI/CD automation. Add Azure Policy to enforce security compliance and block vulnerable images."
+        elif 'ACI' in explanation and 'scaling' in explanation:
+            summary = "ACI has no in-place auto-scaling capability like AKS. You must delete and redeploy the container group with new resource specifications."
+        elif 'Container Apps' in explanation:
+            summary = "External ingress provides internet access with public FQDN. Internal ingress restricts access to VNet only, while disabled is for background jobs."
+        elif 'fault domain' in explanation.lower():
+            summary = "Fault domains separate VMs across different physical hardware racks. This provides protection against hardware failures within the same data center."
+        elif 'availability' in explanation.lower() and 'zone' in explanation.lower():
+            summary = "Availability zones are physically separate data centers within the same region. They provide protection against data center-level failures."
+        elif 'VMSS' in explanation:
+            summary = "Uniform scale sets manage identical VM instances for consistent workloads. Flexible scale sets support different VM sizes and mixed workload types."
+        elif 'storage' in explanation.lower() and 'replication' in explanation.lower():
+            summary = "GZRS provides the lowest RTO with zone-redundant storage plus geo-replication. It offers both local zone protection and cross-region disaster recovery."
         else:
-            # Generic short summary for other questions
-            words = explanation_text.split()[:25]  # First 25 words
-            summary = ' '.join(words) + "..."
-        
-        answer = f"Correct Answer: {correct}"
+            # Generic 2-sentence summary
+            clean_text = explanation.replace('<strong>', '').replace('</strong>', '').replace('<br>', ' ')
+            sentences = clean_text.split('. ')[:2]
+            summary = '. '.join(sentences) + '.' if len(sentences) >= 2 else sentences[0]
         
         # Create note using Question/Answer/Explanation/Tags fields
         note = genanki.Note(
             model=az_104_model,
-            fields=[full_question, answer, summary, tags]
+            fields=[full_question, correct, summary, tags]
         )
         az_104_deck.add_note(note)
 
