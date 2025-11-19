@@ -1,14 +1,83 @@
 # AZ-104 Critical Priorities Study Deck
 
+## 📊 Current Deck Status (34 Total Cards)
+- **Critical Priorities Batch**: 5 essential configuration scenarios
+- **RTO/RPO Storage Batch**: 3 disaster recovery fundamentals  
+- **Storage Replication & DR Batch**: 26 comprehensive storage questions
+- **Last Updated**: November 18, 2025
+
 ## 📥 Download
 
-**[⬇️ Download AZ-104-Critical-Priorities-Study-Deck.apkg](https://github.com/mikiemapo/AZ-104-Critical-Priorities-Study-Deck/raw/main/AZ-104-Critical-Priorities-Study-Deck.apkg)**
+**[⬇️ Download AZ-104-Master-Study-Deck.apkg](https://github.com/mikiemapo/AZ-104-Critical-Priorities-Study-Deck/raw/main/AZ-104-Master-Study-Deck.apkg)**
 
-_Click the link above to download the Anki deck file. Double-click to import into Anki._
+_Click the link above to download the hierarchical Anki deck file. Double-click to import into Anki._
 
 ---
 
-This repository contains a focused Anki deck of multiple choice questions designed specifically to address critical weak areas identified in AZ-104 exam performance. **This deck follows the exact format and styling of Connor Sayers' AZ-104 Study Deck**, ensuring consistency with established best practices for AZ-104 Anki study materials.
+## 🎯 Features
+- **Hierarchical subdeck structure** with expandable categories (+/- signs)
+- **Visual answer format** with white choice rectangles that turn green on reveal
+- **Critical priority focus** on high-impact exam topics
+- **Zero blank rectangle issues** - all choices display correctly
+- **Randomized answer positions** across A/B/C/D choices
+- **Concise explanations** (2 sentences max) for quick review
+
+## 📁 Files Structure
+- `AZ-104-Master-Questions.csv` - Master question database
+- `create_master_deck.py` - Deck generation script  
+- `AZ-104-Master-Study-Deck.apkg` - Final hierarchical deck file
+- `README.md` - This documentation
+
+## 🔄 **ADDING NEW QUESTION BATCHES**
+
+### ⚠️ CRITICAL FORMAT REQUIREMENTS:
+**DO NOT CHANGE THESE - THEY ENSURE THE DECK CONTINUES WORKING**
+
+#### CSV Structure (EXACT ORDER):
+```
+Question,ChoiceA,ChoiceB,ChoiceC,ChoiceD,Correct,Explanation,Tags,Source,Batch
+```
+
+#### Format Rules:
+1. **Randomize Answers**: Distribute correct answers across A/B/C/D positions
+2. **Short Explanations**: Maximum 2 sentences per explanation
+3. **Batch Naming**: Use descriptive batch name for subdeck organization
+4. **Choice Format**: Embed choices in question text as HTML rectangles
+
+#### Workflow:
+1. Add questions to `AZ-104-Master-Questions.csv`
+2. Run: `python3 create_master_deck.py`
+3. Commit: `git add . && git commit -m "ADD [Batch Name]: [count] questions"`
+4. Push: `git push origin main`
+
+### 🚫 **WORKING FORMAT - DO NOT MODIFY:**
+```python
+# Template structure in create_master_deck.py
+qfmt = """{{Question}}"""  # Shows white rectangles
+afmt = """{{QuestionWithAnswer}}<hr>{{Answer}}"""  # Shows green highlighting
+```
+
+**Why this works:**
+- **Question Field**: Plain question with embedded white rectangles
+- **QuestionWithAnswer Field**: Same question with green highlighting for correct choice
+- **Separate Front/Back**: Prevents premature green highlighting
+- **CSS**: White rectangles turn green only on "Show Answer"
+
+### 📝 **Example New Batch Entry:**
+```csv
+"Which replication provides zone + region protection?","LRS","ZRS","GZRS","GRS","C","GZRS combines zone redundancy with geo-replication. It provides both local zone protection and cross-region disaster recovery.","Storage,Replication,GZRS","Microsoft Learn","Storage Batch"
+```
+
+## 📥 Import Instructions
+1. Download `AZ-104-Master-Study-Deck.apkg`
+2. Import into Anki
+3. Expand/collapse subdecks using + signs for focused study
+
+## 🎉 Perfect for:
+- AZ-104 exam preparation
+- Storage & disaster recovery mastery
+- Critical priority scenarios practice
+- Hierarchical study organization
 
 ## About This Deck
 

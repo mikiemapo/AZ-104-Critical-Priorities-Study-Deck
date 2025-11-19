@@ -1,9 +1,32 @@
 #!/usr/bin/env python3
+"""
+🎯 AZ-104 Master Study Deck Generator
+=====================================
+
+⚠️  CRITICAL: DO NOT MODIFY THE TEMPLATE FORMAT BELOW
+    This format fixes the "blank rectangle" issue and ensures proper display
+
+🔧 WORKING TEMPLATE STRUCTURE:
+   - qfmt: Shows Question field (white rectangles on front)
+   - afmt: Shows QuestionWithAnswer field (green highlighting on back)
+   - Separate fields prevent premature highlighting
+
+📝 TO ADD NEW BATCHES:
+   1. Add questions to AZ-104-Master-Questions.csv
+   2. Run: python3 create_master_deck.py  
+   3. Commit and push updated deck
+
+🎉 Maintains hierarchical subdeck structure with expandable categories
+"""
 
 import genanki
 import csv
 
-# Create the WORKING model (DO NOT CHANGE THIS!)
+# ⚠️  DO NOT MODIFY THIS MODEL - IT FIXES THE BLANK RECTANGLE ISSUE!
+# This specific template structure ensures:
+# - Question field shows white rectangles on card front
+# - QuestionWithAnswer field shows green highlighting on card back  
+# - Prevents premature green highlighting that causes blank rectangles
 az_104_model = genanki.Model(
     1607392320,  # Original Model ID
     'AZ-104 Master Questions Model',
