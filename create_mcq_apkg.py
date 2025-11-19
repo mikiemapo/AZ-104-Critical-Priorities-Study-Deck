@@ -16,7 +16,7 @@ az_104_model = genanki.Model(
         {
             'name': 'Card 1',
             'qfmt': '{{Question}}',
-            'afmt': '{{Question}}',
+            'afmt': '{{Question}}<hr><div style="background-color: #4CAF50; color: white; padding: 10px; border-radius: 5px; margin: 10px 0; font-size: 16px;">{{Answer}}</div>',
         },
     ],
     css="""
@@ -37,6 +37,15 @@ az_104_model = genanki.Model(
     border-radius: 8px;
     display: block;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #333333;
+    font-weight: normal;
+}
+
+.choice.correct {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    border-color: #45a049 !important;
+    font-weight: bold;
 }
     """
 )
@@ -62,15 +71,37 @@ with open('AZ-104-Connor-Format.csv', 'r', encoding='utf-8') as file:
         explanation = row['Explanation']
         tags = row['Tags']
         
-        # Create question with white rectangles around each choice
-        full_question = f"""{question_text}<br><br>
-<div class="choice">A) {choice_a}</div>
-<div class="choice">B) {choice_b}</div>
-<div class="choice">C) {choice_c}</div>
-<div class="choice">D) {choice_d}</div>"""
+        # Create question with highlighting for correct answer
+        correct_letter = correct.strip()
+        choice_a_class = "choice correct" if correct_letter == "A" else "choice"
+        choice_b_class = "choice correct" if correct_letter == "B" else "choice"
+        choice_c_class = "choice correct" if correct_letter == "C" else "choice"
+        choice_d_class = "choice correct" if correct_letter == "D" else "choice"
         
-        # Create simple answer
-        answer = f"Correct Answer: {correct}"
+        full_question = f"""{question_text}<br><br>
+<div class="{choice_a_class}">A) {choice_a}</div>
+<div class="{choice_b_class}">B) {choice_b}</div>
+<div class="{choice_c_class}">C) {choice_c}</div>
+<div class="{choice_d_class}">D) {choice_d}</div>"""
+        
+        # Create SHORT explanation (1-2 sentences max)
+        if 'auto-swap' in question_text.lower():
+            short_explanation = "Create deployment slot first, configure warm-up, then enable auto-swap for automatic staging-to-production deployment."
+        elif 'VNet Integration' in explanation:
+            short_explanation = "Must establish VNet integration and service endpoints BEFORE disabling public access to prevent connectivity loss."
+        elif 'Three-Layer Security' in explanation:
+            short_explanation = "Combine Microsoft Defender (scanning) + ACR Tasks (CI/CD) + Azure Policy (enforcement) for complete security."
+        elif 'ACI' in explanation and 'scaling' in explanation:
+            short_explanation = "ACI has no auto-scaling - must delete and redeploy container group with new specs (unlike AKS HPA)."
+        elif 'Container Apps' in explanation:
+            short_explanation = "External = internet access, Internal = VNet only, Disabled = background jobs only."
+        else:
+            # Generic short explanation
+            clean_text = explanation.replace('<strong>', '').replace('</strong>', '').replace('<br>', ' ')
+            words = clean_text.split()[:20]  # First 20 words max
+            short_explanation = ' '.join(words) + "..."
+        
+        answer = f"Correct: {correct} - {short_explanation}"
         
         # Create note using Question/Answer/Tags fields
         note = genanki.Note(
