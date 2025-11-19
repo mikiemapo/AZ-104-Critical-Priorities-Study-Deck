@@ -9,6 +9,7 @@ az_104_model = genanki.Model(
     'AZ-104 Multiple Choice Model',
     fields=[
         {'name': 'Question'},
+        {'name': 'QuestionWithAnswer'},
         {'name': 'Answer'},
         {'name': 'Tags'}
     ],
@@ -16,7 +17,7 @@ az_104_model = genanki.Model(
         {
             'name': 'Card 1',
             'qfmt': '{{Question}}',
-            'afmt': '{{Question}}<style>.choice.correct { background-color: #4CAF50 !important; color: white !important; border-color: #45a049 !important; font-weight: bold; }</style><hr><div style="background-color: #4CAF50; color: white; padding: 10px; border-radius: 5px; margin: 10px 0; font-size: 16px;">{{Answer}}</div>',
+            'afmt': '{{QuestionWithAnswer}}<style>.choice.correct { background-color: #4CAF50 !important; color: white !important; border-color: #45a049 !important; font-weight: bold; }</style><hr><div style="background-color: #4CAF50; color: white; padding: 10px; border-radius: 5px; margin: 10px 0; font-size: 16px;">{{Answer}}</div>',
         },
     ],
     css="""
@@ -64,14 +65,21 @@ with open('AZ-104-Connor-Format.csv', 'r', encoding='utf-8') as file:
         explanation = row['Explanation']
         tags = row['Tags']
         
-        # Create question with highlighting for correct answer
+        # Create question with NO highlighting - all choices look the same initially
+        full_question = f"""{question_text}<br><br>
+<div class="choice">A) {choice_a}</div>
+<div class="choice">B) {choice_b}</div>
+<div class="choice">C) {choice_c}</div>
+<div class="choice">D) {choice_d}</div>"""
+
+        # Create question WITH highlighting for the back side
         correct_letter = correct.strip()
         choice_a_class = "choice correct" if correct_letter == "A" else "choice"
         choice_b_class = "choice correct" if correct_letter == "B" else "choice"
         choice_c_class = "choice correct" if correct_letter == "C" else "choice"
         choice_d_class = "choice correct" if correct_letter == "D" else "choice"
         
-        full_question = f"""{question_text}<br><br>
+        question_with_answer = f"""{question_text}<br><br>
 <div class="{choice_a_class}">A) {choice_a}</div>
 <div class="{choice_b_class}">B) {choice_b}</div>
 <div class="{choice_c_class}">C) {choice_c}</div>
@@ -96,10 +104,10 @@ with open('AZ-104-Connor-Format.csv', 'r', encoding='utf-8') as file:
         
         answer = f"Correct: {correct} - {short_explanation}"
         
-        # Create note using Question/Answer/Tags fields
+        # Create note using Question/QuestionWithAnswer/Answer/Tags fields
         note = genanki.Note(
             model=az_104_model,
-            fields=[full_question, answer, tags]
+            fields=[full_question, question_with_answer, answer, tags]
         )
         az_104_deck.add_note(note)
 
