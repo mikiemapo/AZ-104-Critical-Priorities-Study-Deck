@@ -16,7 +16,7 @@ az_104_model = genanki.Model(
         {
             'name': 'Card 1',
             'qfmt': '{{Question}}',
-            'afmt': '{{Question}}<hr><div style="background-color: #4CAF50; color: white; padding: 10px; border-radius: 5px; margin: 10px 0; font-size: 16px;">{{Answer}}</div>',
+            'afmt': '{{Question}}<style>.choice.correct { background-color: #4CAF50 !important; color: white !important; border-color: #45a049 !important; font-weight: bold; }</style><hr><div style="background-color: #4CAF50; color: white; padding: 10px; border-radius: 5px; margin: 10px 0; font-size: 16px;">{{Answer}}</div>',
         },
     ],
     css="""
@@ -39,13 +39,6 @@ az_104_model = genanki.Model(
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     color: #333333;
     font-weight: normal;
-}
-
-.choice.correct {
-    background-color: #4CAF50 !important;
-    color: white !important;
-    border-color: #45a049 !important;
-    font-weight: bold;
 }
     """
 )
