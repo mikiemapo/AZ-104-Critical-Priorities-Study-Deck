@@ -3,18 +3,23 @@
 ## ⚠️ CRITICAL WORKFLOW FOR AI ASSISTANT
 
 **BEFORE adding new questions, ALWAYS:**
+
 1. **Verify question content** - Confirm topic matches user's request (e.g., Container Security vs FD-UD)
 2. **Check for duplicates** - Run `grep -n "keyword" AZ-104-Master-Questions.csv` to avoid duplicates
 3. **Append to CSV** - Add to END of AZ-104-Master-Questions.csv (never replace entire file)
-4. **Regenerate deck** - Run `python3 create_master_deck.py` after CSV changes
-5. **Update README** - Update card count and batch list in this file
-6. **Commit with details** - Use descriptive commit message with topic and count
+4. **Keep explanations to 2 sentences MAXIMUM** - Critical for maintaining study flow and preventing cognitive overload
+5. **Cross-reference MS Learn** - Add MS Learn source link to the MS Learn References section at bottom of README
+6. **Regenerate deck** - Run `python3 create_master_deck.py` after CSV changes
+7. **Update README** - Update card count and batch list in this file
+8. **Commit with details** - Use descriptive commit message with topic and count
 
 **NEVER:**
+
 - ❌ Add duplicate questions from previous batches
 - ❌ Mix up question topics (e.g., adding FD-UD when user asked for Container Security)
+- ❌ Write explanations longer than 2 sentences (breaks study flow)
 - ❌ Forget to regenerate the .apkg file after CSV changes
-- ❌ Commit without updating README card counts
+- ❌ Commit without updating README card counts and MS Learn references
 
 **Repository Location:** `/Users/mike1macbook/Documents/MY STUFF DOCS AND ALL/EBOOK/AZ-104-Study-Deck/`
 
@@ -233,3 +238,55 @@ This deck is designed to complement Connor Sayers' AZ-104 Study Deck by focusing
 **Acknowledgment:** This deck follows the format and design principles established by Connor Sayers' excellent AZ-104 Study Deck. Special thanks to Connor for creating the foundational template that makes AZ-104 Anki studying so effective.
 
 Feedback on question accuracy and additional priority topics is welcomed.
+
+---
+
+## 📚 Microsoft Learn References
+
+All questions cross-referenced with official Microsoft Learn documentation:
+
+### Container Security Batch
+
+- [Microsoft Defender for Containers](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-containers-introduction)
+- [ACR Tasks](https://learn.microsoft.com/azure/container-registry/container-registry-tasks-overview)
+- [Azure Policy for Containers](https://learn.microsoft.com/azure/governance/policy/concepts/policy-for-kubernetes)
+- [Container Security Best Practices](https://learn.microsoft.com/azure/container-instances/container-instances-image-security)
+- [Secure Container Deployment](https://learn.microsoft.com/azure/container-registry/container-registry-best-practices)
+
+### App Service Deployment Batch
+
+- [App Service Deployment Slots](https://learn.microsoft.com/azure/app-service/deploy-staging-slots)
+- [App Service Configuration](https://learn.microsoft.com/azure/app-service/configure-common)
+- [App Service Auto-Swap](https://learn.microsoft.com/azure/app-service/deploy-staging-slots#auto-swap)
+- [App Service Deployment Best Practices](https://learn.microsoft.com/azure/app-service/deploy-best-practices)
+
+### App Service Security Batch
+
+- [App Service VNet Integration](https://learn.microsoft.com/azure/app-service/overview-vnet-integration)
+- [SQL Database Network Security](https://learn.microsoft.com/azure/azure-sql/database/network-access-controls-overview)
+- [VNet Integration](https://learn.microsoft.com/azure/app-service/configure-vnet-integration-enable)
+- [Secure SQL Connectivity](https://learn.microsoft.com/azure/app-service/app-service-web-tutorial-connect-msi)
+
+### Container Scaling Batch
+
+- [Traffic Manager](https://learn.microsoft.com/azure/traffic-manager/traffic-manager-overview)
+- [Azure Load Balancer](https://learn.microsoft.com/azure/load-balancer/load-balancer-overview)
+- [ACI Scaling Strategies](https://learn.microsoft.com/azure/container-instances/container-instances-container-groups)
+- [Traffic Manager Routing](https://learn.microsoft.com/azure/traffic-manager/traffic-manager-routing-methods)
+
+### SSL Certificates Batch
+
+- [App Service Custom Domains](https://learn.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain)
+- [TLS/SSL Certificates](https://learn.microsoft.com/azure/app-service/configure-ssl-certificate)
+- [App Service SSL Binding](https://learn.microsoft.com/azure/app-service/configure-ssl-bindings)
+
+### VM Availability & Fault Tolerance Batch
+
+- [Availability Sets](https://learn.microsoft.com/azure/virtual-machines/availability-set-overview)
+- [Planned Maintenance](https://learn.microsoft.com/azure/virtual-machines/maintenance-and-updates)
+
+### Storage Batches
+
+- [Azure Storage Documentation](https://learn.microsoft.com/azure/storage/)
+- [Storage Replication](https://learn.microsoft.com/azure/storage/common/storage-redundancy)
+- [Storage Security](https://learn.microsoft.com/azure/storage/common/security-recommendations)
