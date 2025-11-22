@@ -16,6 +16,14 @@
    2. Run: python3 create_master_deck.py  
    3. Commit and push updated deck
 
+⚡ QUESTION CREATION GUIDELINES:
+   - Include misdirecting answer analysis in explanations
+   - Explain why wrong answers are tempting but incorrect
+   - Helps reinforce concepts by understanding common misconceptions
+   - Cross-reference with Microsoft Learn documentation
+   - Keep explanations to 2 sentences for the point
+   - Randomize correct answers across A-D options
+
 🎉 Maintains hierarchical subdeck structure with expandable categories
 """
 
