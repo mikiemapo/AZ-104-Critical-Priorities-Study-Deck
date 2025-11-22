@@ -1,11 +1,44 @@
 # AZ-104 Critical Priorities Study Deck
 
-## 📊 Current Deck Status (34 Total Cards)
+## ⚠️ CRITICAL WORKFLOW FOR AI ASSISTANT
+
+**BEFORE adding new questions, ALWAYS:**
+1. **Verify question content** - Confirm topic matches user's request (e.g., Container Security vs FD-UD)
+2. **Check for duplicates** - Run `grep -n "keyword" AZ-104-Master-Questions.csv` to avoid duplicates
+3. **Append to CSV** - Add to END of AZ-104-Master-Questions.csv (never replace entire file)
+4. **Regenerate deck** - Run `python3 create_master_deck.py` after CSV changes
+5. **Update README** - Update card count and batch list in this file
+6. **Commit with details** - Use descriptive commit message with topic and count
+
+**NEVER:**
+- ❌ Add duplicate questions from previous batches
+- ❌ Mix up question topics (e.g., adding FD-UD when user asked for Container Security)
+- ❌ Forget to regenerate the .apkg file after CSV changes
+- ❌ Commit without updating README card counts
+
+**Repository Location:** `/Users/mike1macbook/Documents/MY STUFF DOCS AND ALL/EBOOK/AZ-104-Study-Deck/`
+
+---
+
+## 📊 Current Deck Status (294 Total Cards)
 
 - **Critical Priorities Batch**: 5 essential configuration scenarios
 - **RTO/RPO Storage Batch**: 3 disaster recovery fundamentals
-- **Storage Replication & DR Batch**: 26 comprehensive storage questions
-- **Last Updated**: November 18, 2025
+- **Storage Replication & DR Batch**: 52 comprehensive storage questions
+- **App Service & Container Operations Batch**: 29 questions
+- **Enhanced Compute Batch**: 37 questions
+- **Deep Storage Mastery Batch**: 36 questions
+- **Storage Identity & Security Traps Batch**: 31 questions
+- **Storage Endpoints & Encryption Batch**: 20 questions
+- **Storage Performance & Lifecycle Batch**: 20 questions
+- **Storage Security & Authentication Batch**: 20 questions
+- **VM Availability & Fault Tolerance Batch**: 20 questions (FD-UD deep dive)
+- **Container Security Batch**: 5 questions (Defender, ACR Tasks, Azure Policy)
+- **App Service Deployment Batch**: 5 questions (Auto-Swap, Slot Settings)
+- **App Service Security Batch**: 4 questions (VNet Integration, SQL connectivity)
+- **Container Scaling Batch**: 4 questions (Traffic Manager, ACI)
+- **SSL Certificates Batch**: 3 questions (Wildcard certs, SSL Binding)
+- **Last Updated**: November 22, 2025
 
 ## 📥 Download
 
