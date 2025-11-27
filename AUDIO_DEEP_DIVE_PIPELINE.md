@@ -1,6 +1,7 @@
 # Audio Deep Dive to Anki Deck Pipeline
 
 ## Overview
+
 Convert audio transcripts (Deep Dive explainer series) into focused Anki decks using the **Enriched scenario-based format**.
 
 ---
@@ -8,7 +9,9 @@ Convert audio transcripts (Deep Dive explainer series) into focused Anki decks u
 ## Current Status
 
 ### ✅ Completed Decks (2)
+
 1. **VMSS Deep Dive** (12 cards)
+
    - Orchestration modes (Uniform vs. Flexible)
    - Update Domains, Fault Domains
    - Availability Zones
@@ -26,6 +29,7 @@ Convert audio transcripts (Deep Dive explainer series) into focused Anki decks u
    - ROADMAP mnemonic & exam traps
 
 ### 📋 Pending/In-Queue (To Process)
+
 - [ ] [Topic needed] - audio file reference/link
 
 ---
@@ -33,22 +37,26 @@ Convert audio transcripts (Deep Dive explainer series) into focused Anki decks u
 ## Workflow: Audio → Anki Deck
 
 ### Phase 1: Transcript Extraction
+
 - Source: Audio file (.mp3, .wav, .m4a)
 - Tool: `openai-whisper` (local, offline)
 - Output: `transcript.txt`
 
 ### Phase 2: Topic Analysis
+
 - Read transcript
 - Identify key concepts, decision frameworks, golden rules
 - Extract scenario examples from speaker dialogue
 
 ### Phase 3: Question Generation
+
 - Convert topics into **Enriched scenario-based Q&A**
 - Include: use-case context, constraints, trade-offs, gotchas
 - Format: CSV (Question, ChoiceA-D, Correct, Explanation, Tags, Source, Batch)
 - Keep explanations ≤2 sentences
 
 ### Phase 4: Integration
+
 - Create `AZ104_[Topic]_Deep_Dive.csv`
 - Append to `AZ-104-Master-Questions.csv`
 - Run `python3 create_master_deck.py`
@@ -65,6 +73,7 @@ Question,ChoiceA,ChoiceB,ChoiceC,ChoiceD,Correct,Explanation,Tags,Source,Batch
 ```
 
 ### Key Elements
+
 - **Scenario**: Real-world use-case or problem
 - **Constraints**: Specific numbers, timeframes, limitations
 - **Correct answer**: Clear, defensible
@@ -92,6 +101,7 @@ Use this to log incoming audio files:
 ## Quick Reference: When to Recommend Anki Deck
 
 **Look for these patterns in user questions:**
+
 - "How do I remember the difference between X and Y?"
 - "What are the trade-offs for this Azure service?"
 - "What's the exam trap here?"
@@ -99,6 +109,7 @@ Use this to log incoming audio files:
 - Multiple questions about a single topic/service
 
 **Response template:**
+
 > "I notice you're asking several questions about [Topic]. Would you like me to extract that Deep Dive audio into a focused Anki batch? I can create [estimated count] scenario-based cards covering [key areas] and add them to your deck. Takes ~30 min, results in production-ready cards."
 
 ---
@@ -106,6 +117,7 @@ Use this to log incoming audio files:
 ## Future Automation: Local Transcription + Deck Generation
 
 ### Architecture (For Later Sprint)
+
 ```
 audio_file
     ↓
@@ -123,6 +135,7 @@ audio_file
 ```
 
 **Tools needed:**
+
 - `faster-whisper` (faster alternative to OpenAI Whisper)
 - Python script for topic extraction
 - Prompt template for Q&A generation (Claude/GPT API or local LLM)
@@ -136,6 +149,7 @@ audio_file
 ---
 
 ## Current Deck Stats
+
 - **Total Cards:** 380
 - **Batches:** 20
 - **Deep Dive Batches:** 2 (VMSS, App Service)
@@ -144,6 +158,7 @@ audio_file
 ---
 
 ## Notes
+
 - Each Deep Dive typically yields 12-20 cards
 - Maintain enriched scenario-based format across all new batches
 - Golden Rule questions recommended per Deep Dive

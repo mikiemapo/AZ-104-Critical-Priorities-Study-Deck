@@ -1,0 +1,296 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AZ-104 Study Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AZ-104 Second Round Study
+X-WR-TIMEZONE:America/Los_Angeles
+X-WR-CALDESC:Complete 8-week AZ-104 exam prep (6am-6pm schedule, free every other day)
+BEGIN:VEVENT
+DTSTART:20251127T060000
+DTEND:20251127T120000
+RRULE:FREQ=WEEKLY;BYDAY=MO;COUNT=8
+SUMMARY:WEEK 1-8: Monday Study Session (6am-12pm)
+DESCRIPTION:Monday Heavy Study Day\n- Anki: 100 cards (2 hrs)\n- Break & breakfast (1 hr)\n- Deep Dive audio or synthesis (1.5 hrs)\n- Review & notes (1.5 hrs)
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Monday,Study
+UID:az104-mon-study-001@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251128T060000
+DTEND:20251128T120000
+RRULE:FREQ=WEEKLY;BYDAY=TU;COUNT=8
+SUMMARY:WEEK 1-8: Tuesday Study Session (6am-12pm)
+DESCRIPTION:Tuesday Heavy Study Day\n- Anki: 50 cards (1 hr)\n- Media Hub reference (1 hr)\n- Deep Dive audio or Theory (1.5 hrs)\n- Notes & synthesis (1.5 hrs)
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Tuesday,Study
+UID:az104-tue-study-001@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251129T000000
+DTEND:20251129T235959
+RRULE:FREQ=WEEKLY;BYDAY=WE;COUNT=8
+SUMMARY:⭐ Wednesday OFF DAY (Recovery)
+DESCRIPTION:MANDATORY OFF DAY\n\n✅ No study required\n✅ Optional: 10-15 min light Anki if desired\n✅ Focus: Rest, hydration, good food\n\nRecovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-wed-offday-001@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251201T060000
+DTEND:20251201T120000
+RRULE:FREQ=WEEKLY;BYDAY=TH;COUNT=8
+SUMMARY:WEEK 1-8: Thursday Study Session (6am-12pm)
+DESCRIPTION:Thursday: Tutorial Dojo & Lab Day\n- Anki: 50 cards (1 hr)\n- Tutorial Dojo: 20-30 questions (2 hrs)\n- Whizlabs Lab or Audio (1.5 hrs)\n- Review missed questions (1.5 hrs)
+LOCATION:Home - Laptop Required
+CATEGORIES:AZ-104,Thursday,Study
+UID:az104-thu-study-001@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251202T060000
+DTEND:20251202T120000
+RRULE:FREQ=WEEKLY;BYDAY=FR;COUNT=8
+SUMMARY:WEEK 1-8: Friday Study Session (6am-12pm)
+DESCRIPTION:Friday: Practice & Synthesis Day\n- Anki: 50 cards (1 hr)\n- Tutorial Dojo: 20-30 questions continued (2 hrs)\n- Week synthesis & notes (1.5 hrs)\n- Decision flowcharts/mindmaps (1 hr)
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Friday,Study
+UID:az104-fri-study-001@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251204T000000
+DTEND:20251204T235959
+RRULE:FREQ=WEEKLY;BYDAY=SA;COUNT=8
+SUMMARY:⭐ Saturday OFF DAY (Optional Light Review)
+DESCRIPTION:OPTIONAL OFF DAY\n\n✅ Mandatory rest (preferred)\n✅ Optional: 15-30 min light Anki review if energy allows\n✅ No labs, no new material\n\nUse for recovery, family time, or light activity.
+LOCATION:Rest & Optional Light Study
+CATEGORIES:AZ-104,OffDay,Optional
+UID:az104-sat-offday-001@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251205T060000
+DTEND:20251205T120000
+RRULE:FREQ=WEEKLY;BYDAY=SU;COUNT=8
+SUMMARY:WEEK 1-8: Sunday Whizlabs Exam & Review (6am-12pm)
+DESCRIPTION:Sunday: Full Practice Exam & Analysis\n- Week 1-3: Mini-quiz (50 Q, 1 hr)\n- Week 4-8: Full-length exam (150-200 Q, 3 hrs)\n- Gap analysis & weak area identification (2 hrs)
+LOCATION:Home - Exam Simulation
+CATEGORIES:AZ-104,Sunday,Exam
+UID:az104-sun-exam-001@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251127T055000
+DTEND:20251127T060000
+SUMMARY:☕ Study Prep: Coffee Ready + NO DISTRACTIONS
+DESCRIPTION:5:50 AM Reminder\n\nTime to wake up and prepare for study session:\n✅ Coffee/Tea ready\n✅ Phone on silent\n✅ Notifications off\n✅ Anki/resources open\n✅ Study space organized\n\nYou've got this! 💪
+LOCATION:Home - Kitchen/Study Desk
+CATEGORIES:AZ-104,Reminder
+UID:az104-mon-prep-001@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251127T120000
+DTEND:20251127T130000
+SUMMARY:🎉 Session Complete: Rest & Lunch
+DESCRIPTION:12:00 PM - Session Wrap-Up\n\n✅ Save your work\n✅ Take notes of difficult concepts\n✅ Update daily tracker\n✅ Close laptop\n✅ Eat lunch, move your body\n✅ Free time until next session\n\nGreat work today!
+LOCATION:Home - Kitchen/Outdoor
+CATEGORIES:AZ-104,Break
+UID:az104-mon-break-001@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251210T000000
+DTEND:20251210T235959
+SUMMARY:📊 WEEK 4 CHECKPOINT: Mid-Program Review
+DESCRIPTION:End of Week 4 - Mid-Program Assessment\n\n✅ Completed Anki through Storage (150+ cards)?\n✅ Tutorial Dojo score 75%+ average?\n✅ Completed 2-3 Whizlabs labs?\n✅ Weak areas identified?\n\nIf score < 70%: Extend Week 4, compress later weeks\nIf on track: Continue per plan\nIf ahead: Add optional Deep Dives
+LOCATION:Home - Self Assessment
+CATEGORIES:AZ-104,Checkpoint
+UID:az104-week4-checkpoint@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251227T000000
+DTEND:20251227T235959
+SUMMARY:⚠️ HOLIDAY WEEK: Flexible Schedule
+DESCRIPTION:Week 7/8 may overlap with holidays\n\n✅ Adjust study times as needed (family commitments)\n✅ Maintain 25 hrs/week if possible\n✅ If not possible: Extend exam date by 1 week\n✅ Don't skip completely; even 30 min/day helps\n\nBalance family time with exam readiness.
+LOCATION:Home/Travel
+CATEGORIES:AZ-104,Holiday
+UID:az104-holiday-flex@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260108T000000
+DTEND:20260108T235959
+SUMMARY:🎯 WEEK 8 FINAL CHECKPOINT: Ready for Exam?
+DESCRIPTION:End of Week 8 - Final Readiness Check\n\n✅ Completed all 380 Anki cards (3+ times)?\n✅ 85%+ on Whizlabs exams?\n✅ Completed all Tutorial Dojo questions?\n✅ Can explain all weak areas?\n✅ Confident on Golden Rules?\n✅ Can draw architecture diagrams from memory?\n✅ Know all RTO/RPO trade-offs?\n\nIf ALL YES: Schedule exam date!\nIf ANY NO: Extend Week 8 by 3-5 days
+LOCATION:Home - Final Review
+CATEGORIES:AZ-104,Checkpoint,Final
+UID:az104-week8-checkpoint@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260115T000000
+DTEND:20260115T235959
+SUMMARY:🏁 EXAM DAY (Tentative - Adjust as needed)
+DESCRIPTION:Tentative AZ-104 Exam Date\n\n⚠️ ADJUST BASED ON YOUR READINESS\n\nPre-Exam Day (Night Before):\n✅ Light Anki review (15 min weak cards)\n✅ No heavy study\n✅ Early bedtime (10 PM)\n✅ Lay out ID, exam confirmation\n\nExam Day Morning:\n✅ 6 AM wake-up\n✅ Light breakfast (no heavy food)\n✅ Hydration\n✅ Arrive 15 min early\n\nDuring Exam:\n✅ Read every question carefully\n✅ Flag for review if unsure\n✅ Time management: Don't linger on one Q\n✅ Trust your preparation\n\nTARGET SCORE: 270+ out of 300 (90%+)\n\nYou've got this! 💪
+LOCATION:Testing Center
+CATEGORIES:AZ-104,Exam,Final
+UID:az104-exam-day@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251201T090000
+DTEND:20251201T110000
+SUMMARY:[WEEK 2] Tuesday: VMSS Deep Dive Audio + Notes
+DESCRIPTION:Week 2 Theme: VM Scale Sets Orchestration\n\n📚 Activity:\n- Listen to VMSS Deep Dive transcript\n- Note: Fault Domains (hardware failure boundaries)\n- Note: Update Domains (maintenance windows)\n- Note: Availability Zones (distinct physical locations)\n- Practice: Draw VMSS resilience architecture\n\n🎯 Goal: Understand FD ≠ UD; both needed for resilience
+LOCATION:Home - Audio/Transcript
+CATEGORIES:AZ-104,Week2,DeepDive
+UID:az104-week2-vmss-audio@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251208T090000
+DTEND:20251208T110000
+SUMMARY:[WEEK 3] Monday: App Service Deep Dive Audio + Bicep
+DESCRIPTION:Week 3 Theme: App Service Runtimes & Deployment\n\n📚 Activity:\n- Listen to App Service Deep Dive transcript\n- Key: Windows = .NET Framework ONLY (no .NET Core)\n- Key: Linux = .NET Core/Node.js (no Framework)\n- Bicep: serverFarmId vs. linuxFxVersion patterns\n- Practice: Determine OS constraints from scenario\n\n🎯 Goal: Master OS constraints before choosing runtime
+LOCATION:Home - Audio/Transcript
+CATEGORIES:AZ-104,Week3,DeepDive
+UID:az104-week3-appservice-audio@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251204T090000
+DTEND:20251204T110000
+SUMMARY:[WEEK 2] Thursday: Whizlabs VMSS Lab - Create Scale Set
+DESCRIPTION:Week 2 Hands-On Lab\n\n🏗️ Lab Objective:\n- Navigate Azure Portal\n- Create Virtual Machine Scale Set (Uniform mode)\n- Configure orchestration mode\n- Set up load balancer\n- Test auto-scaling policies\n- Clean up resources\n\n⏱️ Estimated time: 1.5-2 hours\n📋 Reference: App Service Deep Dive for resilience patterns\n\n✅ Completion: Take screenshot of VMSS overview page
+LOCATION:Azure Portal - Hands On
+CATEGORIES:AZ-104,Week2,Lab
+UID:az104-week2-vmss-lab@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251211T090000
+DTEND:20251211T110000
+SUMMARY:[WEEK 3] Thursday: Whizlabs App Service Lab - Deploy App
+DESCRIPTION:Week 3 Hands-On Lab\n\n🏗️ Lab Objective:\n- Create App Service Plan (Windows)\n- Deploy .NET Framework app (Windows-only)\n- Create 2nd App Service Plan (Linux)\n- Deploy Node.js app (Linux)\n- Configure authentication\n- Set up deployment slots\n- Understand tier/feature differences\n\n⏱️ Estimated time: 1.5-2 hours\n📋 Reference: App Service Deep Dive for OS constraints\n\n✅ Completion: Both apps running with correct OS
+LOCATION:Azure Portal - Hands On
+CATEGORIES:AZ-104,Week3,Lab
+UID:az104-week3-appservice-lab@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251218T090000
+DTEND:20251218T110000
+SUMMARY:[WEEK 4] Thursday: Whizlabs Storage Lab - Redundancy
+DESCRIPTION:Week 4 Hands-On Lab\n\n🏗️ Lab Objective:\n- Create storage account with LRS (Local Redundancy)\n- Create 2nd account with GRS (Geo-Redundancy)\n- Configure private endpoints\n- Set firewall rules\n- Test failover (if GRS)\n- Verify replication\n- Understand RTO/RPO differences\n\n⏱️ Estimated time: 1.5-2 hours\n📋 Reference: Storage Deep Dive for redundancy patterns\n\n✅ Completion: Both accounts with correct replication confirmed
+LOCATION:Azure Portal - Hands On
+CATEGORIES:AZ-104,Week4,Lab
+UID:az104-week4-storage-lab@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251225T060000
+DTEND:20251225T120000
+SUMMARY:[WEEK 5] Thursday: Whizlabs Storage Security Lab
+DESCRIPTION:Week 5 Hands-On Lab - Holiday Week (Flexible)\n\n🏗️ Lab Objective:\n- Configure managed identity for storage access\n- Create SAS token with constraints\n- Set up shared key authentication\n- Test access patterns (success/failure)\n- Configure role-based access (RBAC)\n- Enable soft delete & versioning\n\n⏱️ Estimated time: 1.5-2 hours\n📋 Adjust timing if holiday commitments\n\n✅ Completion: All access methods working correctly
+LOCATION:Azure Portal - Hands On
+CATEGORIES:AZ-104,Week5,Lab,Holiday
+UID:az104-week5-storage-sec-lab@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260101T060000
+DTEND:20260101T120000
+SUMMARY:[WEEK 6] Thursday: Whizlabs Networking Lab - Load Balancer
+DESCRIPTION:Week 6 Hands-On Lab - New Year Week (Flexible)\n\n🏗️ Lab Objective:\n- Create VMs in same availability set\n- Configure Azure Load Balancer (Layer 4)\n- Set up health probes\n- Configure session persistence\n- Test failover & traffic distribution\n- Compare with Application Gateway (Layer 7)\n\n⏱️ Estimated time: 1.5-2 hours\n📋 Adjust timing if needed\n\n✅ Completion: LB distributing traffic correctly
+LOCATION:Azure Portal - Hands On
+CATEGORIES:AZ-104,Week6,Lab,NewYear
+UID:az104-week6-networking-lb-lab@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260108T090000
+DTEND:20260108T110000
+SUMMARY:[WEEK 7] Thursday: Whizlabs Backup/DR Lab
+DESCRIPTION:Week 7 Hands-On Lab\n\n🏗️ Lab Objective:\n- Configure VM backup (Recovery Services Vault)\n- Set backup policy (retention, schedule)\n- Test restore options (files, disk, full VM)\n- Understand RTO (Recovery Time Objective)\n- Understand RPO (Recovery Point Objective)\n- Configure cross-region replication\n- Calculate RTO/RPO for scenarios\n\n⏱️ Estimated time: 1.5-2 hours\n\n✅ Completion: Successfully restore a VM disk from backup
+LOCATION:Azure Portal - Hands On
+CATEGORIES:AZ-104,Week7,Lab
+UID:az104-week7-backup-lab@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251201T060000
+DTEND:20251201T120000
+SUMMARY:[WEEK 2] Sunday: Whizlabs Mini-Quiz (50 Q, 1 hr)
+DESCRIPTION:Week 2 Practice Exam\n\n📝 Quiz Details:\n- 50 questions\n- 1 hour time limit\n- Topics: Compute, VMSS, resilience\n- After: Record score in tracker\n- Review all incorrect answers (read explanation!)\n\n🎯 Target: 75%+ (37/50 correct)\n\n📊 Record in ~/Documents/WL_Labs/exam_scores.txt
+LOCATION:Home - Exam Simulation
+CATEGORIES:AZ-104,Week2,Quiz
+UID:az104-week2-quiz@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251208T060000
+DTEND:20251208T120000
+SUMMARY:[WEEK 3] Sunday: Whizlabs Mini-Quiz (50 Q, 1 hr)
+DESCRIPTION:Week 3 Practice Exam\n\n📝 Quiz Details:\n- 50 questions\n- 1 hour time limit\n- Topics: App Service, runtimes, deployment\n- After: Record score in tracker\n- Focus on exam traps & OS constraints\n\n🎯 Target: 75%+ (37/50 correct)\n\n📊 Record progress in tracker
+LOCATION:Home - Exam Simulation
+CATEGORIES:AZ-104,Week3,Quiz
+UID:az104-week3-quiz@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251215T060000
+DTEND:20251215T120000
+SUMMARY:[WEEK 4] Sunday: Whizlabs FULL EXAM (150-200 Q, 3 hrs)
+DESCRIPTION:Week 4 Full-Length Practice Exam\n\n📝 Exam Details:\n- 150-200 questions\n- 3 hours time limit\n- Cumulative (all topics through Week 4)\n- Simulate real exam conditions\n- After: Detailed gap analysis\n\n🎯 Target: 70%+ (105/150 correct)\n\n📊 Record:\n- Score: ___/150\n- % Correct: ___%\n- Weak domains: [List]\n- Plan for Week 5: [Adjustments]\n\n💡 If < 70%: Add 2-3 extra days of review in Week 5
+LOCATION:Home - Full Exam Simulation
+CATEGORIES:AZ-104,Week4,FullExam
+UID:az104-week4-full-exam@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251222T060000
+DTEND:20251222T120000
+SUMMARY:[WEEK 5] Sunday: Whizlabs FULL EXAM (150-200 Q) - Holiday
+DESCRIPTION:Week 5 Full-Length Practice Exam (Holiday Flexible)\n\n📝 Exam Details:\n- 150-200 questions\n- 3 hours time limit\n- Topics: All Storage, Security, Identity\n- Simulate real exam conditions\n- Note: HOLIDAY WEEK - adjust time if needed\n\n🎯 Target: 75%+ (112/150 correct)\n\n📊 Record score & weak areas\n\n⚠️ If holiday prevents testing: Move to Dec 27\nDon't skip; keep momentum through holidays!\n\nBalance family time + exam prep 🎄
+LOCATION:Home/Holiday Location
+CATEGORIES:AZ-104,Week5,FullExam,Holiday
+UID:az104-week5-full-exam@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251229T060000
+DTEND:20251229T120000
+SUMMARY:[WEEK 6] Sunday: Whizlabs FULL EXAM (150-200 Q)
+DESCRIPTION:Week 6 Full-Length Practice Exam\n\n📝 Exam Details:\n- 150-200 questions\n- 3 hours time limit\n- Topics: Networking, Load Balancers, VNet, Gateways\n- Cumulative (all prior topics too)\n\n🎯 Target: 80%+ (120/150 correct)\n\n📊 Record score & identify any remaining weak areas\n\n💡 Trend analysis: Are scores improving? Aim for +5-10% each week\n\nGreat progress! Keep going! 💪
+LOCATION:Home - Exam Simulation
+CATEGORIES:AZ-104,Week6,FullExam
+UID:az104-week6-full-exam@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260105T060000
+DTEND:20260105T120000
+SUMMARY:[WEEK 7] Sunday: Whizlabs FULL EXAM (150-200 Q) - New Year
+DESCRIPTION:Week 7 Full-Length Practice Exam (New Year Week)\n\n📝 Exam Details:\n- 150-200 questions\n- 3 hours time limit\n- Topics: Backup, DR, RTO/RPO, Compliance\n- Full cumulative exam\n\n🎯 Target: 82%+ (123/150 correct)\n\n📊 Record score; review any weak areas\n\n⚠️ If New Year celebrations interfere: Move to Jan 6\nFlexibility is OK; consistency matters more than perfect timing.\n\nYou're almost there! 🏁\n\nNew Year, New Certification! 🎆
+LOCATION:Home/Travel
+CATEGORIES:AZ-104,Week7,FullExam,NewYear
+UID:az104-week7-full-exam@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260112T060000
+DTEND:20260112T120000
+SUMMARY:[WEEK 8] Sunday: Whizlabs FULL EXAM #3 - Final Benchmark
+DESCRIPTION:Week 8 Final Full-Length Practice Exam\n\n📝 Exam Details:\n- 150-200 questions\n- 3 hours time limit\n- COMPREHENSIVE (all topics, all 8 weeks)\n- Final benchmark before real exam\n\n🎯 Target: 85%+ (127/150 correct = Ready to take real exam!)\n\n📊 Record FINAL score:\n- Score: ___/150\n- % Correct: ___%\n- Compare to Week 4, 5, 6, 7\n- Improvement trend: ___% total gain\n\n✅ READINESS DECISION:\n- 85%+: SCHEDULE REAL EXAM! You're ready! 🎉\n- 80-85%: Take one more practice exam next week\n- <80%: Extend study by 3-5 days, focus on weak areas\n\nYou've come so far. Final push! 🚀\nThis is it!\n\nREAL EXAM BOOKING LINK: https://examregistration.microsoft.com\nTARGET: 270+ out of 300 (90%+)\n\nLET'S GO!! 💪🏆
+LOCATION:Home - Final Exam Simulation
+CATEGORIES:AZ-104,Week8,FullExam,Final
+UID:az104-week8-full-exam@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+END:VCALENDAR

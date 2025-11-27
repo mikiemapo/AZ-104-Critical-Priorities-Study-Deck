@@ -25,7 +25,7 @@
 
 ---
 
-## 📊 Current Deck Status (380 Total Cards)
+## 📊 Current Deck Status (424 Total Cards)
 
 - **Critical Priorities Batch**: 5 essential configuration scenarios
 - **RTO/RPO Storage Batch**: 3 disaster recovery fundamentals
@@ -47,7 +47,9 @@
 - **Golden Rule Enriched Part 2**: 35 scenario-driven questions (Redundancy, Disks, Networking, Backup, DR, Performance)
 - **VMSS Deep Dive Batch**: 12 scenario-driven questions (Orchestration modes, Update/Fault Domains, Availability Zones, Load Balancing, IaaS operational burden)
 - **App Service Deep Dive Batch**: 17 scenario-driven questions (OS constraints, Runtime choices, Deployment methods, Resource contention, VNet integration, Security pipeline, Bicep IaC, Exam traps)
-- **Last Updated**: November 26, 2025
+- **Resilience & Disaster Recovery Deep Dive Batch**: 20 scenario-driven questions (VABRF blueprint, RSV regional boundaries, RBAC Backup Contributor, Azure Backup vs ASR distinction, ransomware vs regional recovery, app-consistent recovery points, VSS technology, test failover validation, commit/reprotect sequence, action groups automation, monitoring replication health, Azure Policy resilience architecture)
+- **Hybrid Azure Mastery Deep Dive Batch**: 20 scenario-driven questions (RBAC vs Entra DS identity model, Azure Files double-permission layer, SMB port 445 hybrid tunneling, Kerberos authentication for NTFS, Azure Policy governance enforcement, PIM just-in-time privilege, App Service plan scaling architecture, Docker Container runtime ownership, ACI no-scaling limitation, Bicep IaC performance benchmarks, three-tier VNet subnet design, VNet peering vs VPN gateway, internal load balancer vs Application Gateway, WAF tier requirement, Network Watcher IP Flow Verify and Connection Troubleshoot, Azure Monitor KQL, metric/log search/activity log alerts, hybrid Azure Monitor Agent deployment, five-pillar architectural integration, resource tagging + Policy inventory foundation)
+- **Last Updated**: November 27, 2025
 
 ## 📥 Download
 

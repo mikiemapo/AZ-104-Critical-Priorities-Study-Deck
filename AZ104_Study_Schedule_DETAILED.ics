@@ -1,0 +1,265 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AZ-104 Study Calendar with Deck Details//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AZ-104 Study Schedule (Detailed w/ Decks)
+X-WR-TIMEZONE:America/Los_Angeles
+X-WR-CALDESC:8-week prep with specific Anki decks aligned to labs and audio
+BEGIN:VEVENT
+DTSTART:20251127T060000
+DTEND:20251127T120000
+SUMMARY:🎴 WEEK 1 MON: Golden Rule Part 1 (22 cards) + Foundation
+DESCRIPTION:Monday - Heavy Anki Study\n\n📚 ANKI DECK:\n→ Golden Rule Enriched Part 1 (22 cards)\n  Topics: App Service runtimes, Storage basics, Redundancy patterns\n\n⏱️ Schedule:\n- 6-7 AM: Anki Golden Rule Part 1 (50 cards)\n- 7-8 AM: Continue Anki (25+ cards)\n- 8-9 AM: Break + breakfast\n- 9-11 AM: Media Hub reference (visual confirmation)\n- 11-12 PM: Synthesis notes\n\n🎯 Goal: Complete Golden Rule Part 1 (22 cards total)\n💡 Key: Master decision frameworks for storage/compute\n\nNo lab this day. Focus on learning fundamentals.
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week1,Anki,Golden-Rules
+UID:az104-w1-mon@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251128T060000
+DTEND:20251128T120000
+SUMMARY:🎴 WEEK 1 TUE: Golden Rule Part 2 (35 cards) + Theory
+DESCRIPTION:Tuesday - Heavy Anki Study\n\n📚 ANKI DECK:\n→ Golden Rule Enriched Part 2 (35 cards)\n  Topics: GZRS, Managed Disks, App Service Plans, Load Balancer, Traffic Manager, VPN Gateway, Backup/RTO/RPO\n\n⏱️ Schedule:\n- 6-7 AM: Anki Golden Rule Part 2 (50 cards)\n- 7-8 AM: Continue Anki (25+ cards)\n- 8-9 AM: Break + breakfast\n- 9-11 AM: Media Hub Networking section\n- 11-12 PM: Synthesis notes (decision matrix)\n\n🎯 Goal: Complete Golden Rule Part 2 (35 cards total)\n💡 Key: Advanced redundancy, disaster recovery trade-offs\n\nNo lab this day. Foundation theory only.
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week1,Anki,Golden-Rules
+UID:az104-w1-tue@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251129T000000
+DTEND:20251129T235959
+SUMMARY:⭐ WEEK 1 WED: OFF DAY (Recovery)
+DESCRIPTION:MANDATORY OFF DAY\n\n✅ No study required\n✅ Optional: 10-15 min light Anki if desired\n✅ Focus: Rest, hydration, good food\n\nRecovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w1-wed-offday@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251201T060000
+DTEND:20251201T120000
+SUMMARY:🎴 WEEK 2 THU: VMSS Deep Dive (12 cards) + Tutorial Dojo
+DESCRIPTION:Thursday - Tutorial Dojo & Practice\n\n📚 ANKI DECK:\n→ VMSS Deep Dive Batch (12 cards)\n  Topics: Orchestration modes (Uniform vs Flexible), Fault Domains, Update Domains, Availability Zones, Load Balancer persistence\n\n🧪 HANDS-ON LAB:\n→ Whizlabs: Create Virtual Machine Scale Set\n  - Create VMSS (Uniform mode)\n  - Configure load balancer\n  - Test auto-scaling\n  - Clean up resources\n  Duration: 1.5-2 hours\n\n📋 TUTORIAL DOJO:\n→ Compute/VMSS scenario questions (20-30 Q)\n\n⏱️ Schedule:\n- 6-7 AM: Anki VMSS Deep Dive (12 cards review)\n- 7-8 AM: Tutorial Dojo (15-20 questions)\n- 8-9 AM: Break\n- 9-11 AM: Whizlabs VMSS Lab\n- 11-12 PM: Lab review & notes\n\n🎯 Goal: Understand FD vs UD; complete lab\n💡 Key: Exam focuses on resilience patterns, not just creation\n\n📍 Start Whizlabs Lab: Prerequisite for Week 2 exam
+LOCATION:Home - Laptop Required
+CATEGORIES:AZ-104,Week2,Anki,Lab,VMSS
+UID:az104-w2-thu@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251202T060000
+DTEND:20251202T120000
+SUMMARY:🎴 WEEK 2 FRI: Enhanced Compute (20 cards) + Synthesis
+DESCRIPTION:Friday - Practice & Synthesis\n\n📚 ANKI DECK:\n→ Enhanced Compute Batch (20 cards)\n  Topics: VM sizing, scaling strategies, compute optimization\n\n📋 TUTORIAL DOJO:\n→ Compute set continued (15-20 questions)\n\n⏱️ Schedule:\n- 6-7 AM: Anki Enhanced Compute (20 cards)\n- 7-8 AM: Tutorial Dojo (15-20 questions)\n- 8-9 AM: Break\n- 9-11 AM: Week 2 synthesis & weak area notes\n- 11-12 PM: Decision flowchart (VMSS architecture)\n\n🎯 Goal: 75%+ on Tutorial Dojo questions\n💡 Key: Reinforce compute fundamentals\n\n📊 Prep for Week 2 Sunday exam: VMSS + Compute mini-quiz (50Q, 1hr)
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week2,Anki,Practice,Compute
+UID:az104-w2-fri@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251204T000000
+DTEND:20251204T235959
+SUMMARY:⭐ WEEK 2 SAT: OFF DAY (Optional)
+DESCRIPTION:OPTIONAL OFF DAY\n\n✅ Mandatory rest (preferred)\n✅ Optional: 15-30 min light Anki review if energy allows\n✅ No labs, no new material\n\nUse for recovery, family time, or light activity.
+LOCATION:Rest & Optional Light Study
+CATEGORIES:AZ-104,OffDay,Optional
+UID:az104-w2-sat-offday@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251205T060000
+DTEND:20251205T120000
+SUMMARY:📊 WEEK 2 SUN: Whizlabs Mini-Exam (50Q) + Review
+DESCRIPTION:Sunday - Exam & Gap Analysis\n\n📝 WHIZLABS MINI-EXAM:\n→ 50 questions, 1 hour\n→ Topics: Compute, VMSS, Resilience\n→ Goal: 75%+ (37/50 correct)\n\n📚 REFERENCE DECKS (For Review):\n→ VMSS Deep Dive (12 cards) - review incorrect answers\n→ Enhanced Compute (20 cards) - reinforce weak areas\n\n⏱️ Schedule:\n- 6-7 AM: Whizlabs mini-exam (50Q, 1 hr)\n- 7-10 AM: Review incorrect answers, record score\n- 10-11 AM: Return to weak cards in Anki\n- 11-12 PM: Gap analysis + notes for next week\n\n📊 Track:\n- Score: ___/50\n- % Correct: ___%\n- Weak areas: [List for Week 3]\n\n🎯 Target: 75%+ (ready to move to App Service)\n\n💡 If score <70%: Add 1 extra day review before Week 3
+LOCATION:Home - Exam Simulation
+CATEGORIES:AZ-104,Week2,Exam,Review
+UID:az104-w2-sun@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251208T060000
+DTEND:20251208T120000
+SUMMARY:🎴 WEEK 3 MON: App Service Deep Dive (17 cards) + Audio
+DESCRIPTION:Monday - App Service Focus\n\n📚 ANKI DECK:\n→ App Service Deep Dive Batch (17 cards)\n  Topics: OS constraints (Windows .NET Framework only, Linux multi-container), Runtime choices, Code vs Docker, VNet integration, Bicep patterns (serverFarmId, linuxFxVersion), Container security (ACR→Defender→Policy), ROADMAP mnemonic, Exam traps\n\n🎧 DEEP DIVE AUDIO:\n→ App Service Deep Dive Transcript\n  Full context on deployment methods, tier features, OS-specific scenarios\n\n⏱️ Schedule:\n- 6-7 AM: Anki App Service Deep Dive (50 cards if available, else 17 core)\n- 7-8 AM: Continue Anki\n- 8-9 AM: Break + breakfast\n- 9-11 AM: Listen to App Service Deep Dive transcript (reference)\n- 11-12 PM: Synthesis + ROADMAP mnemonic practice\n\n🎯 Goal: Master OS constraints (Windows ≠ Linux capabilities)\n💡 Key: Exam trap - read OS requirement first!\n\n📌 Start: App Service Deep Dive provides context for Tuesday audio
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week3,Anki,DeepDive,AppService
+UID:az104-w3-mon@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251209T060000
+DTEND:20251209T120000
+SUMMARY:🎴 WEEK 3 TUE: App Service Theory + Deep Dive Reference
+DESCRIPTION:Tuesday - App Service Deep Dive Continuation\n\n📚 ANKI DECK:\n→ App Service Deep Dive Batch (17 cards continued)\n  Reinforce OS constraints, Bicep patterns, security pipeline\n\n🎧 DEEP DIVE AUDIO:\n→ App Service Deep Dive Transcript (continued)\n  Reference specific Bicep patterns, deployment methods\n\n⏱️ Schedule:\n- 6-7 AM: Anki App Service (17 cards final review)\n- 7-8 AM: Media Hub App Service section\n- 8-9 AM: Break + breakfast\n- 9-11 AM: App Service Deep Dive transcript (reference specific scenarios)\n- 11-12 PM: Create App Service decision matrix (OS→Runtime→Tier)\n\n🎯 Goal: Understand all tier features + deployment constraints\n💡 Key: Premium tier enables VNet; Standard/Basic don't\n\n📌 Prep for Thursday lab: Know deployment methods before hands-on
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week3,Anki,DeepDive,AppService
+UID:az104-w3-tue@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251211T060000
+DTEND:20251211T120000
+SUMMARY:🎴 WEEK 3 THU: Container Operations (29 cards) + App Service Lab
+DESCRIPTION:Thursday - Container Operations & App Service Lab\n\n📚 ANKI DECK:\n→ Container Operations Batch (29 cards)\n  Topics: Container registries, container instances, networking, scaling\n\n🧪 HANDS-ON LAB:\n→ Whizlabs: Deploy App Service Apps\n  - Create App Service Plan (Windows)\n  - Deploy .NET Framework app\n  - Create 2nd Plan (Linux)\n  - Deploy Node.js app\n  - Configure authentication\n  - Set up deployment slots\n  Duration: 1.5-2 hours\n\n📋 TUTORIAL DOJO:\n→ App Service scenario questions (15-20 Q)\n\n⏱️ Schedule:\n- 6-7 AM: Anki Container Operations (25-30 cards)\n- 7-8 AM: Tutorial Dojo (10-15 questions)\n- 8-9 AM: Break\n- 9-11 AM: Whizlabs App Service Lab\n- 11-12 PM: Lab review + OS constraint validation\n\n🎯 Goal: Hands-on experience with .NET Framework (Windows only)\n💡 Key: Understand tier/OS interaction in real portal\n\n✅ Take screenshot: Both apps running with correct OS\n\n📌 Lab prerequisite: Completed App Service Deep Dive deck
+LOCATION:Azure Portal - Hands On
+CATEGORIES:AZ-104,Week3,Anki,Lab,AppService
+UID:az104-w3-thu@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251212T060000
+DTEND:20251212T120000
+SUMMARY:🎴 WEEK 3 FRI: Container Security (5 cards) + Synthesis
+DESCRIPTION:Friday - Containers & Synthesis\n\n📚 ANKI DECK:\n→ Container Security Batch (5 cards)\n  Topics: Threat detection, policy enforcement\n\n📋 TUTORIAL DOJO:\n→ App Service set continued (15-20 Q)\n\n⏱️ Schedule:\n- 6-7 AM: Anki Container Security (5 cards)\n- 7-8 AM: Tutorial Dojo (15-20 questions)\n- 8-9 AM: Break\n- 9-11 AM: Week 3 synthesis & weak area analysis\n- 11-12 PM: Create App Service decision flowchart\n\n🎯 Goal: 80%+ on Tutorial Dojo questions\n💡 Key: By now, OS constraints should be automatic\n\n📊 Prep for Week 3 Sunday exam: App Service + Container mini-quiz (50Q)\n\n💡 If struggling with OS constraints: Extra 30-min Anki review Friday evening
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week3,Anki,Practice,Containers
+UID:az104-w3-fri@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251215T060000
+DTEND:20251215T120000
+SUMMARY:📊 WEEK 3 SUN: Whizlabs Mini-Exam (50Q) + Gap Analysis
+DESCRIPTION:Sunday - Exam & Review\n\n📝 WHIZLABS MINI-EXAM:\n→ 50 questions, 1 hour\n→ Topics: App Service, Containers, Runtime constraints\n→ Goal: 75%+ (37/50 correct)\n\n📚 REFERENCE DECKS (For Review):\n→ App Service Deep Dive (17 cards)\n→ Container Operations (29 cards)\n→ Container Security (5 cards)\n\n⏱️ Schedule:\n- 6-7 AM: Whizlabs mini-exam (50Q, 1 hr)\n- 7-10 AM: Review incorrect answers; record score\n- 10-11 AM: Return to weak Anki cards\n- 11-12 PM: Gap analysis for Week 4\n\n📊 Track:\n- Score: ___/50\n- % Correct: ___%\n- Weak areas: [List for Week 4 focus]\n- Exam traps: [Note any patterns]\n\n🎯 Target: 75%+ on Container/App Service questions\n\n💡 If OS constraint questions still weak: Deep dive ROADMAP mnemonic next week
+LOCATION:Home - Exam Simulation
+CATEGORIES:AZ-104,Week3,Exam,Review
+UID:az104-w3-sun@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251218T060000
+DTEND:20251218T120000
+SUMMARY:🎴 WEEK 4 MON: Storage Replication & DR (52 cards) P1
+DESCRIPTION:Monday - Storage Deep Dive Part 1\n\n📚 ANKI DECK:\n→ Storage Replication & DR Batch (52 cards)\n  Topics: LRS, ZRS, GRS, RA-GRS, GZRS patterns; RTO/RPO; Failover strategies\n\n⏱️ Schedule:\n- 6-7 AM: Anki Storage Replication (50 cards)\n- 7-8 AM: Continue (50 more cards if available)\n- 8-9 AM: Break + breakfast\n- 9-11 AM: Media Hub Storage section (visual diagrams)\n- 11-12 PM: Create redundancy decision tree\n\n🎯 Goal: Understand GRS (regions), ZRS (zone), GZRS (both)\n💡 Key Distinction: GRS = 2 regions, primary+secondary; GZRS = primary zone + secondary region\n\n📌 Heavy deck (52 cards): Spread across 2 days if needed\n\n🚨 CRITICAL: Week 4 is storage deep dive. Spend time here!\n\nNo lab this day. Theory foundation for Thursday lab.
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week4,Anki,Storage
+UID:az104-w4-mon@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251219T060000
+DTEND:20251219T120000
+SUMMARY:🎴 WEEK 4 TUE: Storage Endpoints & Encryption (20 cards) P2
+DESCRIPTION:Tuesday - Storage Security Foundations\n\n📚 ANKI DECK:\n→ Storage Endpoints & Encryption Batch (20 cards)\n  Topics: Private endpoints, firewall rules, service endpoints, encryption at rest/in transit\n\n⏱️ Schedule:\n- 6-7 AM: Anki Storage Endpoints (20 cards)\n- 7-8 AM: Media Hub Storage security section\n- 8-9 AM: Break + breakfast\n- 9-11 AM: Continue Media Hub reference\n- 11-12 PM: Security posture notes (private endpoints vs service endpoints)\n\n🎯 Goal: Understand private endpoint architecture\n💡 Key: Private endpoint = private IP; firewall = IP-based; service endpoint = subnet-based\n\n📌 Foundation for Week 5 security deep dive\n\nNo lab this day. Preparation for storage lab Thursday.
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week4,Anki,Storage
+UID:az104-w4-tue@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251221T060000
+DTEND:20251221T120000
+SUMMARY:🎴 WEEK 4 THU: Storage Performance & Lifecycle (20 cards) + Lab
+DESCRIPTION:Thursday - Storage Operations & Hands-On Lab\n\n📚 ANKI DECK:\n→ Storage Performance & Lifecycle Batch (20 cards)\n  Topics: Blob tiers (Hot/Cool/Archive), lifecycle policies, tier transitions, cost optimization\n\n🧪 HANDS-ON LAB:\n→ Whizlabs: Storage Redundancy Lab\n  - Create LRS storage account\n  - Create GRS storage account\n  - Configure private endpoints\n  - Set firewall rules\n  - Test failover (if GRS)\n  - Verify replication\n  Duration: 1.5-2 hours\n\n📋 TUTORIAL DOJO:\n→ Storage scenario questions (15-20 Q)\n\n⏱️ Schedule:\n- 6-7 AM: Anki Storage Performance (20 cards)\n- 7-8 AM: Tutorial Dojo (10-15 questions)\n- 8-9 AM: Break\n- 9-11 AM: Whizlabs Storage Lab\n- 11-12 PM: Lab review & replication validation\n\n🎯 Goal: Hands-on understanding of GRS failover\n💡 Key: See replication in action (LRS stays in 1 region; GRS has secondary)\n\n✅ Completion: Both accounts with correct replication confirmed\n\n📌 Lab validation: Critical for exam scenarios\n\n⚠️ HOLIDAY NOTE: Week 4 ends just before holidays. Push hard this week!\n\nNo off day this week - Week 4 is critical storage foundation.
+LOCATION:Azure Portal - Hands On
+CATEGORIES:AZ-104,Week4,Anki,Lab,Storage
+UID:az104-w4-thu@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251222T060000
+DTEND:20251222T120000
+SUMMARY:📊 WEEK 4 SUN: Whizlabs FULL EXAM (150Q, 3hrs) + CHECKPOINT
+DESCRIPTION:Sunday - FULL PRACTICE EXAM & MID-PROGRAM CHECKPOINT\n\n📝 WHIZLABS FULL-LENGTH EXAM:\n→ 150-200 questions\n→ 3 hours time limit\n→ Topics: Cumulative (Weeks 1-4: Foundations, Compute, App Service, Storage)\n→ Goal: 70%+ (105/150 correct)\n\n📚 REFERENCE DECKS (For Review):\n→ Golden Rules (57 cards) - foundations\n→ VMSS Deep Dive (12 cards) - compute\n→ App Service Deep Dive (17 cards) - deployment\n→ Storage Replication (52 cards) - storage P1\n→ Storage Endpoints (20 cards) - storage P2\n→ Storage Performance (20 cards) - storage P3\n\n⏱️ Schedule:\n- 6-9 AM: Whizlabs full exam (150Q, 3 hours)\n- 9-11 AM: Review incorrect answers; record detailed score\n- 11-12 PM: Gap analysis for Weeks 5-8\n\n📊 CHECKPOINT DECISION:\n- Score >70%: Continue per plan\n- Score 65-70%: OK, adjust Week 5\n- Score <65%: Extend Week 4, compress later weeks\n\n📈 Track (in DAILY_TRACKER.md):\n- Score: ___/150\n- % Correct: ___%\n- Lowest-score domain: [List]\n- Highest-score domain: [List]\n- Plan for next week: [Adjustments]\n\n🎯 TARGET: 70%+ (Ready for holiday week)\n\n💡 If struggling: Use holiday break to review weak areas\n\n⚠️ HOLIDAY WEEK AHEAD: Adjust timing as needed for family commitments\n\n📌 This is your mid-program reality check. Use results to calibrate final 4 weeks!\n\nGreat work reaching Week 4! You're halfway there! 🏁\nLet the results guide your holiday week prep. 💪
+LOCATION:Home - Full Exam Simulation
+CATEGORIES:AZ-104,Week4,FullExam,Checkpoint
+UID:az104-w4-sun@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251225T060000
+DTEND:20251225T120000
+SUMMARY:🎴 WEEK 5 MON: Storage Security & Auth (20 cards) HOLIDAY
+DESCRIPTION:Monday - Storage Security Focus (Holiday Flexible)\n\n📚 ANKI DECK:\n→ Storage Security & Authentication Batch (20 cards)\n  Topics: Shared Key, SAS tokens, Managed Identity patterns, access control\n\n⏱️ Schedule:\n- 6-7 AM: Anki Storage Security (20 cards)\n- 7-8 AM: Media Hub reference (optional)\n- 8-9 AM: Break\n- 9-11 AM: Light study or family time (FLEXIBLE)\n- 11-12 PM: Synthesis notes\n\n🎯 Goal: Understand SAS (temporary) vs Shared Key (permanent)\n💡 Key: Exam loves \"which auth method fails in this scenario?\"\n\n⚠️ HOLIDAY WEEK: If family commitments override, move to Dec 27\nFlexibility is OK this week. Consistency matters more than perfection.\n\nBalance holiday + exam prep 🎄\n\n📌 Week 5 has 3 storage batches (71 cards total). Spread across week.\n\nNo lab this day (holiday).
+LOCATION:Home - Flexible Study
+CATEGORIES:AZ-104,Week5,Anki,Storage,Holiday
+UID:az104-w5-mon-holiday@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251226T060000
+DTEND:20251226T120000
+SUMMARY:🎴 WEEK 5 TUE: Storage Performance & Lifecycle (20 cards) HOLIDAY
+DESCRIPTION:Tuesday - Storage Cost Optimization (Holiday Flexible)\n\n📚 ANKI DECK:\n→ Storage Performance & Lifecycle Batch (20 cards)\n  Topics: Blob tiers (Hot/Cool/Archive), lifecycle policies, tier transitions\n\n⏱️ Schedule:\n- 6-7 AM: Anki Storage Performance (20 cards)\n- 7-8 AM: Optional Media Hub\n- 8 AM-12 PM: Family time or light study (FLEXIBLE)\n\n🎯 Goal: Archive = cheapest but slow; Hot = expensive but fast\n💡 Key: Lifecycle policies automate tier transitions\n\n⚠️ HOLIDAY FLEXIBILITY: If commitments are heavy, compress to 30-min study\nJust keep some daily touchpoint.\n\n📌 Two storage batches down (40 cards). One to go (31 cards).\n\nNo lab this day.
+LOCATION:Home/Holiday Location\CATEGORIES:AZ-104,Week5,Anki,Storage,Holiday
+UID:az104-w5-tue-holiday@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251228T060000
+DTEND:20251228T120000
+SUMMARY:🎴 WEEK 5 THU: Storage Identity & Traps (31 cards) + Lab HOLIDAY
+DESCRIPTION:Thursday - Storage Security Deep Dive + Lab (Holiday Flexible)\n\n📚 ANKI DECK:\n→ Storage Identity & Security Traps Batch (31 cards)\n  Topics: Access control patterns, RBAC, exam gotchas, compliance scenarios\n\n🧪 HANDS-ON LAB:\n→ Whizlabs: Storage Security Lab\n  - Configure managed identity\n  - Create SAS token with constraints\n  - Set up shared key authentication\n  - Test access patterns (success/failure)\n  - Configure RBAC\n  - Enable soft delete & versioning\n  Duration: 1.5-2 hours\n\n📋 TUTORIAL DOJO:\n→ Storage security questions (15-20 Q)\n\n⏱️ Schedule:\n- 6-7 AM: Anki Storage Identity (25-30 cards)\n- 7-8 AM: Tutorial Dojo (10-15 questions)\n- 8-9 AM: Break\n- 9-11 AM: Whizlabs Storage Security Lab (or move to Dec 29 if needed)\n- 11-12 PM: Lab review + access control validation\n\n🎯 Goal: Understand managed identity > SAS > shared key hierarchy\n💡 Key: Exam scenario: \"Choose most secure auth method\"\n\n⚠️ HOLIDAY TIMING: If lab conflicts with holiday plans, move to Dec 29\nPriority: Maintain momentum without sacrificing family time.\n\n✅ Lab completion: Successfully set managed identity, SAS, RBAC\n\n📌 Three storage security batches complete (71 cards total)\n\nThis finishes Week 5 storage focus!
+LOCATION:Azure Portal - Hands On (or flexible)\CATEGORIES:AZ-104,Week5,Anki,Lab,Storage,Holiday
+UID:az104-w5-thu-lab-holiday@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20251229T060000
+DTEND:20251229T120000
+SUMMARY:📊 WEEK 5 SUN: Whizlabs FULL EXAM (150Q) HOLIDAY
+DESCRIPTION:Sunday - FULL PRACTICE EXAM (Holiday Flexible)\n\n📝 WHIZLABS FULL-LENGTH EXAM:\n→ 150-200 questions\n→ 3 hours time limit\n→ Topics: Cumulative (Weeks 1-5: All prior + Storage security/identity)\n→ Goal: 75%+ (112/150 correct)\n\n📚 REFERENCE DECKS (For Review):\n→ Storage Security (20 cards)\n→ Storage Performance (20 cards)\n→ Storage Identity (31 cards)\n→ All prior batches (from Weeks 1-4)\n\n⏱️ Schedule:\n- 6-9 AM: Whizlabs full exam (150Q, 3 hours)\n- 9-11 AM: Review incorrect answers; record score\n- 11-12 PM: Gap analysis; identify weak domains\n\n📊 TRACK:\n- Score: ___/150\n- % Correct: ___%\n- Weak domains: [List]\n- Trend vs Week 4: Up/Down/Flat?\n\n🎯 TARGET: 75%+ (Strong progress post-holiday)\n\n⚠️ HOLIDAY NOTE: If family plans prevent exam, move to Dec 30 or Jan 1\nFlexibility OK; don't skip.\n\n💡 If score dropped from Week 4: Holiday break may have caused retention loss\nPlan intense review week if needed.\n\n📈 Trend analysis: Aim for +5-10% improvement from Week 4\n\nGreat work managing holiday + exam prep balance! 🎄💪\n\n(Use Dec 30-Jan 1 for light review if needed)\n\nNew Year, New Confidence! 🎆\nYou're entering final stretch (Weeks 6-8). Keep pushing!\nLOCATION:Home/Holiday Location\CATEGORIES:AZ-104,Week5,FullExam,Holiday
+UID:az104-w5-sun-exam-holiday@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260101T060000
+DTEND:20260101T120000
+SUMMARY:🎴 WEEK 6 MON: Container & Network Scaling (20 cards) NEW YEAR
+DESCRIPTION:Monday - Networking Foundations (New Year Flexible)\n\n📚 ANKI DECK:\n→ Container & Network Scaling Batch (20 cards)\n  Topics: Auto-scaling policies, networking for scaled deployments, load balancing basics\n\n⏱️ Schedule:\n- 6-7 AM: Anki Container/Network Scaling (20 cards)\n- 7-8 AM: Media Hub Networking section\n- 8-9 AM: Break\n- 9-11 AM: New Year planning or light study\n- 11-12 PM: Synthesis notes (scaling strategies)\n\n🎯 Goal: Understand auto-scaling triggers (CPU, memory, custom metrics)\n💡 Key: Scale sets vs. App Service scaling (different patterns)\n\n⚠️ NEW YEAR FLEXIBILITY: If celebrations interfere, move to Jan 2\nJust keep momentum.\n\n📌 Week 6 has 3 networking/security batches (50 cards total)\n\nNo lab this day.
+LOCATION:Home - Flexible Study\CATEGORIES:AZ-104,Week6,Anki,Networking,NewYear
+UID:az104-w6-mon-ny@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260102T060000
+DTEND:20260102T120000
+SUMMARY:🎴 WEEK 6 TUE: Container Security (5 cards) + SSL Certs (20 cards)
+DESCRIPTION:Tuesday - Security & Advanced Networking\n\n📚 ANKI DECKS:\n→ Container Security Batch (5 cards)\n  Topics: Threat detection, policy enforcement\n\n→ SSL Certificates & Advanced Networking Batch (20 cards)\n  Topics: SSL/TLS, Application Gateway (Layer 7), advanced routing patterns\n\n⏱️ Schedule:\n- 6-7 AM: Anki Container Security (5 cards)\n- 7-8 AM: Anki SSL/Advanced Networking (20 cards)\n- 8-9 AM: Break\n- 9-11 AM: Media Hub SSL section\n- 11-12 PM: Layer 4 vs Layer 7 comparison notes\n\n🎯 Goal: Understand Layer 4 (Load Balancer) vs Layer 7 (App Gateway)\n💡 Key: LB = session persistence; App Gateway = path-based routing\n\n📌 Security foundation for Thursday lab\n\nNo lab this day. Preparation.
+LOCATION:Home - Focused Study\CATEGORIES:AZ-104,Week6,Anki,Networking,Security
+UID:az104-w6-tue@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260104T060000
+DTEND:20260104T120000
+SUMMARY:🎴 WEEK 6 THU: Critical Priorities (5 cards) + Networking Lab
+DESCRIPTION:Thursday - Critical Exams Traps + Hands-On Lab\n\n📚 ANKI DECK:\n→ Critical Priorities Batch (5 cards)\n  Topics: Exam-critical governance, policy enforcement, must-knows\n\n🧪 HANDS-ON LAB:\n→ Whizlabs: Azure Load Balancer Lab\n  - Create VMs in availability set\n  - Configure Azure Load Balancer (Layer 4)\n  - Set up health probes\n  - Configure session persistence\n  - Test failover & traffic distribution\n  - Compare with Application Gateway (Layer 7)\n  Duration: 1.5-2 hours\n\n📋 TUTORIAL DOJO:\n→ Networking scenario questions (15-20 Q)\n\n⏱️ Schedule:\n- 6-7 AM: Anki Critical Priorities (5 cards)\n- 7-8 AM: Tutorial Dojo (10-15 questions)\n- 8-9 AM: Break\n- 9-11 AM: Whizlabs Networking Lab\n- 11-12 PM: Lab review + LB vs App Gateway comparison\n\n🎯 Goal: Hands-on understanding of Layer 4 load balancing\n💡 Key: Session persistence (client affinity) use cases\n\n✅ Completion: LB distributing traffic correctly across VMs\n\n📌 Final hands-on lab! Only 1 more after this.\n\nYou're in the home stretch! 💪
+LOCATION:Azure Portal - Hands On\CATEGORIES:AZ-104,Week6,Anki,Lab,Networking
+UID:az104-w6-thu@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260108T060000
+DTEND:20260108T120000
+SUMMARY:📊 WEEK 6 SUN: Whizlabs FULL EXAM (150Q) + Trend Check
+DESCRIPTION:Sunday - FULL PRACTICE EXAM + SCORE TREND ANALYSIS\n\n📝 WHIZLABS FULL-LENGTH EXAM:\n→ 150-200 questions\n→ 3 hours time limit\n→ Topics: Cumulative (Weeks 1-6: All + Networking)\n→ Goal: 80%+ (120/150 correct)\n\n📚 REFERENCE DECKS (For Review):\n→ Container & Network Scaling (20 cards)\n→ SSL & Advanced Networking (20 cards)\n→ Container Security (5 cards)\n→ All prior batches\n\n⏱️ Schedule:\n- 6-9 AM: Whizlabs full exam (150Q, 3 hours)\n- 9-11 AM: Review incorrect answers; record score\n- 11-12 PM: Trend analysis + final 2-week plan\n\n📊 SCORE TREND ANALYSIS:\n- Week 4 exam score: ___\n- Week 5 exam score: ___\n- Week 6 exam score: ___ (TODAY)\n- Trend: +% or -%?\n- On track for 85%+ by Week 8?\n\n🎯 TARGET: 80%+ (120/150 correct)\n\n💡 Score Trajectory:\n- 70%+ Week 4 + 75%+ Week 5 + 80%+ Week 6 = Ready for final sprint\n- If any <70%: Adjust Week 7-8 plan\n\n📈 Last 2 weeks focus: Backup/DR + Final comprehensive review\n\nYou're 75% through! Final push ahead! 🏁\n\nWeek 7-8 will be intensive review. Get rest between exams.\nLOCATION:Home - Full Exam Simulation\CATEGORIES:AZ-104,Week6,FullExam,TrendCheck
+UID:az104-w6-sun@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260115T060000
+DTEND:20260115T235959
+SUMMARY:🏁 EXAM DAY (Tentative - Adjust Per Readiness)
+DESCRIPTION:Tentative AZ-104 Exam Date\n\n⚠️ ADJUST BASED ON YOUR READINESS\n\nFinal Readiness Checklist (Week 8, Friday):\n✅ Completed all 380 Anki cards (3+ times)?\n✅ 85%+ on Whizlabs exams (Weeks 4-8)?\n✅ Completed all Tutorial Dojo questions?\n✅ Can name weak areas & explain them?\n✅ Confident on Golden Rules framework?\n✅ Can draw VMSS, App Service, Storage diagrams from memory?\n✅ Know all RTO/RPO trade-offs?\n✅ Know App Service OS constraints cold?\n✅ Understand Storage redundancy options?\n✅ Master networking layer concepts?\n\nIf ALL YES: Ready to exam!\nIf ANY NO: Extend by 3-5 days, focus on that gap\n\n---\n\nPre-Exam Day (Night Before):\n✅ Light Anki review (15 min weak cards only)\n✅ No heavy study after 6 PM\n✅ Early bedtime (10 PM)\n✅ Lay out ID, exam confirmation email\n✅ Know test center location + route\n\nExam Day Morning:\n✅ 6 AM wake-up\n✅ Light breakfast (toast, fruit, coffee - nothing heavy)\n✅ Hydration (water, not soda)\n✅ Shower, calm mindset\n✅ Arrive 15 minutes early\n✅ Leave phone in car\n✅ Deep breaths in waiting area\n\nDuring Exam:\n✅ Read EVERY question carefully\n✅ Don't rush (3 hours = 1 min per question = 50 min buffer)\n✅ Mark uncertain answers for review\n✅ Time management: Don't linger on one Q\n✅ Trust your preparation\n✅ Stay calm if questions seem hard\n✅ Use all 3 hours; review every answer\n\nPost-Exam:\n✅ Take a screenshot of your score (portal shows immediately)\n✅ Celebrate! You're done! 🎉\n✅ Rest; don't obsess over individual questions\n✅ Results come via email within 24 hours\n\n---\n\nTARGET SCORE: 270+ out of 300 (90%+)\n\nYou've put in 150+ hours of study. You've got this!\n\nLet's GO! 💪🏆\n\nPost-exam: https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/\n(View your badge here once certified!)\nLOCATION:Testing Center\CATEGORIES:AZ-104,Exam,Final
+UID:az104-exam-day-jan15@azureexam.local
+DTSTAMP:20251126T000000Z
+END:VEVENT
+END:VCALENDAR
+
+BEGIN:VEVENT
+DTSTART:20260112T060000
+DTEND:20260112T120000
+SUMMARY:🎴 WEEK 7 MON: Resilience & DR Deep Dive (20 cards)
+DESCRIPTION:Monday - Disaster Recovery & Resilience Deep Dive\n\n📚 ANKI DECK:\n→ Resilience & Disaster Recovery Deep Dive Batch (20 cards)\n  Topics: VABRF blueprint (Vault-Access-Backup-Restore-Failover), RSV regional boundaries, Azure Backup vs ASR, ransomware recovery paths, app-consistent recovery points, VSS technology, test failover validation, commit/reprotect post-failover, monitoring replication health with Azure Monitor alerts, Action Groups automation, Azure Policy for resilience architecture\n\n🎧 REFERENCE:\n→ Resilience & Disaster Recovery Deep Dive Transcript\n  Full operational context on backup/recovery decision frameworks\n\n⏱️ Schedule:\n- 6-7 AM: Anki Resilience & DR (50 cards if available, else 20 core)\n- 7-8 AM: Continue Anki deep focus\n- 8-9 AM: Break + breakfast\n- 9-11 AM: Reference transcript for VABRF sequence understanding\n- 11-12 PM: Create recovery decision matrix (local vs regional)\n\n🎯 Goal: Master VABRF mnemonic; understand when to use Backup vs ASR\n💡 Key: Ransomware = Restore (local). Regional failure = Failover (ASR)\n\n📌 VABRF is high-probability exam content! Memorize the sequence.\n\nYou're in final 2 weeks! Focus on operational patterns.\nLOCATION:Home - Focused Study\CATEGORIES:AZ-104,Week7,Anki,DeepDive,Resilience,DR
+UID:az104-w7-mon@azureexam.local
+DTSTAMP:20251226T000000Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20260113T060000
+DTEND:20260113T120000
+SUMMARY:🎴 WEEK 7 TUE: Hybrid Azure Mastery Deep Dive (20 cards)
+DESCRIPTION:Tuesday - Hybrid & Multi-Pillar Architecture Deep Dive\n\n📚 ANKI DECK:\n→ Hybrid Azure Mastery Deep Dive Batch (20 cards)\n  Topics: 5-pillar integration (Identity→Storage→Compute→Networking→Monitoring), RBAC vs Entra Domain Services identity model, Azure Files double-permission layer (RBAC + NTFS + Kerberos), SMB port 445 hybrid tunneling (VPN/ExpressRoute/SAS tokens), Azure Policy governance vs RBAC, PIM just-in-time privilege elevation, App Service plan scaling architecture, App Service Code vs Docker Container deployment, ACI no-scaling limitation, Bicep vs Terraform IaC performance benchmarks, three-tier VNet subnet design (web/app/db), VNet peering vs VPN gateway, internal load balancer vs Application Gateway, Network Watcher IP Flow Verify and Connection Troubleshoot, Azure Monitor architecture (KQL), metric/log search/activity log alert types, hybrid Azure Monitor Agent deployment, foundational resource tagging + Azure Policy inventory governance\n\n🎧 REFERENCE:\n→ Hybrid Azure Mastery Deep Dive Transcript\n  Full context on how 5 pillars integrate in real operations\n\n⏱️ Schedule:\n- 6-7 AM: Anki Hybrid Mastery (50 cards if available, else 20 core)\n- 7-8 AM: Continue Anki (emphasize mnemonics)\n- 8-9 AM: Break\n- 9-11 AM: Reference transcript; understand pillar dependencies\n- 11-12 PM: Create 5-pillar flowchart (Identity→Storage→Compute→Network→Monitor)\n\n🎯 Goal: Understand how 5 pillars work together; operational dependencies\n💡 Key: Mnemonics from Deep Dive are HIGH-PROBABILITY exam material\n   - 'RBAC opens door; Entra DS decides who touches files'\n   - 'Scale the plan, not the app; engine lifts all cars'\n   - 'ACI Always Create Instance' (no in-place scaling)\n   - 'No tag, no resource' (Azure Policy tagging enforcement)\n\n📌 5-pillar integration = test taker differentiator. Master this.\n\nFinal week of new material! Then comprehensive review.\nLOCATION:Home - Focused Study\CATEGORIES:AZ-104,Week7,Anki,DeepDive,Hybrid,Integration
+UID:az104-w7-tue@azureexam.local
+DTSTAMP:20251226T000000Z
+END:VEVENT
