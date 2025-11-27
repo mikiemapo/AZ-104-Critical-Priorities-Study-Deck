@@ -25,7 +25,7 @@
 
 ---
 
-## 📊 Current Deck Status (366 Total Cards)
+## 📊 Current Deck Status (351 Total Cards)
 
 - **Critical Priorities Batch**: 5 essential configuration scenarios
 - **RTO/RPO Storage Batch**: 3 disaster recovery fundamentals
@@ -43,10 +43,9 @@
 - **App Service Security Batch**: 4 questions (VNet Integration, SQL connectivity)
 - **Container Scaling Batch**: 4 questions (Traffic Manager, ACI)
 - **SSL Certificates Batch**: 3 questions (Wildcard certs, SSL Binding)
-- **Golden Rule Batch**: 28 questions (Azure best practices and decision frameworks)
-- **Golden Rule Enriched Part 1**: 8 scenario questions (Tutorial Dojo grounded)
-- **Golden Rule Enriched Part 2**: 8 scenario questions (Tutorial Dojo grounded)
-- **Last Updated**: November 27, 2025
+- **Golden Rule Enriched Part 1**: 22 scenario-driven questions (App Service, Storage, Redundancy, Blob Tiers)
+- **Golden Rule Enriched Part 2**: 35 scenario-driven questions (Redundancy, Disks, Networking, Backup, DR, Performance)
+- **Last Updated**: November 26, 2025
 
 ## 📥 Download
 
