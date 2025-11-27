@@ -25,7 +25,7 @@
 
 ---
 
-## 📊 Current Deck Status (351 Total Cards)
+## 📊 Current Deck Status (363 Total Cards)
 
 - **Critical Priorities Batch**: 5 essential configuration scenarios
 - **RTO/RPO Storage Batch**: 3 disaster recovery fundamentals
@@ -45,6 +45,7 @@
 - **SSL Certificates Batch**: 3 questions (Wildcard certs, SSL Binding)
 - **Golden Rule Enriched Part 1**: 22 scenario-driven questions (App Service, Storage, Redundancy, Blob Tiers)
 - **Golden Rule Enriched Part 2**: 35 scenario-driven questions (Redundancy, Disks, Networking, Backup, DR, Performance)
+- **VMSS Deep Dive Batch**: 12 scenario-driven questions (Orchestration modes, Update/Fault Domains, Availability Zones, Load Balancing, IaaS operational burden)
 - **Last Updated**: November 26, 2025
 
 ## 📥 Download
