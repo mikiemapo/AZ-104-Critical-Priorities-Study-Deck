@@ -25,7 +25,7 @@
 
 ---
 
-## 📊 Current Deck Status (424 Total Cards)
+## 📊 Current Deck Status (445 Total Cards)
 
 - **Critical Priorities Batch**: 5 essential configuration scenarios
 - **RTO/RPO Storage Batch**: 3 disaster recovery fundamentals
@@ -49,6 +49,7 @@
 - **App Service Deep Dive Batch**: 17 scenario-driven questions (OS constraints, Runtime choices, Deployment methods, Resource contention, VNet integration, Security pipeline, Bicep IaC, Exam traps)
 - **Resilience & Disaster Recovery Deep Dive Batch**: 20 scenario-driven questions (VABRF blueprint, RSV regional boundaries, RBAC Backup Contributor, Azure Backup vs ASR distinction, ransomware vs regional recovery, app-consistent recovery points, VSS technology, test failover validation, commit/reprotect sequence, action groups automation, monitoring replication health, Azure Policy resilience architecture)
 - **Hybrid Azure Mastery Deep Dive Batch**: 20 scenario-driven questions (RBAC vs Entra DS identity model, Azure Files double-permission layer, SMB port 445 hybrid tunneling, Kerberos authentication for NTFS, Azure Policy governance enforcement, PIM just-in-time privilege, App Service plan scaling architecture, Docker Container runtime ownership, ACI no-scaling limitation, Bicep IaC performance benchmarks, three-tier VNet subnet design, VNet peering vs VPN gateway, internal load balancer vs Application Gateway, WAF tier requirement, Network Watcher IP Flow Verify and Connection Troubleshoot, Azure Monitor KQL, metric/log search/activity log alerts, hybrid Azure Monitor Agent deployment, five-pillar architectural integration, resource tagging + Policy inventory foundation)
+- **Storage Identity Resilience Untangled Deep Dive Batch**: 20 scenario-driven questions (Azure Files 3-layer access: network/RBAC/NTFS, Private Endpoints bypassing ISP port blocks, Entra ID vs RBAC vs Azure Policy governance distinctions, Conditional Access MFA >99.9% attack blocking, PIM just-in-time privilege auto-expiration, GRS vs ZRS cost/resilience trade-offs, Recovery Services Vault vs Azure Backup Vault architectures, ASR planned/unplanned/test failover sequencing, Cost Management + Budgets for billing separation beyond tags)
 - **Last Updated**: November 27, 2025
 
 ## 📥 Download
