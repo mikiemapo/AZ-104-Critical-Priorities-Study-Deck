@@ -101,16 +101,16 @@ with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
             
             if 'Golden Rule' in batch:
                 # Golden Rules segment
-                subdeck_name = f"{main_deck_name}::Golden Rules::{clean_batch}"
+                subdeck_name = f"{main_deck_name}::Golden Rules Segments::{clean_batch}"
             elif 'Deep Dive' in batch:
                 # Deep Dives segment
-                subdeck_name = f"{main_deck_name}::Deep Dives::{clean_batch}"
+                subdeck_name = f"{main_deck_name}::Deep Dive Segments::{clean_batch}"
             elif 'Performance Review' in batch:
                 # Performance Review segment
-                subdeck_name = f"{main_deck_name}::Performance Review::{clean_batch}"
+                subdeck_name = f"{main_deck_name}::Performance Review Segments::{clean_batch}"
             else:
                 # Study Guide Cards segment (everything else)
-                subdeck_name = f"{main_deck_name}::Study Guide Cards::{clean_batch}"
+                subdeck_name = f"{main_deck_name}::Study Guide Segments::{clean_batch}"
             
             # Generate CONSISTENT deck ID from batch name hash (same batch = same ID always)
             import hashlib
