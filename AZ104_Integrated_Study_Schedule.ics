@@ -1,0 +1,608 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AZ-104 Integrated Study System//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AZ-104 Complete Study System (Tutorials Dojo + Anki + Whizlabs Labs)
+X-WR-TIMEZONE:America/Los_Angeles
+X-WR-CALDESC:Comprehensive AZ-104 prep integrating Tutorials Dojo section quizzes with spaced repetition, Anki personalized flashcards, and Whizlabs CLI-intensive labs
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:STANDARD
+DTSTART:20251102T020000
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20250309T020000
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+END:VTIMEZONE
+
+<!-- ============================================ -->
+<!-- WEEK 1 (Nov 30 - Dec 6): Storage Focus     -->
+<!-- ============================================ -->
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251202T090000
+DTEND;TZID=America/Los_Angeles:20251202T110000
+SUMMARY:📚 Tutorials Dojo: Storage Section Quiz (FRESH)
+DESCRIPTION:Section-Based: Implement and Manage Storage (AZ-104)\n\n✅ STATUS: Next recommended quiz (weakest untested domain: 48.33%)\n\n📋 COVERS:\n• Storage Accounts & Types\n• Blob Storage (tiers, lifecycle)\n• Azure Files & File Sync\n• Storage Security (SAS, encryption)\n• Backup & Recovery\n\n🎯 TARGET: 70%+ to pass\n\n⚡ AFTER QUIZ:\n1. Extract weak spots\n2. Generate Anki flashcards\n3. Schedule retake (7 days later)
+LOCATION:Online - Tutorials Dojo
+CATEGORIES:AZ-104,Tutorials-Dojo,Storage,Fresh-Quiz
+UID:td-storage-fresh-20251202@azureexam.local
+DTSTAMP:20251129T000000Z
+STATUS:CONFIRMED
+PRIORITY:1
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251130T140000
+DTEND;TZID=America/Los_Angeles:20251130T153000
+SUMMARY:💡 Anki: Review Identities Weak Spots (Day 1)
+DESCRIPTION:Personalized flashcards from Nov 29 Identities quiz\n\n🎴 DECK: Identities - Spaced Repetition\n\n📌 FOCUS AREAS:\n• Azure Policy inheritance (resources retain region, inherit target RG policies)\n• RBAC role assignments & scopes\n• B2B guest invites & redemption\n• SSPR configuration & requirements\n• Group licensing (direct vs inherited)\n\n🔄 SCHEDULE: Daily review for 3 days, then spacing increases
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Identities,Spaced-Repetition
+UID:anki-identities-day1-20251130@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251201T090000
+DTEND;TZID=America/Los_Angeles:20251201T113000
+SUMMARY:🔧 Whizlabs Lab: Storage Account CLI Operations
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Create storage accounts via Azure CLI\n• Configure blob containers & access tiers\n• Generate SAS tokens with expiration\n• Configure storage firewalls & network rules\n• Enable diagnostic logging\n\n📝 COMMANDS TO MASTER:\naz storage account create\naz storage container create\naz storage blob upload\naz storage account generate-sas\naz storage account update (network rules)\n\n✅ GOAL: Build CLI muscle memory for storage operations
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Storage,CLI
+UID:whizlabs-storage-cli-20251201@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251201T140000
+DTEND;TZID=America/Los_Angeles:20251201T153000
+SUMMARY:💡 Anki: Review Identities Weak Spots (Day 2)
+DESCRIPTION:Personalized flashcards from Nov 29 Identities quiz\n\n🎴 DECK: Identities - Spaced Repetition\n\n🔄 Day 2 of daily review before spacing
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Identities,Spaced-Repetition
+UID:anki-identities-day2-20251201@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251202T090000
+DTEND;TZID=America/Los_Angeles:20251202T113000
+SUMMARY:🔧 Whizlabs Lab: Azure Files & File Sync CLI
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Create Azure File shares via CLI\n• Configure SMB/NFS protocols\n• Set up File Sync with on-prem servers\n• Configure sync groups & cloud endpoints\n• Troubleshoot sync conflicts\n\n📝 COMMANDS TO MASTER:\naz storage share create\naz storage share-rm create\naz storage file upload-batch\naz storagesync create\n\n✅ GOAL: Master hybrid storage scenarios
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Storage,CLI
+UID:whizlabs-files-cli-20251202@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251202T140000
+DTEND;TZID=America/Los_Angeles:20251202T153000
+SUMMARY:💡 Anki: Review Identities Weak Spots (Day 3)
+DESCRIPTION:Personalized flashcards from Nov 29 Identities quiz\n\n🎴 DECK: Identities - Spaced Repetition\n\n🔄 Day 3 of daily review - spacing will increase after this
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Identities,Spaced-Repetition
+UID:anki-identities-day3-20251202@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251202T160000
+DTEND;TZID=America/Los_Angeles:20251202T173000
+SUMMARY:💡 Anki: NEW - Storage Weak Spots (Day 1)
+DESCRIPTION:Personalized flashcards from Nov 30 Storage quiz\n\n🎴 DECK: Storage - Spaced Repetition\n\n📌 Generated automatically from quiz weak spots\n\n🔄 Starting daily review cycle
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Storage,Spaced-Repetition
+UID:anki-storage-day1-20251202@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251203T090000
+DTEND;TZID=America/Los_Angeles:20251203T110000
+SUMMARY:🔁 Tutorials Dojo: Identities RETAKE (Spaced Repetition)
+DESCRIPTION:Section-Based: Manage Azure Identities and Governance (AZ-104) - RETAKE\n\n📅 ORIGINAL QUIZ: Nov 29, 2025 (10/17 = 58.82%)\n⏱️ DAYS ELAPSED: 4 days (optimal spacing)\n\n✅ STATUS: READY for retake\n\n📋 FOCUS AREAS (studied via Anki):\n• Azure Policy inheritance rules ⚡\n• RBAC role assignments & scopes ⚡\n• B2B guest invites & redemption ⚡\n• SSPR configuration ⚡\n• Group licensing ⚡\n\n🎯 TARGET: 75%+ (13/17 correct)\n\n⚡ AFTER QUIZ:\n1. Compare results to Nov 29\n2. Update cumulative score\n3. Identify any remaining weak spots
+LOCATION:Online - Tutorials Dojo
+CATEGORIES:AZ-104,Tutorials-Dojo,Identities,Retake,Spaced-Repetition
+UID:td-identities-retake-20251203@azureexam.local
+DTSTAMP:20251129T000000Z
+STATUS:CONFIRMED
+PRIORITY:1
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251203T140000
+DTEND;TZID=America/Los_Angeles:20251203T153000
+SUMMARY:💡 Anki: Review Storage Weak Spots (Day 2)
+DESCRIPTION:Personalized flashcards from Nov 30 Storage quiz\n\n🎴 DECK: Storage - Spaced Repetition\n\n🔄 Day 2 of daily review
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Storage,Spaced-Repetition
+UID:anki-storage-day2-20251203@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251204T090000
+DTEND;TZID=America/Los_Angeles:20251204T113000
+SUMMARY:🔧 Whizlabs Lab: Blob Lifecycle Management CLI
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Configure blob lifecycle policies via CLI\n• Set tier transitions (Hot → Cool → Archive)\n• Create deletion rules for old blobs\n• Test policy execution\n• Monitor lifecycle actions\n\n📝 COMMANDS TO MASTER:\naz storage account management-policy create\naz storage blob set-tier\naz storage blob delete-batch\n\n✅ GOAL: Automate storage cost optimization
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Storage,CLI
+UID:whizlabs-lifecycle-cli-20251204@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251204T140000
+DTEND;TZID=America/Los_Angeles:20251204T153000
+SUMMARY:💡 Anki: Review Storage Weak Spots (Day 3)
+DESCRIPTION:Personalized flashcards from Nov 30 Storage quiz\n\n🎴 DECK: Storage - Spaced Repetition\n\n🔄 Day 3 of daily review - spacing increases after this
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Storage,Spaced-Repetition
+UID:anki-storage-day3-20251204@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251209T090000
+DTEND;TZID=America/Los_Angeles:20251209T110000
+SUMMARY:🔁 Tutorials Dojo: Storage RETAKE (Spaced Repetition)
+DESCRIPTION:Section-Based: Implement and Manage Storage (AZ-104) - RETAKE\n\n📅 ORIGINAL QUIZ: Dec 2, 2025\n⏱️ DAYS ELAPSED: 7 days (full week spacing)\n\n✅ STATUS: READY for retake\n\n🎯 TARGET: 75%+\n\n⚡ AFTER QUIZ:\n1. Compare results to Nov 30\n2. Update cumulative score\n3. Archive if mastered (75%+)
+LOCATION:Online - Tutorials Dojo
+CATEGORIES:AZ-104,Tutorials-Dojo,Storage,Retake,Spaced-Repetition
+UID:td-storage-retake-20251205@azureexam.local
+DTSTAMP:20251129T000000Z
+STATUS:CONFIRMED
+PRIORITY:1
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251206T090000
+DTEND;TZID=America/Los_Angeles:20251206T113000
+SUMMARY:🔧 Whizlabs Lab: Storage Security & Networking CLI
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Configure storage firewalls via CLI\n• Create service endpoints for VNets\n• Generate SAS tokens with IP restrictions\n• Enable Azure AD authentication\n• Configure private endpoints\n\n📝 COMMANDS TO MASTER:\naz storage account network-rule add\naz storage account update --default-action Deny\naz network vnet subnet update --service-endpoints\naz storage account private-endpoint-connection\n\n✅ GOAL: Secure storage with network isolation
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Storage,CLI,Security
+UID:whizlabs-storage-security-20251206@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251206T140000
+DTEND;TZID=America/Los_Angeles:20251206T153000
+SUMMARY:💡 Anki: Review Identities (Spaced - Day 7)
+DESCRIPTION:Personalized flashcards from Nov 29 Identities quiz\n\n🎴 DECK: Identities - Spaced Repetition\n\n🔄 Week 1 review - spacing at 7 days
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Identities,Spaced-Repetition
+UID:anki-identities-day7-20251206@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+<!-- ============================================ -->
+<!-- WEEK 2 (Dec 7-13): Compute Focus           -->
+<!-- ============================================ -->
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251209T090000
+DTEND;TZID=America/Los_Angeles:20251209T110000
+SUMMARY:📚 Tutorials Dojo: Compute Section Quiz (FRESH)
+DESCRIPTION:Section-Based: Deploy and Manage Azure Compute Resources (AZ-104)\n\n✅ STATUS: Next recommended (current score: 40.68% - lowest performing)\n\n📋 COVERS:\n• Virtual Machines (deployment, sizing, availability)\n• VM Scale Sets (VMSS)\n• Azure Container Instances (ACI)\n• Azure Container Apps\n• Availability Sets vs Zones\n• VM Extensions & Custom Script\n\n🎯 TARGET: 70%+ to pass\n\n⚡ AFTER QUIZ:\n1. Extract weak spots\n2. Generate Anki flashcards\n3. Schedule retake (Dec 10-12)
+LOCATION:Online - Tutorials Dojo
+CATEGORIES:AZ-104,Tutorials-Dojo,Compute,Fresh-Quiz
+UID:td-compute-fresh-20251207@azureexam.local
+DTSTAMP:20251129T000000Z
+STATUS:CONFIRMED
+PRIORITY:1
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251207T140000
+DTEND;TZID=America/Los_Angeles:20251207T153000
+SUMMARY:💡 Anki: Review Storage (Spaced - Day 7)
+DESCRIPTION:Personalized flashcards from Nov 30 Storage quiz\n\n🎴 DECK: Storage - Spaced Repetition\n\n🔄 Week 1 review - spacing at 7 days
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Storage,Spaced-Repetition
+UID:anki-storage-day7-20251207@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251208T090000
+DTEND;TZID=America/Los_Angeles:20251208T113000
+SUMMARY:🔧 Whizlabs Lab: VM Deployment & Management CLI
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Create VMs via Azure CLI\n• Configure VM sizes & availability zones\n• Attach managed disks\n• Configure NSG rules\n• Install VM extensions (custom script)\n\n📝 COMMANDS TO MASTER:\naz vm create\naz vm resize\naz vm disk attach\naz vm extension set\naz vm list-sizes\naz vm availability-set create\n\n✅ GOAL: Master VM lifecycle management via CLI
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Compute,CLI
+UID:whizlabs-vm-cli-20251208@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251208T140000
+DTEND;TZID=America/Los_Angeles:20251208T153000
+SUMMARY:💡 Anki: NEW - Compute Weak Spots (Day 1)
+DESCRIPTION:Personalized flashcards from Dec 7 Compute quiz\n\n🎴 DECK: Compute - Spaced Repetition\n\n📌 Generated automatically from quiz weak spots\n\n🔄 Starting daily review cycle
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Compute,Spaced-Repetition
+UID:anki-compute-day1-20251208@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251209T090000
+DTEND;TZID=America/Los_Angeles:20251209T113000
+SUMMARY:🔧 Whizlabs Lab: VMSS Deployment & Scaling CLI
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Create VM Scale Sets via CLI\n• Configure autoscale rules\n• Deploy custom images to VMSS\n• Update VMSS instances\n• Configure load balancer integration\n\n📝 COMMANDS TO MASTER:\naz vmss create\naz vmss scale\naz monitor autoscale create\naz vmss update --image\naz vmss list-instances\n\n✅ GOAL: Master scalable compute deployments
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Compute,CLI
+UID:whizlabs-vmss-cli-20251209@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251209T140000
+DTEND;TZID=America/Los_Angeles:20251209T153000
+SUMMARY:💡 Anki: Review Compute Weak Spots (Day 2)
+DESCRIPTION:Personalized flashcards from Dec 7 Compute quiz\n\n🎴 DECK: Compute - Spaced Repetition\n\n🔄 Day 2 of daily review
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Compute,Spaced-Repetition
+UID:anki-compute-day2-20251209@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251210T090000
+DTEND;TZID=America/Los_Angeles:20251210T113000
+SUMMARY:🔧 Whizlabs Lab: Container Instances & Apps CLI
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Deploy Azure Container Instances via CLI\n• Configure container groups\n• Set environment variables & secrets\n• Deploy Azure Container Apps\n• Configure ingress & scaling\n\n📝 COMMANDS TO MASTER:\naz container create\naz container logs\naz containerapp create\naz containerapp update\naz containerapp ingress enable\n\n✅ GOAL: Master containerized workloads on Azure
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Compute,CLI,Containers
+UID:whizlabs-containers-cli-20251210@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251210T140000
+DTEND;TZID=America/Los_Angeles:20251210T153000
+SUMMARY:💡 Anki: Review Compute Weak Spots (Day 3)
+DESCRIPTION:Personalized flashcards from Dec 7 Compute quiz\n\n🎴 DECK: Compute - Spaced Repetition\n\n🔄 Day 3 of daily review - spacing increases after this
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Compute,Spaced-Repetition
+UID:anki-compute-day3-20251210@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251216T090000
+DTEND;TZID=America/Los_Angeles:20251216T110000
+SUMMARY:🔁 Tutorials Dojo: Compute RETAKE (Spaced Repetition)
+DESCRIPTION:Section-Based: Deploy and Manage Azure Compute Resources (AZ-104) - RETAKE\n\n📅 ORIGINAL QUIZ: Dec 9, 2025\n⏱️ DAYS ELAPSED: 7 days (full week spacing)\n\n✅ STATUS: READY for retake\n\n🎯 TARGET: 75%+\n\n⚡ AFTER QUIZ:\n1. Compare results to Dec 7\n2. Update cumulative score\n3. Identify any remaining weak spots
+LOCATION:Online - Tutorials Dojo
+CATEGORIES:AZ-104,Tutorials-Dojo,Compute,Retake,Spaced-Repetition
+UID:td-compute-retake-20251211@azureexam.local
+DTSTAMP:20251129T000000Z
+STATUS:CONFIRMED
+PRIORITY:1
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251213T140000
+DTEND;TZID=America/Los_Angeles:20251213T153000
+SUMMARY:💡 Anki: Review Identities (Spaced - Day 14)
+DESCRIPTION:Personalized flashcards from Nov 29 Identities quiz\n\n🎴 DECK: Identities - Spaced Repetition\n\n🔄 2-week review - spacing at 14 days
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Identities,Spaced-Repetition
+UID:anki-identities-day14-20251213@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+<!-- ============================================ -->
+<!-- WEEK 3 (Dec 14-20): Networking Focus       -->
+<!-- ============================================ -->
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251216T090000
+DTEND;TZID=America/Los_Angeles:20251216T110000
+SUMMARY:📚 Tutorials Dojo: Networking Section Quiz (FRESH)
+DESCRIPTION:Section-Based: Implement and Manage Virtual Networking (AZ-104)\n\n✅ STATUS: Next in sequence (current score: 58.06%)\n\n📋 COVERS:\n• VNet creation & configuration\n• Subnets & IP addressing\n• VNet peering (same region & global)\n• Network Security Groups (NSG)\n• Service Endpoints & Private Endpoints\n• Azure DNS\n• VPN Gateway & ExpressRoute basics\n\n🎯 TARGET: 70%+ to pass\n\n⚡ AFTER QUIZ:\n1. Extract weak spots\n2. Generate Anki flashcards\n3. Schedule retake (Dec 17-19)
+LOCATION:Online - Tutorials Dojo
+CATEGORIES:AZ-104,Tutorials-Dojo,Networking,Fresh-Quiz
+UID:td-networking-fresh-20251214@azureexam.local
+DTSTAMP:20251129T000000Z
+STATUS:CONFIRMED
+PRIORITY:1
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251214T140000
+DTEND;TZID=America/Los_Angeles:20251214T153000
+SUMMARY:💡 Anki: Review Storage (Spaced - Day 14)
+DESCRIPTION:Personalized flashcards from Nov 30 Storage quiz\n\n🎴 DECK: Storage - Spaced Repetition\n\n🔄 2-week review - spacing at 14 days
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Storage,Spaced-Repetition
+UID:anki-storage-day14-20251214@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251215T090000
+DTEND;TZID=America/Los_Angeles:20251215T113000
+SUMMARY:🔧 Whizlabs Lab: VNet & Subnet Management CLI
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Create VNets & subnets via CLI\n• Configure address spaces & subnet ranges\n• Create NSGs & security rules\n• Associate NSGs with subnets\n• Configure service endpoints\n\n📝 COMMANDS TO MASTER:\naz network vnet create\naz network vnet subnet create\naz network nsg create\naz network nsg rule create\naz network vnet subnet update --service-endpoints\n\n✅ GOAL: Master network foundation setup
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Networking,CLI
+UID:whizlabs-vnet-cli-20251215@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251215T140000
+DTEND;TZID=America/Los_Angeles:20251215T153000
+SUMMARY:💡 Anki: NEW - Networking Weak Spots (Day 1)
+DESCRIPTION:Personalized flashcards from Dec 14 Networking quiz\n\n🎴 DECK: Networking - Spaced Repetition\n\n📌 Generated automatically from quiz weak spots\n\n🔄 Starting daily review cycle
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Networking,Spaced-Repetition
+UID:anki-networking-day1-20251215@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251215T160000
+DTEND;TZID=America/Los_Angeles:20251215T173000
+SUMMARY:💡 Anki: Review Compute (Spaced - Day 7)
+DESCRIPTION:Personalized flashcards from Dec 7 Compute quiz\n\n🎴 DECK: Compute - Spaced Repetition\n\n🔄 Week 1 review - spacing at 7 days
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Compute,Spaced-Repetition
+UID:anki-compute-day7-20251215@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251216T090000
+DTEND;TZID=America/Los_Angeles:20251216T113000
+SUMMARY:🔧 Whizlabs Lab: VNet Peering CLI
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Create VNet peering connections via CLI\n• Configure same-region peering\n• Configure global VNet peering\n• Enable gateway transit\n• Test connectivity across peered VNets\n\n📝 COMMANDS TO MASTER:\naz network vnet peering create\naz network vnet peering list\naz network vnet peering update\n\n✅ GOAL: Master VNet connectivity patterns
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Networking,CLI
+UID:whizlabs-peering-cli-20251216@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251216T140000
+DTEND;TZID=America/Los_Angeles:20251216T153000
+SUMMARY:💡 Anki: Review Networking Weak Spots (Day 2)
+DESCRIPTION:Personalized flashcards from Dec 14 Networking quiz\n\n🎴 DECK: Networking - Spaced Repetition\n\n🔄 Day 2 of daily review
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Networking,Spaced-Repetition
+UID:anki-networking-day2-20251216@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251217T090000
+DTEND;TZID=America/Los_Angeles:20251217T113000
+SUMMARY:🔧 Whizlabs Lab: Private Endpoints & Service Endpoints CLI
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Create service endpoints for storage/SQL\n• Configure private endpoints via CLI\n• Test private connectivity\n• Configure DNS for private endpoints\n• Verify network isolation\n\n📝 COMMANDS TO MASTER:\naz network private-endpoint create\naz network private-dns zone create\naz network vnet subnet update --service-endpoints\n\n✅ GOAL: Secure PaaS resources with network isolation
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Networking,CLI,Security
+UID:whizlabs-privateendpoint-cli-20251217@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251217T140000
+DTEND;TZID=America/Los_Angeles:20251217T153000
+SUMMARY:💡 Anki: Review Networking Weak Spots (Day 3)
+DESCRIPTION:Personalized flashcards from Dec 14 Networking quiz\n\n🎴 DECK: Networking - Spaced Repetition\n\n🔄 Day 3 of daily review - spacing increases after this
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Networking,Spaced-Repetition
+UID:anki-networking-day3-20251217@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251223T090000
+DTEND;TZID=America/Los_Angeles:20251223T110000
+SUMMARY:🔁 Tutorials Dojo: Networking RETAKE (Spaced Repetition)
+DESCRIPTION:Section-Based: Implement and Manage Virtual Networking (AZ-104) - RETAKE\n\n📅 ORIGINAL QUIZ: Dec 16, 2025\n⏱️ DAYS ELAPSED: 7 days (full week spacing)\n\n✅ STATUS: READY for retake\n\n🎯 TARGET: 75%+\n\n⚡ AFTER QUIZ:\n1. Compare results to Dec 14\n2. Update cumulative score\n3. Archive if mastered
+LOCATION:Online - Tutorials Dojo
+CATEGORIES:AZ-104,Tutorials-Dojo,Networking,Retake,Spaced-Repetition
+UID:td-networking-retake-20251218@azureexam.local
+DTSTAMP:20251129T000000Z
+STATUS:CONFIRMED
+PRIORITY:1
+END:VEVENT
+
+<!-- ============================================ -->
+<!-- WEEK 4 (Dec 21-27): Monitoring Focus       -->
+<!-- ============================================ -->
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251223T090000
+DTEND;TZID=America/Los_Angeles:20251223T110000
+SUMMARY:📚 Tutorials Dojo: Monitoring Section Quiz (FRESH)
+DESCRIPTION:Section-Based: Monitor and Maintain Azure Resources (AZ-104)\n\n✅ STATUS: Final section quiz (current score: 53.85%)\n\n📋 COVERS:\n• Azure Monitor & Metrics\n• Log Analytics & KQL queries\n• Alerts & Action Groups\n• Application Insights\n• Network Watcher\n• Backup & Site Recovery\n\n🎯 TARGET: 70%+ to pass\n\n⚡ AFTER QUIZ:\n1. Extract weak spots\n2. Generate Anki flashcards\n3. Schedule retake (Dec 24-26)
+LOCATION:Online - Tutorials Dojo
+CATEGORIES:AZ-104,Tutorials-Dojo,Monitoring,Fresh-Quiz
+UID:td-monitoring-fresh-20251221@azureexam.local
+DTSTAMP:20251129T000000Z
+STATUS:CONFIRMED
+PRIORITY:1
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251221T140000
+DTEND;TZID=America/Los_Angeles:20251221T153000
+SUMMARY:💡 Anki: Review Compute (Spaced - Day 14)
+DESCRIPTION:Personalized flashcards from Dec 7 Compute quiz\n\n🎴 DECK: Compute - Spaced Repetition\n\n🔄 2-week review - spacing at 14 days
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Compute,Spaced-Repetition
+UID:anki-compute-day14-20251221@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251222T090000
+DTEND;TZID=America/Los_Angeles:20251222T113000
+SUMMARY:🔧 Whizlabs Lab: Azure Monitor & Metrics CLI
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Create metric alerts via CLI\n• Configure action groups\n• Query metrics using CLI\n• Create log analytics workspace\n• Configure diagnostic settings\n\n📝 COMMANDS TO MASTER:\naz monitor metrics alert create\naz monitor action-group create\naz monitor log-analytics workspace create\naz monitor diagnostic-settings create\n\n✅ GOAL: Master monitoring & alerting automation
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Monitoring,CLI
+UID:whizlabs-monitor-cli-20251222@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251222T140000
+DTEND;TZID=America/Los_Angeles:20251222T153000
+SUMMARY:💡 Anki: NEW - Monitoring Weak Spots (Day 1)
+DESCRIPTION:Personalized flashcards from Dec 21 Monitoring quiz\n\n🎴 DECK: Monitoring - Spaced Repetition\n\n📌 Generated automatically from quiz weak spots\n\n🔄 Starting daily review cycle
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Monitoring,Spaced-Repetition
+UID:anki-monitoring-day1-20251222@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251222T160000
+DTEND;TZID=America/Los_Angeles:20251222T173000
+SUMMARY:💡 Anki: Review Networking (Spaced - Day 7)
+DESCRIPTION:Personalized flashcards from Dec 14 Networking quiz\n\n🎴 DECK: Networking - Spaced Repetition\n\n🔄 Week 1 review - spacing at 7 days
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Networking,Spaced-Repetition
+UID:anki-networking-day7-20251222@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251223T090000
+DTEND;TZID=America/Los_Angeles:20251223T113000
+SUMMARY:🔧 Whizlabs Lab: Log Analytics & KQL Queries
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Write KQL queries for log analysis\n• Create custom log searches\n• Build workbooks & dashboards\n• Configure log retention\n• Query across multiple workspaces\n\n📝 COMMANDS TO MASTER:\naz monitor log-analytics query\naz monitor log-analytics workspace table\n\n🔍 KQL QUERIES TO MASTER:\n• AzureActivity | where TimeGenerated > ago(1d)\n• Perf | summarize avg(CounterValue) by bin(TimeGenerated, 5m)\n• SecurityEvent | where EventID == 4624\n\n✅ GOAL: Master log analysis & KQL
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Monitoring,CLI,KQL
+UID:whizlabs-logs-kql-20251223@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251223T140000
+DTEND;TZID=America/Los_Angeles:20251223T153000
+SUMMARY:💡 Anki: Review Monitoring Weak Spots (Day 2)
+DESCRIPTION:Personalized flashcards from Dec 21 Monitoring quiz\n\n🎴 DECK: Monitoring - Spaced Repetition\n\n🔄 Day 2 of daily review
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Monitoring,Spaced-Repetition
+UID:anki-monitoring-day2-20251223@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251224T090000
+DTEND;TZID=America/Los_Angeles:20251224T113000
+SUMMARY:🔧 Whizlabs Lab: Network Watcher & Diagnostics CLI
+DESCRIPTION:Hands-on CLI-intensive lab from Whizlabs\n\n🔗 https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298\n\n🛠️ LAB ACTIVITIES:\n• Use Network Watcher IP flow verify\n• Run next hop analysis\n• Capture network packets\n• Check VPN troubleshooting\n• Verify NSG effective rules\n\n📝 COMMANDS TO MASTER:\naz network watcher test-ip-flow\naz network watcher show-next-hop\naz network watcher packet-capture create\naz network watcher show-security-group-view\n\n✅ GOAL: Master network troubleshooting
+LOCATION:Azure Portal + CLI
+CATEGORIES:AZ-104,Whizlabs,Labs,Monitoring,Networking,CLI
+UID:whizlabs-netwatcher-cli-20251224@azureexam.local
+DTSTAMP:20251129T000000Z
+URL:https://www.whizlabs.com/learn/course/microsoft-azure-certification-az-104/298
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251224T140000
+DTEND;TZID=America/Los_Angeles:20251224T153000
+SUMMARY:💡 Anki: Review Monitoring Weak Spots (Day 3)
+DESCRIPTION:Personalized flashcards from Dec 21 Monitoring quiz\n\n🎴 DECK: Monitoring - Spaced Repetition\n\n🔄 Day 3 of daily review - spacing increases after this
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Monitoring,Spaced-Repetition
+UID:anki-monitoring-day3-20251224@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251230T090000
+DTEND;TZID=America/Los_Angeles:20251230T110000
+SUMMARY:🔁 Tutorials Dojo: Monitoring RETAKE (Spaced Repetition)
+DESCRIPTION:Section-Based: Monitor and Maintain Azure Resources (AZ-104) - RETAKE\n\n📅 ORIGINAL QUIZ: Dec 23, 2025\n⏱️ DAYS ELAPSED: 7 days (full week spacing)\n\n✅ STATUS: READY for retake\n\n🎯 TARGET: 75%+\n\n🎉 MILESTONE: All section quizzes completed!\n\n⚡ AFTER QUIZ:\n1. Compare results to Dec 21\n2. Update cumulative score\n3. Begin practice exam phase
+LOCATION:Online - Tutorials Dojo
+CATEGORIES:AZ-104,Tutorials-Dojo,Monitoring,Retake,Spaced-Repetition
+UID:td-monitoring-retake-20251225@azureexam.local
+DTSTAMP:20251129T000000Z
+STATUS:CONFIRMED
+PRIORITY:1
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251227T140000
+DTEND;TZID=America/Los_Angeles:20251227T153000
+SUMMARY:💡 Anki: Review Identities (Spaced - Day 28)
+DESCRIPTION:Personalized flashcards from Nov 29 Identities quiz\n\n🎴 DECK: Identities - Spaced Repetition\n\n🔄 4-week review - spacing at 28 days (monthly)\n\n🎉 Long-term retention check!
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Identities,Spaced-Repetition
+UID:anki-identities-day28-20251227@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+<!-- ============================================ -->
+<!-- WEEK 5+ (Dec 28+): Practice Exam Phase     -->
+<!-- ============================================ -->
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260106T090000
+DTEND;TZID=America/Los_Angeles:20260106T130000
+SUMMARY:🎓 Tutorials Dojo: Practice Exam #1 (Full Length)
+DESCRIPTION:Full-length practice exam (50-60 questions, timed)\n\n✅ ALL SECTION QUIZZES COMPLETED - Ready for full exam simulation\n\n📊 BASELINE ASSESSMENT - See where you stand after completing all sections\n\n📋 COVERS: All AZ-104 domains\n• Identities & Governance (15-20%)\n• Storage (15-20%)\n• Compute (20-25%)\n• Networking (25-30%)\n• Monitoring (10-15%)\n\n🎯 TARGET: 700+ score (70%+)\n⏱️ TIME LIMIT: 120 minutes\n\n⚡ AFTER EXAM:\n1. Analyze weak domains\n2. Review missed questions\n3. Update study focus
+LOCATION:Online - Tutorials Dojo
+CATEGORIES:AZ-104,Practice-Exam,Full-Length
+UID:td-practice-1-20251228@azureexam.local
+DTSTAMP:20251129T000000Z
+STATUS:CONFIRMED
+PRIORITY:1
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251228T140000
+DTEND;TZID=America/Los_Angeles:20251228T153000
+SUMMARY:💡 Anki: Review Storage (Spaced - Day 28)
+DESCRIPTION:Personalized flashcards from Nov 30 Storage quiz\n\n🎴 DECK: Storage - Spaced Repetition\n\n🔄 4-week review - spacing at 28 days (monthly)
+LOCATION:Home - Anki Review
+CATEGORIES:AZ-104,Anki,Storage,Spaced-Repetition
+UID:anki-storage-day28-20251228@azureexam.local
+DTSTAMP:20251129T000000Z
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260106T150000
+DTEND;TZID=America/Los_Angeles:20260106T170000
+SUMMARY:📊 Review Practice Exam #1 Results & Plan Next Steps
+DESCRIPTION:Analyze Practice Exam #1 performance and create custom study plan\n\n📋 ANALYSIS TASKS:\n• Identify weak domains (score breakdown by section)\n• Review all missed questions\n• Update Anki decks with new weak spots\n• Plan timeline for Practice Exam #2 based on results\n\n🎯 DECISION POINTS:\n• If 70%+: Schedule Practice Exam #2 in 3-5 days\n• If 60-69%: Focus on weak domains, retake section quizzes, then Practice Exam #2 in 7-10 days\n• If <60%: Deep review needed - revisit weak sections with labs + Anki, Practice Exam #2 in 14 days\n\n⚡ Custom plan will be created based on actual results
+LOCATION:Home - Review Session
+CATEGORIES:AZ-104,Practice-Exam,Analysis,Planning
+UID:practice-exam-1-review-20260106@azureexam.local
+DTSTAMP:20251129T000000Z
+STATUS:CONFIRMED
+PRIORITY:1
+END:VEVENT
+
+END:VCALENDAR
