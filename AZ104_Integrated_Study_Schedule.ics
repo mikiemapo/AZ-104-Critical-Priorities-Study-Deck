@@ -22,9 +22,6 @@ RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
 END:DAYLIGHT
 END:VTIMEZONE
 
-<!-- ============================================ -->
-<!-- WEEK 1 (Nov 30 - Dec 6): Storage Focus     -->
-<!-- ============================================ -->
 
 BEGIN:VEVENT
 DTSTART;TZID=America/Los_Angeles:20251202T090000
@@ -190,9 +187,6 @@ UID:anki-identities-day7-20251206@azureexam.local
 DTSTAMP:20251129T000000Z
 END:VEVENT
 
-<!-- ============================================ -->
-<!-- WEEK 2 (Dec 7-13): Compute Focus           -->
-<!-- ============================================ -->
 
 BEGIN:VEVENT
 DTSTART;TZID=America/Los_Angeles:20251209T090000
@@ -311,9 +305,6 @@ UID:anki-identities-day14-20251213@azureexam.local
 DTSTAMP:20251129T000000Z
 END:VEVENT
 
-<!-- ============================================ -->
-<!-- WEEK 3 (Dec 14-20): Networking Focus       -->
-<!-- ============================================ -->
 
 BEGIN:VEVENT
 DTSTART;TZID=America/Los_Angeles:20251216T090000
@@ -432,9 +423,6 @@ STATUS:CONFIRMED
 PRIORITY:1
 END:VEVENT
 
-<!-- ============================================ -->
-<!-- WEEK 4 (Dec 21-27): Monitoring Focus       -->
-<!-- ============================================ -->
 
 BEGIN:VEVENT
 DTSTART;TZID=America/Los_Angeles:20251223T090000
@@ -564,9 +552,6 @@ UID:anki-identities-day28-20251227@azureexam.local
 DTSTAMP:20251129T000000Z
 END:VEVENT
 
-<!-- ============================================ -->
-<!-- WEEK 5+ (Dec 28+): Practice Exam Phase     -->
-<!-- ============================================ -->
 
 BEGIN:VEVENT
 DTSTART;TZID=America/Los_Angeles:20260106T090000
