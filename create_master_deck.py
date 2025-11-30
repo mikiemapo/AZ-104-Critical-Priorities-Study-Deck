@@ -96,18 +96,30 @@ with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
         if not batch:
             continue
         if batch not in decks:
-            # Create subdeck using double colon notation for Anki hierarchy
-            if 'Critical' in batch:
-                subdeck_name = f"{main_deck_name}::Critical Priorities"
-            elif 'RTO' in batch:
-                subdeck_name = f"{main_deck_name}::Storage & Recovery"  
+            # Create subdeck using SEGMENTED hierarchy
+            clean_batch = batch.replace(' Batch', '').replace('/', ' & ')
+            
+            if 'Golden Rule' in batch:
+                # Golden Rules segment
+                subdeck_name = f"{main_deck_name}::Golden Rules::{clean_batch}"
+            elif 'Deep Dive' in batch:
+                # Deep Dives segment
+                subdeck_name = f"{main_deck_name}::Deep Dives::{clean_batch}"
+            elif 'Performance Review' in batch:
+                # Performance Review segment
+                subdeck_name = f"{main_deck_name}::Performance Review::{clean_batch}"
             else:
-                # Clean up batch name for subdeck
-                clean_batch = batch.replace(' Batch', '').replace('/', ' & ')
-                subdeck_name = f"{main_deck_name}::{clean_batch}"
+                # Study Guide Cards segment (everything else)
+                subdeck_name = f"{main_deck_name}::Study Guide Cards::{clean_batch}"
+            
+            # Generate CONSISTENT deck ID from batch name hash (same batch = same ID always)
+            import hashlib
+            deck_id = int(hashlib.md5(batch.encode()).hexdigest()[:8], 16)
+            # Ensure ID is positive and in valid range
+            deck_id = 2059400111 + (deck_id % 10000)
                 
             decks[batch] = genanki.Deck(
-                2059400111 + len(decks),  # Unique deck ID for each subdeck
+                deck_id,  # Consistent deck ID based on batch name
                 subdeck_name
             )
             all_decks.append(decks[batch])
