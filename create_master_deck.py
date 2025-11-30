@@ -92,7 +92,9 @@ with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
     csv_reader = csv.DictReader(file)
     
     for row in csv_reader:
-        batch = row['Batch']
+        batch = row.get('Batch', '')
+        if not batch:
+            continue
         if batch not in decks:
             # Create subdeck using double colon notation for Anki hierarchy
             if 'Critical' in batch:
@@ -122,21 +124,23 @@ with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
     
     for row in csv_reader:
         # Track batches
-        batch = row['Batch']
+        batch = row.get('Batch', '')
+        if not batch:
+            continue
         if batch != current_batch:
             current_batch = batch
             batch_count[batch] = batch_count.get(batch, 0)
         batch_count[batch] += 1
         
         # Build questions using WORKING format (DO NOT CHANGE!)
-        question_text = row['Question']
-        choice_a = row['ChoiceA']
-        choice_b = row['ChoiceB']
-        choice_c = row['ChoiceC']
-        choice_d = row['ChoiceD']
-        correct = row['Correct']
-        explanation = row['Explanation']
-        tags = f"{row['Tags']},{batch}"
+        question_text = row.get('Question', '')
+        choice_a = row.get('ChoiceA', '')
+        choice_b = row.get('ChoiceB', '')
+        choice_c = row.get('ChoiceC', '')
+        choice_d = row.get('ChoiceD', '')
+        correct = row.get('Correct', 'A')
+        explanation = row.get('Explanation', '')
+        tags = f"{row.get('Tags', '')},{batch}"
         
         # Create question with NO highlighting for front side
         full_question = f"""{question_text}<br><br>

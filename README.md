@@ -1,15 +1,28 @@
 # AZ-104 Critical Priorities Study Deck
 
-## 📥 QUICK DOWNLOAD - Master Anki Deck
+## 📥 QUICK DOWNLOAD - Study Decks
 
-**[⬇️ Download AZ-104-Master-Study-Deck.apkg](../AZ-104-Master-Study-Deck.apkg)** (465 cards, hierarchical subdecks)
+### 1. Master Study Deck (All Topics)
+**[⬇️ Download AZ-104-Master-Study-Deck.apkg](../AZ-104-Master-Study-Deck.apkg)** (465 cards, 24 subdecks)
 
 **File Location**: `/Users/mike1macbook/Documents/MY STUFF DOCS AND ALL/EBOOK/AZ-104-Master-Study-Deck.apkg`
 
+**Imports as**: `AZ-104 Study Guide` with hierarchical subdecks
+
+### 2. Performance Review Deck (Nov 29 Quiz)
+**[⬇️ Download AZ-104-Performance-Review-Identities-Nov29.apkg](../AZ-104-Performance-Review-Identities-Nov29.apkg)** (49 cards)
+
+**File Location**: `/Users/mike1macbook/Documents/MY STUFF DOCS AND ALL/EBOOK/AZ-104-Performance-Review-Identities-Nov29.apkg`
+
+**Imports as**: `AZ-104 Performance Review::Identities Nov 29`  
+Targets Nov 29 Identities & Governance quiz weak spots
+
 **Import Instructions**:
-1. Locate the file in your EBOOK folder (top level)
-2. Double-click `AZ-104-Master-Study-Deck.apkg` to import into Anki
-3. All topic-based subdecks will be imported automatically
+
+1. Locate files in your EBOOK folder (top level)
+2. Double-click each `.apkg` file to import into Anki
+3. Master deck appears as "AZ-104 Study Guide" with subdecks
+4. Performance review appears as separate "AZ-104 Performance Review" deck
 
 ---
 
