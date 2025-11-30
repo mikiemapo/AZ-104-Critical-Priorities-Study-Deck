@@ -1,5 +1,63 @@
 # AZ-104 Critical Priorities Study Deck
 
+## 📂 Repository Structure
+
+```
+AZ-104-Critical-Priorities-Study-Deck/
+├── Topic-Based-Decks/           # Comprehensive topic deep-dive CSV decks
+│   ├── AZ104_Golden_Rule_Enriched_Part1_FULL.csv
+│   ├── AZ104_Golden_Rule_Enriched_Part2_FULL.csv
+│   ├── AZ104_VMSS_DeepDive.csv
+│   ├── AZ104_App_Service_DeepDive.csv
+│   ├── AZ104_Resilience_DR_DeepDive.csv
+│   ├── AZ104_Hybrid_Azure_Mastery_DeepDive.csv
+│   ├── AZ104_Storage_Identity_Resilience_Untangled_DeepDive.csv
+│   └── AZ104_VABRF_Operational_Resilience_DeepDive.csv
+│
+├── Personalized-Review-Decks/   # Custom decks from quiz weak spots
+│   └── Microsoft_Entra_ID_Cheat_Sheet.csv (48 cards - Tutorials Dojo)
+│
+├── Study-Calendars/             # ICS calendar files for study scheduling
+│   ├── AZ104_Integrated_Study_Schedule.ics (Tutorials Dojo + Anki + Whizlabs)
+│   ├── AZ104_Study_Schedule.ics
+│   └── AZ104_Study_Schedule_DETAILED.ics
+│
+├── AZ-104-Master-Questions.csv  # Master deck database (465 cards)
+└── AZ-104-Master-Study-Deck.apkg # Compiled hierarchical Anki deck
+
+```
+
+## 🎴 Deck Types
+
+### 1. **Master Study Deck** (465 cards - Hierarchical)
+- **File**: `AZ-104-Master-Study-Deck.apkg`
+- **Purpose**: Comprehensive AZ-104 coverage with subdeck organization
+- **Import**: Import once, all batches included as subdecks
+- **Use Case**: Full exam preparation, topic-by-topic study
+
+### 2. **Topic-Based Decks** (Standalone CSV files)
+- **Location**: `Topic-Based-Decks/`
+- **Purpose**: Deep-dive study on specific topics (Golden Rules, VMSS, App Service, etc.)
+- **Import**: Import individually as separate Anki decks
+- **Use Case**: Targeted review when weak on specific topics
+
+### 3. **Personalized Review Decks** (From quiz weak spots)
+- **Location**: `Personalized-Review-Decks/`
+- **Purpose**: Custom flashcards generated from quiz results
+- **Import**: Import as separate decks for spaced repetition
+- **Current Decks**:
+  - **Microsoft Entra ID Cheat Sheet** (48 cards from Tutorials Dojo cheat sheet)
+- **Use Case**: Targeted weak spot review with spaced repetition
+
+### 4. **Study Calendars**
+- **Location**: `Study-Calendars/`
+- **Purpose**: Integrated study schedules combining quizzes, Anki, and labs
+- **Use**: Import into Calendar app (macOS, Google Calendar, Outlook)
+- **Current Calendars**:
+  - **AZ104_Integrated_Study_Schedule.ics** - Tutorials Dojo quizzes + Anki reviews + Whizlabs CLI labs (6-week timeline)
+
+---
+
 ## ⚠️ CRITICAL WORKFLOW FOR AI ASSISTANT
 
 **BEFORE adding new questions, ALWAYS:**
@@ -13,6 +71,12 @@
 7. **Update README** - Update card count and batch list in this file
 8. **Commit with details** - Use descriptive commit message with topic and count
 
+**For Personalized Review Decks (from quiz weak spots):**
+- Save to `Personalized-Review-Decks/` folder
+- Name format: `[Topic]_[Source]_[Date].csv` (e.g., `Identities_TutorialsDojo_Nov29.csv`)
+- DO NOT merge into Master Deck - keep as separate deck for spaced repetition
+- Tag with source: "Tutorials-Dojo-Quiz", "Whizlabs-Weak-Spots", etc.
+
 **NEVER:**
 
 - ❌ Add duplicate questions from previous batches
@@ -20,12 +84,13 @@
 - ❌ Write explanations longer than 2 sentences (breaks study flow)
 - ❌ Forget to regenerate the .apkg file after CSV changes
 - ❌ Commit without updating README card counts and MS Learn references
+- ❌ Merge personalized review decks into Master Deck (defeats spaced repetition purpose)
 
-**Repository Location:** `/Users/mike1macbook/Documents/MY STUFF DOCS AND ALL/EBOOK/AZ-104-Study-Deck/`
+**Repository Location:** `/Users/mike1macbook/Documents/MY STUFF DOCS AND ALL/EBOOK/AZ-104-Critical-Priorities-Study-Deck/`
 
 ---
 
-## 📊 Current Deck Status (445 Total Cards)
+## 📊 Current Deck Status (465 Total Cards)
 
 - **Critical Priorities Batch**: 5 essential configuration scenarios
 - **RTO/RPO Storage Batch**: 3 disaster recovery fundamentals
@@ -47,9 +112,10 @@
 - **Golden Rule Enriched Part 2**: 35 scenario-driven questions (Redundancy, Disks, Networking, Backup, DR, Performance)
 - **VMSS Deep Dive Batch**: 12 scenario-driven questions (Orchestration modes, Update/Fault Domains, Availability Zones, Load Balancing, IaaS operational burden)
 - **App Service Deep Dive Batch**: 17 scenario-driven questions (OS constraints, Runtime choices, Deployment methods, Resource contention, VNet integration, Security pipeline, Bicep IaC, Exam traps)
-- **Resilience & Disaster Recovery Deep Dive Batch**: 20 scenario-driven questions (VABRF blueprint, RSV regional boundaries, RBAC Backup Contributor, Azure Backup vs ASR distinction, ransomware vs regional recovery, app-consistent recovery points, VSS technology, test failover validation, commit/reprotect sequence, action groups automation, monitoring replication health, Azure Policy resilience architecture)
+- **Resilience & Disaster Recovery Deep Dive Batch**: 19 scenario-driven questions (VABRF blueprint, RSV regional boundaries, RBAC Backup Contributor, Azure Backup vs ASR distinction, ransomware vs regional recovery, app-consistent recovery points, VSS technology, test failover validation, commit/reprotect sequence, action groups automation, monitoring replication health, Azure Policy resilience architecture)
 - **Hybrid Azure Mastery Deep Dive Batch**: 20 scenario-driven questions (RBAC vs Entra DS identity model, Azure Files double-permission layer, SMB port 445 hybrid tunneling, Kerberos authentication for NTFS, Azure Policy governance enforcement, PIM just-in-time privilege, App Service plan scaling architecture, Docker Container runtime ownership, ACI no-scaling limitation, Bicep IaC performance benchmarks, three-tier VNet subnet design, VNet peering vs VPN gateway, internal load balancer vs Application Gateway, WAF tier requirement, Network Watcher IP Flow Verify and Connection Troubleshoot, Azure Monitor KQL, metric/log search/activity log alerts, hybrid Azure Monitor Agent deployment, five-pillar architectural integration, resource tagging + Policy inventory foundation)
 - **Storage Identity Resilience Untangled Deep Dive Batch**: 20 scenario-driven questions (Azure Files 3-layer access: network/RBAC/NTFS, Private Endpoints bypassing ISP port blocks, Entra ID vs RBAC vs Azure Policy governance distinctions, Conditional Access MFA >99.9% attack blocking, PIM just-in-time privilege auto-expiration, GRS vs ZRS cost/resilience trade-offs, Recovery Services Vault vs Azure Backup Vault architectures, ASR planned/unplanned/test failover sequencing, Cost Management + Budgets for billing separation beyond tags)
+- **VABRF Operational Resilience Deep Dive Batch**: 20 scenario-driven questions (VABRF 5-step framework operational sequence, RSV regional administrative boundaries, RBAC Access step and Reader role limitations, Backup policy contract with data, Azure Backup vs ASR operational differences, Ransomware restore vs regional failover paths, Recovery point timestamp criticality, VM validation before user cutover, Unplanned failover with Commit finality, Reprotect bi-directional redundancy requirement, VSS app-consistent recovery points for databases, Test failover sandbox isolation, Azure Monitor proactive resilience with metric/activity/log search alerts, Action Groups automated remediation, Secondary region VNet pre-provisioning, Azure Policy + Action Groups drift prevention, Resilience architect vs basic admin operational maturity)
 - **Last Updated**: November 27, 2025
 
 ## 📥 Download

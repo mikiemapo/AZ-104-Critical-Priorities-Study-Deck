@@ -1,0 +1,584 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AZ-104 Study Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AZ-104 Study Plan (520 Cards - 3 Segments)
+X-WR-TIMEZONE:America/Los_Angeles
+X-WR-CALDESC:8-week AZ-104 exam prep with Golden Rules, Deep Dive, Study Guide segments (6am-6pm schedule)
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:STANDARD
+DTSTART:20251102T020000
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20250309T020000
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251127T060000
+DTEND;TZID=America/Los_Angeles:20251127T120000
+SUMMARY:Week 1 - Mon: Anki: Golden Rule Part 1 (28 cards)
+DESCRIPTION:Golden Rules Foundation\n\nCore concepts: App Service, Storage, Redundancy
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week1,Mon
+UID:az104-w1-Mon-1@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251128T060000
+DTEND;TZID=America/Los_Angeles:20251128T120000
+SUMMARY:Week 1 - Tue: Anki: Golden Rule Part 2 (28 cards)
+DESCRIPTION:Golden Rules Foundation\n\nNetworking, Disks, Backup, RTO/RPO
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week1,Tue
+UID:az104-w1-Tue-2@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251130T060000
+DTEND;TZID=America/Los_Angeles:20251130T120000
+SUMMARY:Week 1 - Thu: Tutorial Dojo: Foundation set (20-30 Q)
+DESCRIPTION:Golden Rules Foundation\n\nPractice Golden Rule scenarios
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week1,Thu
+UID:az104-w1-Thu-3@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251201T060000
+DTEND;TZID=America/Los_Angeles:20251201T120000
+SUMMARY:Week 1 - Fri: Tutorial Dojo continued + synthesis
+DESCRIPTION:Golden Rules Foundation\n\nWeek 1 summary
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week1,Fri
+UID:az104-w1-Fri-4@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251203T060000
+DTEND;TZID=America/Los_Angeles:20251203T120000
+SUMMARY:Week 1 - Sun: Whizlabs mini-quiz (50 Q)
+DESCRIPTION:Golden Rules Foundation\n\nValidate Week 1 concepts
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week1,Sun
+UID:az104-w1-Sun-5@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251204T060000
+DTEND;TZID=America/Los_Angeles:20251204T120000
+SUMMARY:Week 2 - Mon: Anki: VABRF Operational Resilience (20 cards)
+DESCRIPTION:Deep Dive - VABRF & Resilience\n\n5-step resilience, backup/restore
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week2,Mon
+UID:az104-w2-Mon-6@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251205T060000
+DTEND;TZID=America/Los_Angeles:20251205T120000
+SUMMARY:Week 2 - Tue: Anki: Resilience & DR Deep Dive (19 cards)
+DESCRIPTION:Deep Dive - VABRF & Resilience\n\nRTO/RPO strategies, failover
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week2,Tue
+UID:az104-w2-Tue-7@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251207T060000
+DTEND;TZID=America/Los_Angeles:20251207T120000
+SUMMARY:Week 2 - Thu: Tutorial Dojo: Backup/DR set (20-30 Q)
+DESCRIPTION:Deep Dive - VABRF & Resilience\n\nRTO/RPO scenarios
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week2,Thu
+UID:az104-w2-Thu-8@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251208T060000
+DTEND;TZID=America/Los_Angeles:20251208T120000
+SUMMARY:Week 2 - Fri: Whizlabs: Backup lab + synthesis
+DESCRIPTION:Deep Dive - VABRF & Resilience\n\nHands-on backup configuration
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week2,Fri
+UID:az104-w2-Fri-9@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251210T060000
+DTEND;TZID=America/Los_Angeles:20251210T120000
+SUMMARY:Week 2 - Sun: Whizlabs: Resilience practice exam (50 Q)
+DESCRIPTION:Deep Dive - VABRF & Resilience\n\nValidate recovery mastery
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week2,Sun
+UID:az104-w2-Sun-10@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251211T060000
+DTEND;TZID=America/Los_Angeles:20251211T120000
+SUMMARY:Week 3 - Mon: Anki: App Service Deep Dive (17 cards) + Hybrid Azure (24 cards)
+DESCRIPTION:Deep Dive - App Service & Hybrid\n\nOS constraints, deployment, hybrid patterns
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week3,Mon
+UID:az104-w3-Mon-11@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251212T060000
+DTEND;TZID=America/Los_Angeles:20251212T120000
+SUMMARY:Week 3 - Tue: Media Hub + mnemonic practice
+DESCRIPTION:Deep Dive - App Service & Hybrid\n\nRuntime stacks, hybrid architecture
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week3,Tue
+UID:az104-w3-Tue-12@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251214T060000
+DTEND;TZID=America/Los_Angeles:20251214T120000
+SUMMARY:Week 3 - Thu: Tutorial Dojo: App Service set (30-40 Q)
+DESCRIPTION:Deep Dive - App Service & Hybrid\n\nOS-specific scenarios
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week3,Thu
+UID:az104-w3-Thu-13@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251215T060000
+DTEND;TZID=America/Los_Angeles:20251215T120000
+SUMMARY:Week 3 - Fri: Whizlabs: App Service lab + synthesis
+DESCRIPTION:Deep Dive - App Service & Hybrid\n\nDeploy .NET Framework vs. Linux apps
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week3,Fri
+UID:az104-w3-Fri-14@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251217T060000
+DTEND;TZID=America/Los_Angeles:20251217T120000
+SUMMARY:Week 3 - Sun: Whizlabs: App Service practice exam (50 Q)
+DESCRIPTION:Deep Dive - App Service & Hybrid\n\nBenchmark + gap analysis
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week3,Sun
+UID:az104-w3-Sun-15@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251218T060000
+DTEND;TZID=America/Los_Angeles:20251218T120000
+SUMMARY:Week 4 - Mon: Anki: Deep Storage Mastery (36 cards)
+DESCRIPTION:Deep Dive - Storage & VMSS\n\nReplication, tiers, endpoints
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week4,Mon
+UID:az104-w4-Mon-16@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251219T060000
+DTEND;TZID=America/Los_Angeles:20251219T120000
+SUMMARY:Week 4 - Tue: Anki: Storage Identity + VMSS (22+12 cards)
+DESCRIPTION:Deep Dive - Storage & VMSS\n\nStorage security, FD/UD/AZ
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week4,Tue
+UID:az104-w4-Tue-17@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251221T060000
+DTEND;TZID=America/Los_Angeles:20251221T120000
+SUMMARY:Week 4 - Thu: Tutorial Dojo: Storage set (40-50 Q)
+DESCRIPTION:Deep Dive - Storage & VMSS\n\nReplication scenarios, RTO/RPO
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week4,Thu
+UID:az104-w4-Thu-18@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251222T060000
+DTEND;TZID=America/Los_Angeles:20251222T120000
+SUMMARY:Week 4 - Fri: Whizlabs: Storage lab + synthesis
+DESCRIPTION:Deep Dive - Storage & VMSS\n\nCreate LRS/GRS/GZRS accounts
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week4,Fri
+UID:az104-w4-Fri-19@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251224T060000
+DTEND;TZID=America/Los_Angeles:20251224T120000
+SUMMARY:Week 4 - Sun: Whizlabs: Storage practice exam (50 Q)
+DESCRIPTION:Deep Dive - Storage & VMSS\n\nValidate storage mastery
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week4,Sun
+UID:az104-w4-Sun-20@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251225T060000
+DTEND;TZID=America/Los_Angeles:20251225T120000
+SUMMARY:Week 5 - Mon: Anki: Storage Replication & DR (52 cards) + Endpoints (20 cards)
+DESCRIPTION:Study Guide - Storage Focus\n\nLRS, ZRS, GRS, GZRS patterns
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week5,Mon
+UID:az104-w5-Mon-21@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251226T060000
+DTEND;TZID=America/Los_Angeles:20251226T120000
+SUMMARY:Week 5 - Tue: Anki: Storage Perf & Lifecycle (20) + Security & Auth (20)
+DESCRIPTION:Study Guide - Storage Focus\n\nBlob tiers, SAS, Managed Identity
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week5,Tue
+UID:az104-w5-Tue-22@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251228T060000
+DTEND;TZID=America/Los_Angeles:20251228T120000
+SUMMARY:Week 5 - Thu: Tutorial Dojo: Storage guides set (40-50 Q)
+DESCRIPTION:Study Guide - Storage Focus\n\nLifecycle, tier transitions
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week5,Thu
+UID:az104-w5-Thu-23@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251229T060000
+DTEND;TZID=America/Los_Angeles:20251229T120000
+SUMMARY:Week 5 - Fri: Whizlabs: Storage security lab + synthesis
+DESCRIPTION:Study Guide - Storage Focus\n\nConfigure SAS, Managed Identity
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week5,Fri
+UID:az104-w5-Fri-24@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251231T060000
+DTEND;TZID=America/Los_Angeles:20251231T120000
+SUMMARY:Week 5 - Sun: Whizlabs: Storage security practice exam (50 Q)
+DESCRIPTION:Study Guide - Storage Focus\n\nBenchmark storage security
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week5,Sun
+UID:az104-w5-Sun-25@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260101T060000
+DTEND;TZID=America/Los_Angeles:20260101T120000
+SUMMARY:Week 6 - Mon: Anki: Enhanced Compute (37) + VM Availability (20)
+DESCRIPTION:Study Guide - Compute & Networking\n\nVM types, FD/UD concepts
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week6,Mon
+UID:az104-w6-Mon-26@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260102T060000
+DTEND;TZID=America/Los_Angeles:20260102T120000
+SUMMARY:Week 6 - Tue: Anki: App Service & Container Ops (29 cards)
+DESCRIPTION:Study Guide - Compute & Networking\n\nNetworking for containers
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week6,Tue
+UID:az104-w6-Tue-27@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260104T060000
+DTEND;TZID=America/Los_Angeles:20260104T120000
+SUMMARY:Week 6 - Thu: Tutorial Dojo: Compute set (40-50 Q)
+DESCRIPTION:Study Guide - Compute & Networking\n\nVM sizing, availability scenarios
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week6,Thu
+UID:az104-w6-Thu-28@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260105T060000
+DTEND;TZID=America/Los_Angeles:20260105T120000
+SUMMARY:Week 6 - Fri: Whizlabs: Compute lab + synthesis
+DESCRIPTION:Study Guide - Compute & Networking\n\nCreate VMSS, availability sets
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week6,Fri
+UID:az104-w6-Fri-29@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260107T060000
+DTEND;TZID=America/Los_Angeles:20260107T120000
+SUMMARY:Week 6 - Sun: Whizlabs: Networking practice exam (50 Q)
+DESCRIPTION:Study Guide - Compute & Networking\n\nBenchmark compute & networking
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week6,Sun
+UID:az104-w6-Sun-30@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260108T060000
+DTEND;TZID=America/Los_Angeles:20260108T120000
+SUMMARY:Week 7 - Mon: Anki: Storage Identity & Security Traps (31 cards)
+DESCRIPTION:Study Guide - Security & Deployment\n\nAccess control patterns
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week7,Mon
+UID:az104-w7-Mon-31@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260109T060000
+DTEND;TZID=America/Los_Angeles:20260109T120000
+SUMMARY:Week 7 - Tue: Anki: Container & App Service security (9+7 cards)
+DESCRIPTION:Study Guide - Security & Deployment\n\nThreat detection, deployment methods
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week7,Tue
+UID:az104-w7-Tue-32@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260111T060000
+DTEND;TZID=America/Los_Angeles:20260111T120000
+SUMMARY:Week 7 - Thu: Tutorial Dojo: Security set (40-50 Q)
+DESCRIPTION:Study Guide - Security & Deployment\n\nAccess patterns, compliance
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week7,Thu
+UID:az104-w7-Thu-33@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260112T060000
+DTEND;TZID=America/Los_Angeles:20260112T120000
+SUMMARY:Week 7 - Fri: Whizlabs: Security lab + synthesis
+DESCRIPTION:Study Guide - Security & Deployment\n\nContainer security, policy config
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week7,Fri
+UID:az104-w7-Fri-34@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260114T060000
+DTEND;TZID=America/Los_Angeles:20260114T120000
+SUMMARY:Week 7 - Sun: Whizlabs: Security practice exam (50 Q)
+DESCRIPTION:Study Guide - Security & Deployment\n\nValidate security understanding
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week7,Sun
+UID:az104-w7-Sun-35@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260115T060000
+DTEND;TZID=America/Los_Angeles:20260115T120000
+SUMMARY:Week 8 - Mon: Anki: Golden Rule Enriched Part 1 (14 cards) + Part 2 (27 cards)
+DESCRIPTION:Enriched & Final Exams\n\nAdvanced scenario frameworks
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week8,Mon
+UID:az104-w8-Mon-36@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260116T060000
+DTEND;TZID=America/Los_Angeles:20260116T120000
+SUMMARY:Week 8 - Tue: Anki: Tutorial Dojo VM Restore (15) + Critical Priorities (5)
+DESCRIPTION:Enriched & Final Exams\n\nFinal governance concepts
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week8,Tue
+UID:az104-w8-Tue-37@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260118T060000
+DTEND;TZID=America/Los_Angeles:20260118T120000
+SUMMARY:Week 8 - Thu: Whizlabs: Full-length practice exam (150-200 Q)
+DESCRIPTION:Enriched & Final Exams\n\nSimulate exam conditions
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week8,Thu
+UID:az104-w8-Thu-38@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260119T060000
+DTEND;TZID=America/Los_Angeles:20260119T120000
+SUMMARY:Week 8 - Fri: Anki: Full deck review (520 cards random)
+DESCRIPTION:Enriched & Final Exams\n\nSpeed + accuracy drilling
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week8,Fri
+UID:az104-w8-Fri-39@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260121T060000
+DTEND;TZID=America/Los_Angeles:20260121T120000
+SUMMARY:Week 8 - Sun: Whizlabs: 2nd full-length practice exam
+DESCRIPTION:Enriched & Final Exams\n\nFinal benchmark: aim for 85%+
+LOCATION:Home - Focused Study
+CATEGORIES:AZ-104,Week8,Sun
+UID:az104-w8-Sun-40@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251129T000000
+DTEND;TZID=America/Los_Angeles:20251129T235959
+SUMMARY:Week 1 - ⭐ Wednesday OFF DAY (Recovery)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w1-Wed-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251202T000000
+DTEND;TZID=America/Los_Angeles:20251202T235959
+SUMMARY:Week 1 - ⭐ Saturday OFF DAY (Optional Light Review)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w1-Sat-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251206T000000
+DTEND;TZID=America/Los_Angeles:20251206T235959
+SUMMARY:Week 2 - ⭐ Wednesday OFF DAY (Recovery)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w2-Wed-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251209T000000
+DTEND;TZID=America/Los_Angeles:20251209T235959
+SUMMARY:Week 2 - ⭐ Saturday OFF DAY (Optional Light Review)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w2-Sat-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251213T000000
+DTEND;TZID=America/Los_Angeles:20251213T235959
+SUMMARY:Week 3 - ⭐ Wednesday OFF DAY (Recovery)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w3-Wed-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251216T000000
+DTEND;TZID=America/Los_Angeles:20251216T235959
+SUMMARY:Week 3 - ⭐ Saturday OFF DAY (Optional Light Review)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w3-Sat-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251220T000000
+DTEND;TZID=America/Los_Angeles:20251220T235959
+SUMMARY:Week 4 - ⭐ Wednesday OFF DAY (Recovery)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w4-Wed-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251223T000000
+DTEND;TZID=America/Los_Angeles:20251223T235959
+SUMMARY:Week 4 - ⭐ Saturday OFF DAY (Optional Light Review)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w4-Sat-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251227T000000
+DTEND;TZID=America/Los_Angeles:20251227T235959
+SUMMARY:Week 5 - ⭐ Wednesday OFF DAY (Recovery)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w5-Wed-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20251230T000000
+DTEND;TZID=America/Los_Angeles:20251230T235959
+SUMMARY:Week 5 - ⭐ Saturday OFF DAY (Optional Light Review)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w5-Sat-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260103T000000
+DTEND;TZID=America/Los_Angeles:20260103T235959
+SUMMARY:Week 6 - ⭐ Wednesday OFF DAY (Recovery)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w6-Wed-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260106T000000
+DTEND;TZID=America/Los_Angeles:20260106T235959
+SUMMARY:Week 6 - ⭐ Saturday OFF DAY (Optional Light Review)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w6-Sat-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260110T000000
+DTEND;TZID=America/Los_Angeles:20260110T235959
+SUMMARY:Week 7 - ⭐ Wednesday OFF DAY (Recovery)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w7-Wed-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260113T000000
+DTEND;TZID=America/Los_Angeles:20260113T235959
+SUMMARY:Week 7 - ⭐ Saturday OFF DAY (Optional Light Review)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w7-Sat-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260117T000000
+DTEND;TZID=America/Los_Angeles:20260117T235959
+SUMMARY:Week 8 - ⭐ Wednesday OFF DAY (Recovery)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w8-Wed-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20260120T000000
+DTEND;TZID=America/Los_Angeles:20260120T235959
+SUMMARY:Week 8 - ⭐ Saturday OFF DAY (Optional Light Review)
+DESCRIPTION:Recovery is part of learning. Don't skip!
+LOCATION:Rest & Recovery
+CATEGORIES:AZ-104,OffDay,Recovery
+UID:az104-w8-Sat-offday@azureexam.local
+DTSTAMP:20251127T221337Z
+END:VEVENT
+END:VCALENDAR
