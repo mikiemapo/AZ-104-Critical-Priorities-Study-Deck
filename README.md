@@ -1,5 +1,18 @@
 # AZ-104 Critical Priorities Study Deck
 
+## 📥 QUICK DOWNLOAD - Master Anki Deck
+
+**[⬇️ Download AZ-104-Master-Study-Deck.apkg](../AZ-104-Master-Study-Deck.apkg)** (465 cards, hierarchical subdecks)
+
+**File Location**: `/Users/mike1macbook/Documents/MY STUFF DOCS AND ALL/EBOOK/AZ-104-Master-Study-Deck.apkg`
+
+**Import Instructions**:
+1. Locate the file in your EBOOK folder (top level)
+2. Double-click `AZ-104-Master-Study-Deck.apkg` to import into Anki
+3. All topic-based subdecks will be imported automatically
+
+---
+
 ## 📂 Repository Structure
 
 ```
@@ -30,18 +43,21 @@ AZ-104-Critical-Priorities-Study-Deck/
 ## 🎴 Deck Types
 
 ### 1. **Master Study Deck** (465 cards - Hierarchical)
+
 - **File**: `AZ-104-Master-Study-Deck.apkg`
 - **Purpose**: Comprehensive AZ-104 coverage with subdeck organization
 - **Import**: Import once, all batches included as subdecks
 - **Use Case**: Full exam preparation, topic-by-topic study
 
 ### 2. **Topic-Based Decks** (Standalone CSV files)
+
 - **Location**: `Topic-Based-Decks/`
 - **Purpose**: Deep-dive study on specific topics (Golden Rules, VMSS, App Service, etc.)
 - **Import**: Import individually as separate Anki decks
 - **Use Case**: Targeted review when weak on specific topics
 
 ### 3. **Personalized Review Decks** (From quiz weak spots)
+
 - **Location**: `Personalized-Review-Decks/`
 - **Purpose**: Custom flashcards generated from quiz results
 - **Import**: Import as separate decks for spaced repetition
@@ -50,6 +66,7 @@ AZ-104-Critical-Priorities-Study-Deck/
 - **Use Case**: Targeted weak spot review with spaced repetition
 
 ### 4. **Study Calendars**
+
 - **Location**: `Study-Calendars/`
 - **Purpose**: Integrated study schedules combining quizzes, Anki, and labs
 - **Use**: Import into Calendar app (macOS, Google Calendar, Outlook)
@@ -72,6 +89,7 @@ AZ-104-Critical-Priorities-Study-Deck/
 8. **Commit with details** - Use descriptive commit message with topic and count
 
 **For Personalized Review Decks (from quiz weak spots):**
+
 - Save to `Personalized-Review-Decks/` folder
 - Name format: `[Topic]_[Source]_[Date].csv` (e.g., `Identities_TutorialsDojo_Nov29.csv`)
 - DO NOT merge into Master Deck - keep as separate deck for spaced repetition
