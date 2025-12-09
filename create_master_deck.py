@@ -208,12 +208,27 @@ with open('AZ-104-Master-Questions.csv', 'r', encoding='utf-8') as file:
         decks[batch].add_note(note)
 
 # Generate the package with all subdecks
-genanki.Package(all_decks).write_to_file('AZ-104-Master-Study-Deck.apkg')
+import os
+import shutil
+
+# Generate .apkg file
+output_file = 'AZ-104-Master-Study-Deck.apkg'
+genanki.Package(all_decks).write_to_file(output_file)
+
+# ALWAYS copy to Anki-Decks folder (NEVER create new folders)
+anki_decks_path = '../Anki-Decks'
+if not os.path.exists(anki_decks_path):
+    os.makedirs(anki_decks_path)
+
+destination = os.path.join(anki_decks_path, output_file)
+shutil.copy2(output_file, destination)
 
 total_cards = sum(len(deck.notes) for deck in all_decks)
-print(f"\n✅ Successfully created AZ-104-Master-Study-Deck.apkg with hierarchical structure")
+print(f"\n✅ Successfully created {output_file} with hierarchical structure")
+print(f"✅ Copied to {destination}")
 print(f"📊 Total cards: {total_cards}")
 print(f"📚 Subdeck structure:")
 for batch, count in batch_count.items():
     print(f"   📁 {main_deck_name}::{batch}: {count} cards")
 print("🎯 WORKING format preserved with expandable subdeck structure!")
+print("\n📍 IMPORT FROM: ../Anki-Decks/AZ-104-Master-Study-Deck.apkg")

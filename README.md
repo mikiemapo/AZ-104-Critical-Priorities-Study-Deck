@@ -3,13 +3,17 @@
 ## 📥 QUICK DOWNLOAD - Study Decks
 
 ### 1. Master Study Deck (All Topics)
+
 **[⬇️ Download AZ-104-Master-Study-Deck.apkg](../AZ-104-Master-Study-Deck.apkg)** (465 cards, 24 subdecks)
 
 **File Location**: `/Users/mike1macbook/Documents/MY STUFF DOCS AND ALL/EBOOK/AZ-104-Master-Study-Deck.apkg`
 
 **Imports as**: `AZ-104 Study Guide` with hierarchical subdecks
 
+**Questioning Method (all decks):** Uses the standardized MCQ/True-False style described in `../Anki-Decks/README.md` under "Questioning Method (Documented System)". Default to MCQ; use True/False only for binary, always/never rules.
+
 ### 2. Performance Review Deck (Nov 29 Quiz)
+
 **[⬇️ Download AZ-104-Performance-Review-Identities-Nov29.apkg](../AZ-104-Performance-Review-Identities-Nov29.apkg)** (49 cards)
 
 **File Location**: `/Users/mike1macbook/Documents/MY STUFF DOCS AND ALL/EBOOK/AZ-104-Performance-Review-Identities-Nov29.apkg`
