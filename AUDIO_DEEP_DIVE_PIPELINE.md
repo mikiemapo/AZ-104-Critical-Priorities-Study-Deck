@@ -2,7 +2,7 @@
 
 ## Overview
 
-Convert audio transcripts (Deep Dive explainer series) into focused Anki decks using the **Enriched scenario-based format**.
+Convert audio transcripts (Deep Dive explainer series) into focused Anki decks using the **CPRS (Concept-Pathway Reinforcement System)** question style.
 
 ---
 
@@ -65,22 +65,30 @@ Convert audio transcripts (Deep Dive explainer series) into focused Anki decks u
 
 ---
 
-## Format Rules (Enriched Style)
+## Format Rules (CPRS)
 
 ```
 Question,ChoiceA,ChoiceB,ChoiceC,ChoiceD,Correct,Explanation,Tags,Source,Batch
-"A [scenario with constraint]. What is [the decision/concept]?","Wrong","Correct answer","Wrong","Wrong","B","[Explanation with trade-off or constraint detail]. [Actionable guidance or best practice].","Topic,Concept,Deep Dive","Deep Dive: [Topic]","[Topic] Deep Dive Batch"
+"[Scenario with constraint/misdirect]. Which option best fits?","Wrong but plausible","Correct","Wrong but plausible","Looks right but misses constraint","B","Why this is right (1 sentence). Why others fail the constraint/trade-off (1 sentence).","Topic,Concept,Deep Dive","Deep Dive: [Topic]","[Topic] Deep Dive Batch"
 ```
+
+### CPRS Checklist (use per question set)
+
+- **Step 1 (Foundation):** What does the service exist to solve?
+- **Step 2 (Definition):** Precise identity in one line.
+- **Step 3 (Differentiation):** How it differs from adjacent services.
+- **Step 4 (Scenario with misdirects):** One best-fit option; others fail a nuance.
+- **Step 5 (Anti-confusion):** Call out why the distractors are wrong.
+- **Step 6 (Compression):** 1-sentence recall line.
 
 ### Key Elements
 
-- **Scenario**: Real-world use-case or problem
-- **Constraints**: Specific numbers, timeframes, limitations
-- **Correct answer**: Clear, defensible
-- **Explanation**: Why correct + when applicable + trade-offs
-- **Tags**: Topic tags for filtering (VMSS, App Service, Storage, etc.)
-- **Source**: "Deep Dive: [Topic]"
-- **Batch**: "[Topic] Deep Dive Batch"
+- Scenario + constraint-driven stem
+- Distractors that are "wrong but almost right" (exam-accurate misdirection)
+- Two-sentence explanations: why correct, why others miss the constraint
+- Tags: Topic tags for filtering (VMSS, App Service, Storage, etc.)
+- Source: "Deep Dive: [Topic]"
+- Batch: "[Topic] Deep Dive Batch"
 
 ---
 

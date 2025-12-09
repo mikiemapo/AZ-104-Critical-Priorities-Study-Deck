@@ -4,7 +4,7 @@
 
 **Problem Solved:** Manual monitoring of cloud transcripts folder, deciding which ones are new, and manually extracting Deep Dive questions is tedious and error-prone.
 
-**Questioning Method (all decks):** Uses the standardized MCQ/True-False style in `../Anki-Decks/README.md` under "Questioning Method (Documented System)". Default to MCQ; use True/False only for binary, always/never rules.
+**Questioning Method (all decks):** Use CPRS (Concept-Pathway Reinforcement System): foundation → definition → differentiation → scenario with exam-style misdirects → anti-confusion (why others are wrong) → one-line compression. Default to MCQ; only use True/False for binary always/never rules.
 
 **Solution:** Automated script that:
 
