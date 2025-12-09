@@ -4,6 +4,8 @@
 
 **Problem Solved:** Manual monitoring of cloud transcripts folder, deciding which ones are new, and manually extracting Deep Dive questions is tedious and error-prone.
 
+**Questioning Method (all decks):** Uses the standardized MCQ/True-False style in `../Anki-Decks/README.md` under "Questioning Method (Documented System)". Default to MCQ; use True/False only for binary, always/never rules.
+
 **Solution:** Automated script that:
 
 1. ✅ Monitors `/Users/mike1macbook/Library/Mobile Documents/.../Conversations not hub/Text files` daily at **12:00 PM**
